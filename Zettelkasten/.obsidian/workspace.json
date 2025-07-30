@@ -1,0 +1,240 @@
+{
+  "main": {
+    "id": "7521f916e97841ca",
+    "type": "split",
+    "children": [
+      {
+        "id": "dea3781f96e38951",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "fa46be74897dcc05",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
+                "file": "Week 1 Quiz.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Week 1 Quiz"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "0644bde79b45147c",
+    "type": "split",
+    "children": [
+      {
+        "id": "83cdfbe3ccaab1ab",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "76fbe91a78538a31",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "bf013a0b638899af",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "control",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "662963a1ae28a6a0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 200
+  },
+  "right": {
+    "id": "41a6a1c3c1c3913f",
+    "type": "split",
+    "children": [
+      {
+        "id": "566cbe9cf833718f",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "f7328734bcc5b503",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "C++ Basics Overview.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks for C++ Basics Overview"
+            }
+          },
+          {
+            "id": "f17281d759b406ad",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "a778c00e389f2c7d",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "dfad4dd6b397c73b",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          },
+          {
+            "id": "ef088e8e4baf70fa",
+            "type": "leaf",
+            "state": {
+              "type": "advanced-tables-toolbar",
+              "state": {},
+              "icon": "spreadsheet",
+              "title": "Advanced Tables"
+            }
+          },
+          {
+            "id": "87fda64e9ccee360",
+            "type": "leaf",
+            "state": {
+              "type": "review-queue-list-view",
+              "state": {},
+              "icon": "SpacedRepIcon",
+              "title": "Notes Review Queue"
+            }
+          }
+        ],
+        "currentTab": 5
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "table-editor-obsidian:Advanced Tables Toolbar": false,
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false,
+      "obsidian-spaced-repetition:Review flashcards": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "fa46be74897dcc05",
+  "lastOpenFiles": [
+    "Week 2 Quiz.md",
+    "Vectors.md",
+    "Variables and Constants.md",
+    "Type Casting.md",
+    "Boolean Logic.md",
+    "C++ Basics.md",
+    "C++ Syntax Reference.md",
+    "Conditionals.md",
+    "Control Flow.md",
+    "Standard Algorithms.md",
+    "Operators.md",
+    "Mixed-Type Expressions.md",
+    "Types Hierarchy.md",
+    "Templates/Diagram.md",
+    "Charts & Diagrams/Drawing 2025-07-28 19.12.18.excalidraw.md",
+    "Charts & Diagrams/Drawing 2025-07-28 19.14.01.excalidraw.md",
+    "Charts & Diagrams/Types Hierarchy.md",
+    "Charts & Diagrams",
+    "Statements and Expressions.md",
+    "Templates/Note.md",
+    "Charts & Diagrams/Untitled Diagram.svg",
+    "Charts & Diagrams",
+    "Week 1 Quiz.md",
+    "Tuple.md",
+    "cc-neovim.md",
+    "Images/cc-dashboard.png",
+    "Images/sample5.png",
+    "Untitled 1.md",
+    "Git.md",
+    "String.md",
+    "Increment and Decrement.md",
+    "Templates/Timestamp",
+    "Images",
+    "Templates"
+  ]
+}

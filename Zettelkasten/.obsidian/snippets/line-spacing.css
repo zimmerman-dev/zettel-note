@@ -1,0 +1,22 @@
+/* === Line Spacing Tweaks for Obsidian === */
+
+/* Editor text spacing */
+.cm-content {
+    line-height: 1.55 !important;  /* Default ~1.4, this is subtly larger */
+}
+
+/* Preview/Reading mode spacing */
+.markdown-preview-view {
+    line-height: 1.55 !important;
+}
+
+/* Optional: add a little more space between paragraphs */
+.markdown-preview-view p {
+    margin-bottom: 0.7em !important;  /* Default is ~0.5em */
+}
+
+/* Optional: tweak spacing between list items */
+.markdown-preview-view li {
+    margin-bottom: 0.3em !important;  /* Gives lists a bit of breathing room */
+}
+
