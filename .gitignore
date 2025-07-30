@@ -1,0 +1,8 @@
+# Ignore machine-specific UI state
+.obsidian/workspace
+.obsidian/workspace.json
+.obsidian/cache/
+
+# Ignore system junk
+.DS_Store
+Thumbs.db
