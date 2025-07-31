@@ -34,7 +34,8 @@ ___
 - Shorthand for simple `if-else`.
 - Returns a value based on a condition.
 
----
+see: [[Conditionals]]
+___
 #### 3️⃣ Iteration (Loops)
 - Repeats a block of code **while** or **until** a condition is met.
 

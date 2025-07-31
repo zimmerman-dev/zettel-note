@@ -13,7 +13,7 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Week 1 Quiz.md",
+                "file": "Conditionals.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Week 1 Quiz"
+              "title": "Conditionals"
             }
           }
         ]
@@ -202,15 +202,16 @@
   },
   "active": "fa46be74897dcc05",
   "lastOpenFiles": [
+    "Control Flow.md",
+    "Conditionals.md",
     "Week 2 Quiz.md",
+    "Week 1 Quiz.md",
     "Vectors.md",
     "Variables and Constants.md",
     "Type Casting.md",
     "Boolean Logic.md",
     "C++ Basics.md",
     "C++ Syntax Reference.md",
-    "Conditionals.md",
-    "Control Flow.md",
     "Standard Algorithms.md",
     "Operators.md",
     "Mixed-Type Expressions.md",
@@ -224,7 +225,6 @@
     "Templates/Note.md",
     "Charts & Diagrams/Untitled Diagram.svg",
     "Charts & Diagrams",
-    "Week 1 Quiz.md",
     "Tuple.md",
     "cc-neovim.md",
     "Images/cc-dashboard.png",
