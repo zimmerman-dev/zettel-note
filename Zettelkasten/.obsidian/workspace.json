@@ -13,6 +13,30 @@
             "state": {
               "type": "markdown",
               "state": {
+                "file": "Loops.md",
+                "mode": "source",
+                "source": false,
+                "backlinks": true,
+                "backlinkOpts": {
+                  "collapseAll": false,
+                  "extraContext": false,
+                  "sortOrder": "alphabetical",
+                  "showSearch": false,
+                  "searchQuery": "",
+                  "backlinkCollapsed": false,
+                  "unlinkedCollapsed": true
+                }
+              },
+              "icon": "lucide-file",
+              "title": "Loops"
+            }
+          },
+          {
+            "id": "61169e81426c0368",
+            "type": "leaf",
+            "state": {
+              "type": "markdown",
+              "state": {
                 "file": "Loops - While.md",
                 "mode": "source",
                 "source": false,
@@ -30,33 +54,8 @@
               "icon": "lucide-file",
               "title": "Loops - While"
             }
-          },
-          {
-            "id": "61169e81426c0368",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Loops - Do While.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Loops - Do While"
-            }
           }
-        ],
-        "currentTab": 1
+        ]
       }
     ],
     "direction": "vertical"
@@ -225,17 +224,20 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "61169e81426c0368",
+  "active": "fa46be74897dcc05",
   "lastOpenFiles": [
     "Loops - While.md",
-    "Loops - Do While.md",
-    "Loops - For.md",
     "Loops.md",
+    "Loops - Do While.md",
+    "Conditionals.md",
+    "Operators.md",
     "Boolean Logic.md",
+    "Tuple.md",
+    "Untitled.md",
+    "Loops - For.md",
     "Loops - Ranged-based For.md",
     "Vectors.md",
     "Git.md",
-    "Conditionals.md",
     "Control Flow.md",
     "Week 2 Quiz.md",
     "Week 1 Quiz.md",
@@ -244,7 +246,6 @@
     "C++ Basics.md",
     "C++ Syntax Reference.md",
     "Standard Algorithms.md",
-    "Operators.md",
     "Mixed-Type Expressions.md",
     "Types Hierarchy.md",
     "Templates/Diagram.md",
@@ -252,8 +253,6 @@
     "Charts & Diagrams/Drawing 2025-07-28 19.14.01.excalidraw.md",
     "Charts & Diagrams/Types Hierarchy.md",
     "Charts & Diagrams",
-    "Statements and Expressions.md",
-    "Templates/Note.md",
     "Charts & Diagrams/Untitled Diagram.svg",
     "Charts & Diagrams",
     "Images/cc-dashboard.png",
