@@ -1,7 +1,7 @@
 #### 📝 Note: Templates and Generics 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: [[C++ Syntax Reference]] , [[Operator Overloading]]  , [[Standard Library Reference]]
+ 🔗 **Related Concepts**: #cpp #note [[C++ Syntax Reference]] , [[Operator Overloading]]  , [[Standard Library Reference]]
 ___
 # 🧬 Templates and Generics (C++)
 

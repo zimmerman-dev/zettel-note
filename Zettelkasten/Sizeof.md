@@ -1,7 +1,7 @@
 #### 📝 Note: Sizeof 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:24 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #operator [[Climits]]  , [[Cfloat]] , [[Data Types]] [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #cpp #note [[climits]]  , [[cfloat]] , [[Data Types]] [[C++ Syntax Reference]]
 ___
 ### Syntax
 
@@ -9,7 +9,7 @@ ___
 
 
 >[!hint] *sizeof* operator
-> The sizeof operator determines size in bytes of a type or variable. This operator gets its information from the [[Climits]] and [[Cfloat]] libraries.
+> The sizeof operator determines size in bytes of a type or variable. This operator gets its information from the [[climits]] and [[cfloat]] libraries.
 
 ___
 

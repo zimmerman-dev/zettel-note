@@ -1,7 +1,7 @@
 #### 📝 Note: Mixed-Type Expressions 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:31 am  📆 Thu Jul 24
- 🔗 **Related Concepts**: [[Statements and Expressions]] , [[Data Types]] , [[C++ Syntax Reference]] , [[Type Casting]] 
+ 🔗 **Related Concepts**: #cpp #note [[Statements and Expressions]] , [[Data Types]] , [[C++ Syntax Reference]] , [[Type Casting]] 
 ___
 ### 🎭 Mixed-Type Expressions
 

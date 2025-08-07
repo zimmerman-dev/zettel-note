@@ -1,7 +1,7 @@
 #### 📝 Note: Ranged-based For 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚4:13 pm  📆 Sat Aug 2
- 🔗 **Related Concepts**: [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops]]
+ 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops]]
 ___
 ## 🔹 **Range-based `for` Loop**
 A range-based `for` loop is a **modern C++ construct** that simplifies iterating directly over the elements of a container (arrays, vectors, strings, etc.).

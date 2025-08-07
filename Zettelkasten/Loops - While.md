@@ -1,7 +1,7 @@
 #### 📝 Note: While 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚4:30 pm  📆 Sat Aug 2
- 🔗 **Related Concepts**: [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops]]
+ 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops]]
 ___
 
 ## ➰ `While` **Loop**

@@ -1,7 +1,7 @@
 #### 📝 Note: Conditionals 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:48 am  📆 Tue Jul 29
- 🔗 **Related Concepts**: [[Control Flow]] , [[Operators]] , [[Boolean Logic]] , [[Loops]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #cpp #note [[Control Flow]] , [[Operators]] , [[Boolean Logic]] , [[Loops]] , [[C++ Syntax Reference]]
 ___
 ## 📓 Selection Statements
 

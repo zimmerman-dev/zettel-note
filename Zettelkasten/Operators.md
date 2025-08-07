@@ -2,7 +2,7 @@
 #### 📝 Note: Operators 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:23 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #operator [[Statements and Expressions]] , [[Control Flow]] , [[Pointers and References]] , [[Increment and Decrement]] , [[Boolean Logic]] , [[Conditionals]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #cpp #note [[Statements and Expressions]] , [[Control Flow]] , [[Pointers and References]] , [[Increment and Decrement]] , [[Boolean Logic]] , [[Conditionals]] , [[C++ Syntax Reference]]
 ___
 ### ⚙️ Operators
 

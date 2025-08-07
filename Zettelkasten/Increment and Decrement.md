@@ -1,7 +1,7 @@
 #### 📝 Note: Increment and Decrement
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚ 11:36 pm  🗓️: Tue Jul 22
- 🔗 **Related Concepts**: [[Operators]] , [[Statements and Expressions]] , [[Operator Overloading]] , [[Loops]] , [[Conditionals]] , [[Jump Statements]]
+ 🔗 **Related Concepts**: #cpp #note [[Operators]] , [[Statements and Expressions]] , [[Operator Overloading]] , [[Loops]] , [[Conditionals]] , [[Jump Statements]]
 
 ___
 ## ➕➖ Increment and Decrement Operators

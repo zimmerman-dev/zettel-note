@@ -1,7 +1,7 @@
 #### 📝 Note: Type Casting 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: [[Mixed-Type Expressions]] , [[Statements and Expressions]] , [[Standard Library Reference]] , [[Data Types]] , [[]]
+ 🔗 **Related Concepts**: #cpp #note [[Mixed-Type Expressions]] , [[Statements and Expressions]] , [[Standard Library Reference]] , [[Data Types]] , 
 ___
 ### 💥 Type Casting
 

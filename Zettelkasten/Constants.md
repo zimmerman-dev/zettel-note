@@ -1,7 +1,7 @@
 #### 📝 Note: Constants 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:08 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: [[Variables and Constants]] , [[Data Types]] , [[Literals]] , [[Pointers and References]] , [[Classes and Objects]] , [[Enums]] 
+ 🔗 **Related Concepts**: #cpp #note [[Variables and Constants]] , [[Data Types]] , [[Literals]] , [[Pointers and References]] , [[Classes and Objects]] , [[Enums]] 
 ___
 ## What is a Constant?
 

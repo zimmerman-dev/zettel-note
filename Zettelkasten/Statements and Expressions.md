@@ -1,7 +1,7 @@
 #### 📝 Note: Statements and Expressions 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:26 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #operator [[C++ Syntax Reference]] , [[Operators]] , [[Functions]] , [[Loops]] , [[Conditionals]]
+ 🔗 **Related Concepts**: #cpp #note [[C++ Syntax Reference]] , [[Operators]] , [[Functions]] , [[Loops]] , [[Conditionals]]
 ___
 ### 🔣 Expressions
 

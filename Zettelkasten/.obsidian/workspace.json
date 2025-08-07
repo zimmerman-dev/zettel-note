@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "dea3781f96e38951",
+        "id": "731e10231942779b",
         "type": "tabs",
         "children": [
           {
-            "id": "fa46be74897dcc05",
+            "id": "c8ab9bfa5b87d7fa",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Loops.md",
+                "file": "String.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,16 +28,16 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Loops"
+              "title": "String"
             }
           },
           {
-            "id": "61169e81426c0368",
+            "id": "dd21a33f2a46f3d2",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Loops - While.md",
+                "file": "Loops - Nesting.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -52,7 +52,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "Loops - While"
+              "title": "Loops - Nesting"
             }
           }
         ]
@@ -224,38 +224,41 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "fa46be74897dcc05",
+  "active": "c8ab9bfa5b87d7fa",
   "lastOpenFiles": [
-    "Loops - While.md",
-    "Loops.md",
-    "Loops - Do While.md",
-    "Conditionals.md",
-    "Operators.md",
-    "Boolean Logic.md",
-    "Tuple.md",
-    "Untitled.md",
-    "Loops - For.md",
-    "Loops - Ranged-based For.md",
+    "Images/cc-dashboard.png",
+    "2D Vector Model.md",
     "Vectors.md",
-    "Git.md",
-    "Control Flow.md",
+    "Loops - Nesting.md",
+    "Charts & Diagrams/2DVectorModel.png",
+    "Arrays.md",
+    "Charts & Diagrams/2DVectorchart.png",
+    "Untitled 1",
+    "Untitled",
+    "String.md",
+    "cstring.md",
+    "cctype.md",
     "Week 2 Quiz.md",
-    "Week 1 Quiz.md",
-    "Variables and Constants.md",
-    "Type Casting.md",
+    "Templates/Bug Diary.md",
+    "Boolean Logic.md",
     "C++ Basics.md",
+    "C++ Headers Index.md",
     "C++ Syntax Reference.md",
-    "Standard Algorithms.md",
-    "Mixed-Type Expressions.md",
-    "Types Hierarchy.md",
-    "Templates/Diagram.md",
-    "Charts & Diagrams/Drawing 2025-07-28 19.12.18.excalidraw.md",
-    "Charts & Diagrams/Drawing 2025-07-28 19.14.01.excalidraw.md",
-    "Charts & Diagrams/Types Hierarchy.md",
+    "cc-neovim.md",
+    "cfloat.md",
+    "Classes and Objects.md",
+    "climits.md",
+    "CMake.md",
+    "Conditionals.md",
+    "Constants.md",
+    "Control Flow.md",
+    "Data Types.md",
+    "Enums.md",
+    "Functions.md",
+    "Git.md",
     "Charts & Diagrams",
     "Charts & Diagrams/Untitled Diagram.svg",
     "Charts & Diagrams",
-    "Images/cc-dashboard.png",
     "Images/sample5.png",
     "Templates/Timestamp",
     "Images",

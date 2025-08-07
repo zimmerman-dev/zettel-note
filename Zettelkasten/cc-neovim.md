@@ -1,7 +1,7 @@
 #### 📝 Note: cc-neovim 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:44 pm  📆 Sat Jul 26
- 🔗 **Related Concepts**:
+ 🔗 **Related Concepts**: #cpp #project #note
 ___
 
 ![[/Images/cc-dashboard.png]]

@@ -1,7 +1,7 @@
 #### 📝 Note: Vectors 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #types [[C++ Headers Index]] , [[Arrays]] , [[Standard Template Library]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #cpp #note [[C++ Headers Index]] , [[Arrays]] , [[Standard Template Library]] , [[C++ Syntax Reference]] 
 ___
 ## 🔢 Vectors (C++)
 
@@ -129,29 +129,88 @@ It does **not** return the allocated memory capacity, only the number of the ele
 
 ---
 
-### Two Dimensional Vectors
+## 🟦 **2D Vectors in C++**
 
-A 2D vector is a **vector** of **vectors**. 
+A **2D vector** is simply a `std::vector` where each element is another `std::vector`:
 
-`std::vector<std::vector<int>> vector_name;`
-
-```cpp title:2DVectors
-std::vector<int> vector1;
-std::vector<int> vector2;
-
-std::vector<std::vector<type>> vector_2D;
+```cpp
+std::vector<std::vector<type>> vector_name;
 ```
 
-A 2D vector functions like a coordinate grid. Here's a visualization:
+Essentially, A 2D vector is a **vector** of **vectors**. You can create individual vectors and add them to the **2D vector**, Like so:
 
+```cpp
+std::vector<int> vector1 {1, 2, 3};
+std::vector<int> vector2 {4, 5, 6};
 
-| Rows  | 0   | 1   | 2   | 3   | Vector  |
-| ----- | --- | --- | --- | --- | ------- |
-| Row 0 | 10  | 20  | 30  | 40  | vector1 |
-| Row 1 | 4   | 6   | 7   | 9   | vector2 |
-`std::vector<std::vector<int>> Vector_2D {vector1, vector2}`
+std::vector<std::vector<int>> vector2D {vector1, vector2};
+```
 
-If you want to display the elements using the `.at()` member function, you would just have to connect the coordinates. So `Vector_2D.at(0).at(0);` would be 10. `Vector_2D.at(0).at(3);` would be 40, and so on.
+**OR**
+
+```cpp
+std::vector<int> vector1 {1, 2, 3};
+std::vector<int> vector2 {4, 5, 6};
+
+std::vector<std::vector<int>> vector2D;
+vector2D.push_back(vector1);
+vector2D.push_back(vector2);
+```
+
+**OR** you can cleanly initialize your 2D vector directly:
+
+```cpp
+std::vector<std::vector<int>> vector2D {
+	{1, 2, 3},
+	{4, 5, 6}
+};
+```
+
+### ✅ **Linear Mental Model**
+
+Think of it as a **linear plot of points** where the points on the line are organized into **containers**. The common way to think of 2D vectors is with outer and inner vectors with rows and columns. In the linear mental model, we don't use those words as they don't represent the linear mental model.
+
+ Here's a visualization:
+ ![[2DVectorModel.png]]
+
+### 🧠 Accessing a 2D Vector (Linear Mental Model)
+
+Lets continue with the example above. 
+```cpp
+std::vector<std::vector<char>> letters {
+    {'a', 'b'},         // index 0
+    {'c', 'd', 'e'},    // index 1
+    {'f'},              // index 2
+    {'g', 'h', 'i'}     // index 3
+};
+
+```
+
+To access one of those inner vectors, use:
+```cpp
+letters.at(i)
+```
+
+To access a specific element _within_ an inner vector, use:
+```cpp
+letters.at(i).at(j)
+```
+
+For example:
+- `letters.at(0).at(1)` → `'b'`
+- `letters.at(1).at(2)` → `'e'`
+- `letters.at(2).at(0)` → `'f'`
+- `letters.at(3).at(2)` → `'i'`
+
+Each `.at(i)` moves linearly through the outer vector (like stepping through train cars), and each `.at(j)` moves linearly through the contents of that car.
+
+**Unsafe but common:**
+```cpp
+letters[i];   
+letters[i][j];
+```
+
+See [[Loops - Nesting]] for information on iterating through vectors and 2D vectors.
 
 ---
 

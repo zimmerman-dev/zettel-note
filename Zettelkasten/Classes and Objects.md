@@ -1,7 +1,7 @@
 #### 📝 Note: Classes and Objects 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:07 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: [[Encapsulation]] , [[Pointers and References]] , [[Memory Management]] , [[Functions]] , [[Templates and Generics]]
+ 🔗 **Related Concepts**: #cpp #note [[Encapsulation]] , [[Pointers and References]] , [[Memory Management]] , [[Functions]] , [[Templates and Generics]]
 ___
 ## 📦 Class Basics
 

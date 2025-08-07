@@ -1,7 +1,7 @@
 #### 📝 Note: CMake 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:07 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #projecttemplate
+ 🔗 **Related Concepts**: #cpp #toolchain #note
 ___
 ## ⚙️ CMake Basics – Minimal Reference
 

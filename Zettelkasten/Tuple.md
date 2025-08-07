@@ -1,7 +1,7 @@
 #### 📝 Note: Tuple 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #types [[Standard Library Reference]] , [[C++ Syntax Reference]] , [[Templates and Generics]] , [[Functions]]
+ 🔗 **Related Concepts**: #cpp #note [[Standard Library Reference]] , [[C++ Syntax Reference]] , [[Templates and Generics]] , [[Functions]]
 ___
 ## 📦 So, what’s a tuple?
 

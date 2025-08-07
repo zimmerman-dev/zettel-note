@@ -1,7 +1,7 @@
 #### 📝 Note: Control Flow 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚8:04 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: [[Operators]] , [[Statements and Expressions]] , [[Conditionals]] , [[Boolean Logic]] , [[Functions]]
+ 🔗 **Related Concepts**: #cpp #note [[Operators]] , [[Statements and Expressions]] , [[Conditionals]] , [[Boolean Logic]] , [[Functions]]
 ___
 
 ## ✅ What is Control Flow?

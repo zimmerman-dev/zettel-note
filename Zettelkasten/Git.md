@@ -1,7 +1,7 @@
 #### 📝 Note: Git 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:21 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #versioncontrol
+ 🔗 **Related Concepts**: #toolchain #note
 ___
 # 🧪 Git Essentials – Quick Reference
 

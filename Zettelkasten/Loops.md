@@ -1,7 +1,7 @@
 #### 📝 Note: Loops 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:36 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops - For | For]] , [[Loops - Ranged-based For | R-B For]] , [[Loops - While | While]] , [[Loops - Do While | Do While]]
+ 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops - For | For]] , [[Loops - Ranged-based For | R-B For]] , [[Loops - While | While]] , [[Loops - Do While | Do While]]
 ___
 ## ➿ **What are Loops?**
  Loops are part of the third basic building block of programming, **iteration.** Iteration, or repetition allows the execution of a statement or block of statements repeatedly. These loops are made up of "loop conditions" and a body which contains the statements to repeat.
