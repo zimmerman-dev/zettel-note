@@ -30,30 +30,6 @@
               "icon": "lucide-file",
               "title": "String"
             }
-          },
-          {
-            "id": "dd21a33f2a46f3d2",
-            "type": "leaf",
-            "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Loops - Nesting.md",
-                "mode": "source",
-                "source": false,
-                "backlinks": true,
-                "backlinkOpts": {
-                  "collapseAll": false,
-                  "extraContext": false,
-                  "sortOrder": "alphabetical",
-                  "showSearch": false,
-                  "searchQuery": "",
-                  "backlinkCollapsed": false,
-                  "unlinkedCollapsed": true
-                }
-              },
-              "icon": "lucide-file",
-              "title": "Loops - Nesting"
-            }
           }
         ]
       }
@@ -226,18 +202,22 @@
   },
   "active": "c8ab9bfa5b87d7fa",
   "lastOpenFiles": [
+    "Conditionals.md",
+    "String.md",
+    "C-Style Strings.md",
+    "cstdlib.md",
+    "cctype.md",
+    "cstring.md",
+    "Untitled 1.md",
+    "Loops - Nesting.md",
     "Images/cc-dashboard.png",
     "2D Vector Model.md",
     "Vectors.md",
-    "Loops - Nesting.md",
     "Charts & Diagrams/2DVectorModel.png",
     "Arrays.md",
     "Charts & Diagrams/2DVectorchart.png",
     "Untitled 1",
     "Untitled",
-    "String.md",
-    "cstring.md",
-    "cctype.md",
     "Week 2 Quiz.md",
     "Templates/Bug Diary.md",
     "Boolean Logic.md",
@@ -249,13 +229,10 @@
     "Classes and Objects.md",
     "climits.md",
     "CMake.md",
-    "Conditionals.md",
     "Constants.md",
     "Control Flow.md",
     "Data Types.md",
     "Enums.md",
-    "Functions.md",
-    "Git.md",
     "Charts & Diagrams",
     "Charts & Diagrams/Untitled Diagram.svg",
     "Charts & Diagrams",

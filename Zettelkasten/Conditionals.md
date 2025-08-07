@@ -3,7 +3,7 @@
  ⌚12:48 am  📆 Tue Jul 29
  🔗 **Related Concepts**: #cpp #note [[Control Flow]] , [[Operators]] , [[Boolean Logic]] , [[Loops]] , [[C++ Syntax Reference]]
 ___
-## 📓 Selection Statements
+### 📓 Selection Statements
 
 *"While statements are executed in the same order in which they appear, programs are not limited to a linear sequence of the statements."* – [cplusplus.com](https://cplusplus.com/doc/tutorial/control/)
 
