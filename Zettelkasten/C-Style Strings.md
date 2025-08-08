@@ -1,7 +1,7 @@
 #### 📝 Note: C-Style Strings 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:18 pm  📆 Wed Aug 6
- 🔗 **Related Concepts**: #note #cpp [[cstdlib]] , [[String]] , [[C++ Headers Index]] , [[cstring]] , [[cctype]] , [[Data Types]] , [[Arrays]] , [[Iostream]] 
+ 🔗 **Related Concepts**: #note #cpp [[cstdlib]] , [[string]] , [[C++ Headers Index]] , [[cstring]] , [[cctype]] , [[Data Types]] , [[Arrays]] , [[Iostream]] 
 ___
 ## 🧠 Overview
 
@@ -119,7 +119,7 @@ const char* raw = name.c_str();
 
 ### ✅ See Also
 
-- [[String]]
+- [[string]]
 - [[cstdlib]]
 - [[cstring]]
 - [[cctype]]

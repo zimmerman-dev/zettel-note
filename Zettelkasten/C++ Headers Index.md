@@ -10,12 +10,13 @@ An index of notes for each `<header>` in the C++ Standard Library.
 ## 📦 STL Containers
 - [[Vectors|<vector>]]
 - [[Arrays|<array>]]
+- [[string|<string>]]
 - [[Maps|<map>]]
 - [[Sets|<set>]]
 - [[Unordered Map|<unordered_map>]]
 
 ## 🎲 Utilities
-- [[Random|<random>]]
+- [[random|<random>]]
 - [[Optional|<optional>]]
 - [[Tuple|<tuple>]]
 - [[Variant|<variant>]]
@@ -25,10 +26,18 @@ An index of notes for each `<header>` in the C++ Standard Library.
 - [[Fstream|<fstream>]]
 - [[Sstream|<sstream>]]
 
-## 📏 Numeric Limits and Types
+## 📏 Numeric Limits, Types and Math
 - [[climits|<climits>]]
 - [[cfloat|<cfloat>]]
 - [[cstdint|<cstdint>]]
+- [[cmath|<cmath>]]
+
+## 🧮 **C Standard Library: String & Memory**
+- [[C-Style Strings]]
+- [[cstring|<cstring>]]
+- [[cstdlib|<cstdlib>]]
+- [[cctype|<cctype>]]
+- [[cstdio|<cstdio>]]
 
 ## 🧠 Other
 - [[Standard Algorithms|<algorithm>]]

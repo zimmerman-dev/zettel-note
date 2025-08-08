@@ -1,137 +1,174 @@
-#### 📝 Note: String 
+#### 📝 Note: Strings
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #cpp #note [[C++ Headers Index]] ,
  [[Standard Template Library]] , [[Variables and Constants]] , [[C++ Syntax Reference]] , [[cstring]] , [[cstdlib]] , [[cctype]] , [[Boolean Logic]]
 ___
-## ✅ What I Know So Far
 
-std::string is a **Class** in the **Standard Template Library**.
+`std::string` is a **class** in the **Standard Template Library (STL)**.
+
 - `#include <string>`
-- `std namespace`
+- Resides in the `std` namespace
 - Contiguous in memory
-- Dynamic in size - (If C-Style strings are like arrays, C++ strings are like vectors).
--  works with iostream
-- lots of useful member functions
-- familiar operators can be used - see [[Operators]]
-
-Interesting things to dive into:
-- Can be converted to C-Style strings if needed
-- safer
-
-
-
-- Any methods or functions I’ve learned?
+- Dynamically sized (If C-style strings are like arrays, C++ strings are like vectors)
+- Works with `iostream`
+- Offers many useful member functions
+- Supports familiar operators — see [[Operators]]
+- Safer than C-style strings
+- Can be converted to C-style strings
 
 ---
-
-### 🛠 Syntax - Declaring and Initializing
-
-Unlike C-Style Strings, C++ strings are always initialized.
+### 🛠 Syntax – Declaring and Initializing
 
 ```cpp
 #include <string>
 
-// String                   || Output
-std::string s1;             // Empty (No garbage in memory)
-std::string s2 {"John"};    // John  (C-Style Literal)
-std::string s3 {s2};        // John  (Copied, but two separate strings in mem)
-std::string s4 {"John", 3}; // Joh   (The first 3 indices of string)
-std::string s5 {s3, 0, 2};  // Jo    (initialized from s3 at 0, 2 is length)
-std::string s6 (3, 'X');    // XXX   (constructor.)
+std::string s1;             // Empty string
+std::string s2 {"John"};    // Literal init
+std::string s3 {s2};        // Copy init (separate memory)
+std::string s4 {"John", 3}; // Joh (first 3 chars)
+std::string s5 {s3, 0, 2};  // Jo (from s3 at index 0, length 2)
+std::string s6 (3, 'X');    // XXX (repeated char)
 ```
 
-
+---
 ### 🐈 Concatenation
 
-✅ **LEGAL**
+👉 **LEGAL**
 ```cpp
 std::string part1 {"C++"};
 std::string part2 {"is a powerful"};
-std::strng sentence;
+std::string sentence;
 
 sentence = part1 + " " + part2 + " language";
-// C++ is a powerful language
 ```
 
-🟥 **ILLEGAL**
+🛑 **ILLEGAL**
 ```cpp
-std::string part1 {"C++"};
-std::string part2 {"is a powerful"};
-std::strng sentence;
-
-sentence = "C++" + " is powerful";
+sentence = "C++" + " is powerful";  // C-style string literals can't be added
 ```
-> You cannot concatenate two C-Style string literals, it only works with C++ strings.
 
+---
 
-### 🔡 Access characters with  `[]` and `.at()` method
+### 🔡 Access Characters – `[]` and `.at()`
 
 ```cpp
 std::string name {"John"};
 
-std::cout << name[1] << std::endl;     // O
-std::cout << name.at(0) << std::endl;  // J
+std::cout << name[1];     // o
+std::cout << name.at(0);  // J
 ```
 
-### 🧵 Iterating through a String
+### 🧵 Iteration
 
 ```cpp
 std::string name {"John"};
-
-for (char c: name) {
-	std::cout << name;
+for (char c : name) {
+    std::cout << c;
 }
 ```
 
-### 📓 Comparing
+### 📓 Comparing Strings
 
-`==` , `!=`, `<`, `>`, `<=`, `>=`
+Operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
 
-The objects are compared character by character lexically. This means when comparing characters, they use the ascii values to determine the comparative relationship.
+- Compared character-by-character using ASCII values
+- Can compare:
+    - Two `std::string` objects
+    - `std::string` and C-style literals
+    - `std::string` and C-style variables
 
-Can compare:
-- Two `std::string` objects
-- `std::string` object and C-Style string literals
-- `std::string` object and C-Style string variables
+### 🔁 Substrings – `.substr()`
 
-### 🔁 Substrings - `substr()`
-
-Extracts a substring from a std::string
-
-Syntax:
 ```cpp
-object.substr(start_index, length)
-
 std::string s1 {"This is a test"};
 
-std::cout << s1.substr(0,4);  // This
-std::cout << s1.substr{5,2};  // is
-std::cout << s1.substr(10,4); // test
+s1.substr(0, 4);   // "This"
+s1.substr(5, 2);   // "is"
+s1.substr(10, 4);  // "test"
 ```
 
-### 📍Searching - `find()`
+- First argument: **start index**
+- Second argument: **number of characters to extract**
 
-Returns the index of a substring in a std::string
+---
+### 🚿 Erasing and Clearing – `.erase()` and `.clear()`
 
-Syntax
 ```cpp
-object.find(search_string)
+std::string s1 {"This is a test"};
+s1.erase(0, 5);  // "is a test"
+s1.clear();      // Empties the entire string
 ```
 
+---
+### 📏 Length – `.length()` / `.size()`
+
+```cpp
+std::string s1 {"John"};
+s1.length();  // 4
+```
+
+- Equivalent to `.size()`
+- Returns number of characters in the string
+
+---
+### 📍 Searching – `.find()`
+
+```cpp
+std::string s1 {"This is a test"};
+
+s1.find("This");   // 0
+s1.find("is");     // 2 (first occurrence)
+s1.find("test");   // 10
+s1.find("pizza");  // std::string::npos
+```
+
+- Returns index of first character in match
+
+- If not found: returns `std::string::npos`  
+- Optional second argument = start index
+    - `s1.find('o', 5);`
+#### 🔁 Pattern Example:
+
+```cpp
+if (s1.find("pizza") == std::string::npos) {
+    std::cout << "Not found!\n";
+}
+```
+
+### 🧪 Checking Emptiness – `.empty()`
+
+```cpp
+std::string s1 {""};
+if (s1.empty()) {
+    std::cout << "String is empty.";
+}
+```
 
 ---
 
-## ❓Open Questions
+### 〰 Input – `.getline()`
 
-- What’s the difference between `std::string` and C-style strings?
-- Have I seen `std::string_view`? What’s it for?
+```cpp
+std::string fullName;
+std::getline(std::cin, fullName);
+```
 
+- `std::cin >>` stops at whitespace and leaves `\n` behind
+- `getline()` reads the entire line including spaces
 
----
+#### 😬 Common Gotcha:
 
-## 
+```cpp
+int age;
+std::string name;
 
-- Unicode/encodings?
-- Conversion between string types?
-- Performance and memory?
+std::cin >> age;
+std::getline(std::cin, name);  // gets leftover \n
+```
+
+#### 🛠 Fix:
+
+```cpp
+std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+```

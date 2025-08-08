@@ -4,16 +4,16 @@
     "type": "split",
     "children": [
       {
-        "id": "731e10231942779b",
+        "id": "6c8412f21bbe2533",
         "type": "tabs",
         "children": [
           {
-            "id": "c8ab9bfa5b87d7fa",
+            "id": "5229fd24b791c930",
             "type": "leaf",
             "state": {
               "type": "markdown",
               "state": {
-                "file": "String.md",
+                "file": "Functions.md",
                 "mode": "source",
                 "source": false,
                 "backlinks": true,
@@ -28,7 +28,7 @@
                 }
               },
               "icon": "lucide-file",
-              "title": "String"
+              "title": "Functions"
             }
           }
         ]
@@ -200,16 +200,28 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c8ab9bfa5b87d7fa",
+  "active": "5229fd24b791c930",
   "lastOpenFiles": [
-    "Conditionals.md",
-    "String.md",
+    "Charts & Diagrams/Function Structure.png",
+    "Terminology Index.md",
+    "Functions.md",
+    "Excalidraw/Drawing 2025-08-08 00.12.02.excalidraw.md",
+    "Excalidraw",
+    "Variables and Constants.md",
+    "Pair.md",
+    "random.md",
+    "cmath.md",
+    "climits.md",
+    "C++ Headers Index.md",
     "C-Style Strings.md",
+    "cstring.md",
+    "string.md",
+    "Standard Template Library.md",
+    "Loops - Nesting.md",
+    "Conditionals.md",
     "cstdlib.md",
     "cctype.md",
-    "cstring.md",
     "Untitled 1.md",
-    "Loops - Nesting.md",
     "Images/cc-dashboard.png",
     "2D Vector Model.md",
     "Vectors.md",
@@ -222,17 +234,6 @@
     "Templates/Bug Diary.md",
     "Boolean Logic.md",
     "C++ Basics.md",
-    "C++ Headers Index.md",
-    "C++ Syntax Reference.md",
-    "cc-neovim.md",
-    "cfloat.md",
-    "Classes and Objects.md",
-    "climits.md",
-    "CMake.md",
-    "Constants.md",
-    "Control Flow.md",
-    "Data Types.md",
-    "Enums.md",
     "Charts & Diagrams",
     "Charts & Diagrams/Untitled Diagram.svg",
     "Charts & Diagrams",

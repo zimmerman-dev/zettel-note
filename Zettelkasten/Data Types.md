@@ -57,7 +57,7 @@ These are the fundamental data types implemented directly by the C++ language. T
 
 
 >[!question] Remember:
->Unlike higher level programming languages, strings are not built in data types. String manipulation requires the use of the [[String|<string>]] library.
+>Unlike higher level programming languages, strings are not built in data types. String manipulation requires the use of the [[string|<string>]] library.
 #### Type Sizes
 The size of the data types are expressed in bits, which means that the more bits a data type can hold means the more values that can be represented. Thus the more bits also means the more storage required. Memory management is an important feature to understand in C++.
 

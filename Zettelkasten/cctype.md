@@ -1,7 +1,7 @@
 #### 📝 Note: cctype 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:29 pm  📆 Tue Aug 5
- 🔗 **Related Concepts**: #cpp #note [[String]] , [[C++ Headers Index]] , [[C++ Syntax Reference]] , [[]]
+ 🔗 **Related Concepts**: #cpp #note [[string]] , [[C++ Headers Index]] , [[C++ Syntax Reference]] , [[]]
 ___
 ##  `<cctype>` & `(ctype.h)`
 
