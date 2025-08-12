@@ -1,7 +1,7 @@
 #### 📝 Note: Loops 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:36 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops - For | For]] , [[Loops - Ranged-based For | R-B For]] , [[Loops - While | While]] , [[Loops - Do While | Do While]]
+ 🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Boolean Logic]] , [[Operators]] , [[Statements and Expressions]] , [[Loops - For]] , [[Loops - While]] , [[Loops - Do While]] , [[Loops - Ranged-based For]] , [[Loops - Nesting]] , [[C++ Basics]]
 ___
 ## ➿ **What are Loops?**
  Loops are part of the third basic building block of programming, **iteration.** Iteration, or repetition allows the execution of a statement or block of statements repeatedly. These loops are made up of "loop conditions" and a body which contains the statements to repeat.
@@ -16,7 +16,6 @@ ___
 
 ---
 ### 🎛️ **Control Statements**
-
 - `break` – exits the loop early.
 	- No further statements in the body of the loop are executed
 	- Loop is immediately terminated
@@ -29,10 +28,12 @@ ___
 - `return` – exits the entire function, not just the loop.
 
 ---
-
 ### 📚 **Loop Types**
-
-#### [[Loops - For |For Loops]] – Controlled iteration with explicit index handling.
-#### [[Loops - Ranged-based For | Ranged based For loops]] – Simplified iteration over containers.
-#### [[Loops - While | While Loops]] – Runs as long as a condition is true.
-#### [[Loops - Do While | Do while loops]] – Similar to while, but executes at least once.
+#### [[Loops - For |For Loops]] 
+- Controlled iteration with explicit index handling.
+#### [[Loops - Ranged-based For | Ranged based For loops]] 
+- Simplified iteration over containers.
+#### [[Loops - While | While Loops]] 
+- Runs as long as a condition is true.
+#### [[Loops - Do While | Do while loops]]
+- Similar to while, but executes at least once.

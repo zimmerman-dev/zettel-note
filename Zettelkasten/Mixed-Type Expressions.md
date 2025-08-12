@@ -1,10 +1,9 @@
 #### 📝 Note: Mixed-Type Expressions 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:31 am  📆 Thu Jul 24
- 🔗 **Related Concepts**: #cpp #note [[Statements and Expressions]] , [[Data Types]] , [[C++ Syntax Reference]] , [[Type Casting]] 
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]] , [[Operators]] , [[Type Casting]] , [[climits]] , [[cfloat(STUB)]] , [[cmath(STUB)]] , [[Functions - Built-in]]
 ___
 ### 🎭 Mixed-Type Expressions
-
 An expression involving **two or more different day types**, such as `int` and `double`.
 **Example:**
 
@@ -12,15 +11,12 @@ An expression involving **two or more different day types**, such as `int` and `
 - If operands are of different types, C++ will convert one
 - Important! since it could affect calculation results
 - C++ will attempt to automatically convert types (coercion). If it can't, a compiler error will occur.
-
 ### 🔄 Type Conversions 
 
 >[!note] What is it?
 >- Type conversion means **changing a value from one type to another.**
 >- This happens all the time in C++ when you're doing math with different kinds of numbers.
-
 ### 🔺Higher vs Lower Types
-
 Higher vs. Lower Types are based on the size of the values the **type** can hold. When C++ has to choose, it will **convert lower types to higher ones** to keep things safe.
 
 - `double` is **higher** than `int` (it can store decimals and bigger numbers)
@@ -39,7 +35,6 @@ auto result = a + b; //result is promoted to double
 
 ---
 ### 🌀 Type Coercion 
-
 As state above, **Type Coercion** just means that *C++ automatically (at compile time) converts one type into another without you doing anything.*
 
 **Promotion:** Converting to a higher type, i.e., `int -> double`, `char -> int`, etc.
@@ -60,12 +55,10 @@ num = 100.2;
 ```
 
 ### 🚧 Types Hierarchy
-
 Diagram for visual aid on types hierarchy for promotion and demotion here:
 [[Types Hierarchy]]
 
 ---
 ### 🌡️ Type Casting
-
 Continued: 
 [[Type Casting]]

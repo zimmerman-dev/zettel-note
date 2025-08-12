@@ -2,7 +2,7 @@
 
 /* Editor text spacing */
 .cm-content {
-    line-height: 1.55 !important;  /* Default ~1.4, this is subtly larger */
+    line-height: 1.8 !important;  /* Default ~1.4, this is subtly larger */
 }
 
 /* Preview/Reading mode spacing */
@@ -17,6 +17,6 @@
 
 /* Optional: tweak spacing between list items */
 .markdown-preview-view li {
-    margin-bottom: 0.3em !important;  /* Gives lists a bit of breathing room */
+    margin-bottom: 0.5em !important;  /* Gives lists a bit of breathing room */
 }
 

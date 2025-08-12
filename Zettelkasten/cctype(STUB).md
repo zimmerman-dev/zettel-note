@@ -1,7 +1,7 @@
 #### 📝 Note: cctype 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:29 pm  📆 Tue Aug 5
- 🔗 **Related Concepts**: #cpp #note [[string]] , [[C++ Headers Index]] , [[C++ Syntax Reference]] , [[]]
+ 🔗 **Related Concepts**: #note #cpp [[C-Style Strings]] , [[C++ Syntax Reference]] , [[Functions - Built-in]] , [[Standard Library(STUB)]]
 ___
 ##  `<cctype>` & `(ctype.h)`
 
@@ -10,7 +10,7 @@ This header declares a set of functions to classify and transform individual cha
 
 These check what kind of character you’re dealing with:
 
-- `std::isalnum(c)` → checks if `c` is alphanumeric (letter or digit)
+- `std::isalnum(c)` → checks if `c` is alphanumeric (letter or digit) 
 - `std::isalpha(c)` → checks if `c` is alphabetic
 - `std::isdigit(c)` → checks if `c` is a digit (`0–9`)
 - `std::islower(c)` → checks if `c` is lowercase

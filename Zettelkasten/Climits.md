@@ -1,13 +1,13 @@
 #### 📝 Note: Climits 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:07 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[C++ Headers Index]] , [[Data Types]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]] , [[Standard Library(STUB)]] , [[Mixed-Type Expressions]] , [[Functions - Built-in]] , [[Type Casting]]
 ___
 ### Sizes of integral types
 
 >[!info]
 >This header defines constants with the limits of fundamental integral types for the specific system and compiler implementation used.
-> - The limits for fundamental floating-point types are defined in [[cfloat|<cfloat>]]
+> - The limits for fundamental floating-point types are defined in [[cfloat(STUB)|<cfloat>]]
 > - The limits for width-specific integral types and other typedef types are defined in [[cstdint|<cstdint>]]
 
 

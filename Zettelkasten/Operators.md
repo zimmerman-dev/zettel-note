@@ -2,10 +2,9 @@
 #### 📝 Note: Operators 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:23 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[Statements and Expressions]] , [[Control Flow]] , [[Pointers and References]] , [[Increment and Decrement]] , [[Boolean Logic]] , [[Conditionals]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #note #cpp [[C++ Basics]] , [[Data Types]] , [[Statements and Expressions]] , [[Boolean Logic]] , [[Conditionals]] , [[Mixed-Type Expressions]] , [[Increment and Decrement]] , [[Loops - Overview]] , [[C++ Syntax Reference]]
 ___
 ### ⚙️ Operators
-
 An **operator** is a special symbol or keyword that performs operations on one or more operands. They're the core tools used within **expressions** to compute values, assign data, compare, or manipulate logic and memory.
 
 C++ includes a rich variety of operators, grouped by category:
@@ -36,23 +35,15 @@ C++ includes a rich variety of operators, grouped by category:
 .     // Member access via object
 /*==========================================================================*/
 ```
-
 ### 🧮 Operator Types
-
 Operators are classified by the **number of operands** they act on:
-
+ 
  - **Unary** - Operates on one operand:
-
 	 - → Example: `-x`, `!flag`, `++i`
-
 - **Binary** - Operates on two operands:
-	
 	- → Example: `a + b`, `x < y`, `a && b`
-
 - **Ternary** - Operates on three operands (only one in C++):
-	
 	- → Example: `condition ? expr1 : expr2`
-	
 	- The ternary operator is the only built-in C++ operator that uses three operands—it's a compact alternative to an `if-else`.
 
 see: [[Conditionals]]
@@ -81,7 +72,6 @@ int main() {
     return 0;
 }
 ```
-
 ### 📐 Testing for Equality
 
 | Operator | Relation     |
@@ -103,7 +93,6 @@ expr1 != expr2 // Not Equals
 |   \|\|   |  Or<br>(Logical or)  | Binary |
 
 ### 🚛 Operator Precedence 
-
 Associativity:
 - Uses precedence rules when adjacent operators are different.
 - Use associativity rules when adjacent operators have the same precedence. 
@@ -123,7 +112,6 @@ num1 >= 10 || num1 < 20;
 - Compares the values of two expressions
 - **Evaluates to a Boolean (True or False, 1 or 0)** *see [[Boolean Logic]]*
 - Commonly used in [[Control Flow]] statements
-
 ### 🎱 Compound Assignment Operators
 
 | Operator | Example | Relation   |
@@ -141,15 +129,9 @@ num1 >= 10 || num1 < 20;
 
 ---
 ### 💡 Notes
-
 - Operators are used **within expressions** to produce values or cause side effects.
-    
 - The same symbol can have **different meanings** depending on context—e.g., `*` for both multiplication and pointer dereference.
-    
 - Operators obey **precedence** (who binds first) and **associativity** (who binds tighter when equal), which affect how expressions are evaluated.
-    
 - C++ allows **operator overloading**, meaning you can define custom behavior for operators on your own types (e.g., `+` for a `Vector3D` class).
-
 - An **operator** is the symbol that performs the action; the **operands** are the values it acts upon.
-
 	- `a + b   // '+' is the operator; 'a' and 'b' are the operands

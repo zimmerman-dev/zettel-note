@@ -1,7 +1,7 @@
 #### 📝 Note: Boolean Logic 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:27 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: #cpp #note [[Control Flow]] , [[Statements and Expressions]] , [[Conditionals]] , [[Loops]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #note #cpp [[Conditionals]] , [[Control Flow]] , [[Operators]] , [[Data Types]] , [[Statements and Expressions]]
 ___
 ### ✅ What is Boolean Logic?
 - Named after **George Boole**, based on true/false values.
@@ -16,13 +16,11 @@ ___
 - `==` → Equal to  
 - `!=` → Not equal to  
 - `<`, `>`, `<=`, `>=` → Comparisons that also return `bool`
-
 ### ✅ Short-Circuit Evaluation
 - **Logical operators (`&&` and `||`) evaluate from left to right**.  
 - Evaluation **stops** as soon as the result is determined:
   - `A && B` → if `A` is **false**, `B` is not evaluated.  
   - `A || B` → if `A` is **true**, `B` is not evaluated.  
-
 #### 🔹 **Why this matters**
 - **Prevents errors**:
   ```cpp
@@ -32,20 +30,17 @@ ___
 - **Controls side effects** (the skipped expression never runs).
 
 ---
-
 ### ✅ Using `boolalpha`
 ```cpp
 std::cout << std::boolalpha << (5 > 3); // prints true
 ```
 
 ---
-
 ### ✅ Conditional Expressions
 - `if`, `while`, `for`, and the ternary `?:` all rely on boolean results.  
 - Any non-zero value in a condition is treated as `true`.
 
 ---
-
 ### ✅ Examples
 ```cpp
 bool isAdult = (age >= 18);

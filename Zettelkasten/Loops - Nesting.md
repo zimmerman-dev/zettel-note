@@ -1,10 +1,9 @@
 #### 📝 Note: Loops - Nesting 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:02 pm  📆 Tue Aug 5
- 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops]] , [[Loops - For]]
+ 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops - Overview]] , [[Loops - For]]
 ___
 ## ➰ Nested Loops
-
 A nested loop is simply a loop placed inside of a loop. For this note, we will only consider nested `for` loops.
 
 ```cpp
@@ -15,7 +14,6 @@ for (initialization; condition; increment) {
 	// outer statement
 }
 ```
-
 #### Basics:
 - The **outer loop** controls the overall iterations.
 - For **each** iteration of the outer loop, the **inner loop** runs through all it's iterations
@@ -23,9 +21,7 @@ for (initialization; condition; increment) {
 - The inner loop fully completes before the outer loop increments.
 
 ---
-
 ## 🔁 Nested Loop Flow
-
 Iteration flow for nested `for` loops example:
 
 ```cpp
@@ -36,9 +32,7 @@ for (int i {1}; i <= 2; ++i) {        // <--> Outer Loop
 	std::cout << std::endl;
 }
 ```
-
 #### 🌊 Flow Breakdown:
-
 1. **Outer loop begins**
    - `i` is initialized to `1`.
    - Condition `i <= 2` is `true` ➡️ **enter outer loop**
@@ -61,10 +55,8 @@ for (int i {1}; i <= 2; ++i) {        // <--> Outer Loop
 
 ---
 #### 🔢 **Arrays & Vectors**
-
 You can use nested loops to process a 1D array multiple times or compare elements.
 #### ✅ Example: Comparing every element with every other
-
 ```cpp
 int arr[3] {10, 20, 30};
 
@@ -83,10 +75,8 @@ In this example, there’s **only one array** (`arr`), but we have **two loops**
 The logic is identical to arrays, but you use `.size()` instead of a hardcoded length.
 
 ###  🔢 **2D Vectors and Arrays**
-
 With **2D structures**, the outer loop goes through **rows**, and the inner loop goes through **columns**.
 #### ✅ Example: Printing a 2D Vector
-
 ```cpp
 std::vector<std::vector<int>> matrix {
 	{1, 2, 3}, {4, 5, 6}
@@ -117,7 +107,6 @@ Member functions present:
 
 ---
 #### 🌩️ **Jagged Arrays**
-
 Inner vectors can have **different sizes**.
 
 ```cpp
@@ -135,12 +124,10 @@ for (size_t i = 0; i < jagged.size(); ++i) {      // outer: 3 rows
 If you had used `jagged.size()` instead, the inner loop would always think there are **3 elements** and crash when `i = 2`.
 
 #### ✅ **In short:**
-
 - `jagged.size()` → **number of rows** (outer dimension).
 - `jagged.at(i).size()` → **number of columns in row i** (inner dimension).
 - This distinction matters **only for jagged structures**—in a perfectly rectangular 2D array, both would effectively be constant per row.
 - This structure is common when rows naturally differ in length (e.g., triangle patterns, adjacency lists in graphs, etc.).
-
 ### `matrix[i].size()` vs. `matrix.at(i).size()`
 
 |     Access Style      |                                                         Safety                                                         |                            Performance                             |                                                      When to Use                                                       |

@@ -1,7 +1,8 @@
 {
   "cssTheme": "AnuPpuccin",
-  "accentColor": "#665cf5",
+  "accentColor": "#221f41",
   "enabledCssSnippets": [
     "line-spacing"
-  ]
+  ],
+  "theme": "system"
 }

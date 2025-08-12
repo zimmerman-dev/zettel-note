@@ -1,10 +1,9 @@
 #### 📝 Note: Tuple 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[Standard Library Reference]] , [[C++ Syntax Reference]] , [[Templates and Generics]] , [[Functions]]
+ 🔗 **Related Concepts**: #note #cpp [[Pair(STUB)]] , [[Templates and Generics(STUB)]] , [[Data Types]] , [[C++ Syntax Reference]]
 ___
 ## 📦 So, what’s a tuple?
-
 A **tuple** is a way to **bundle multiple values together** into a single unit, even if those values are different types.
 
 Think of it like a tiny, unnamed package:
@@ -27,8 +26,7 @@ You can mix and match _any_ types:
 The only constraint is that **you must specify each type in order**, and you can only access elements by position—not by name.
 
 ---
-## 🧱 Declaring a Tuple
-
+### 🧱 Declaring a Tuple
 ```cpp title:Example.1
 std::tuple<int, std::string, bool> person;
 ```
@@ -39,7 +37,6 @@ The tuple above is holding three distinct types:
 3. a `bool`
 
 ### 🏗 2. Initializing a Tuple
-
 ```cpp title:Example.2
 std::tuple<int, std::string, bool> person = std::make_tuple(7, "Kepler", true);
 ```
@@ -53,7 +50,6 @@ question about the term "inferred types"
 
 ---
 ### 📦 3. Accessing Tuple Elements
-
 Syntax:   `std::get<N>(tuple_name);`
 
 - Like an array or vector, tuples are zero-indexed, but you can't access them exactly like an array or vector due to different types.
@@ -77,15 +73,11 @@ std::cout << "No..." << std::endl;
 }
 return 0;
 ```
-
-
 ### 🪄 4. Structured Bindings (C++17+)
-
 Syntax:   `auto [id, name, alive] = person;`
 
 - This unpacks the tuple into name variables
 - It's cleaner and more readable, and is generally considered best practices for C++ when available.
-
 
 >[!note] Inferred Types
 > When you use `std::make_tuple(...)`, the compiler **automatically deduces** the types of the values you pass in.
@@ -102,14 +94,11 @@ Syntax:   `auto [id, name, alive] = person;`
 
 ---
 #### 🎯 Why Tuples Are Useful
-
 Tuples are like **ad hoc structs** for when:
 - You don’t want to define a full struct or class
 - You just need to pass or return multiple values quickly
 - You don’t need named fields—just a temporary bundle
-
 #### 🤔 When _not_ to use a tuple
-
 - If the values need **names**, not just positions → use a `struct`
 - If there are **too many elements** → it becomes unreadable
 - If you want **clarity over brevity** → tuples can get cryptic fast

@@ -1,17 +1,16 @@
 #### 📝 Note: Variables and Constants 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[C++ Syntax Reference]]  [[Data Types]] , [[Constants]]
+ 🔗 **Related Concepts**: #note #cpp [[C++ Basics]] , [[Constants]] , [[Data Types]] , [[Operators]] , [[Iostream]] , [[Statements and Expressions]] , [[C++ Syntax Reference]]
 ___
-#### What is a variable?
+## What is a variable?
 A variable is an abstraction for a memory location. It allows programmers to use meaningful names and not memory addresses.
 
 >[!note] Variables have:
 >- Type: integer, real number, string, etc., ...
 >- Value: the contents i.e. 1, 10.2, "string", etc., ...
 
-#### Variables must be declared before used:
-
+### Variables must be declared before used:
 >[!info] Rules for Variable naming:
 > - Can contain letters, numbers, and underscores. Case sensitive.
 > - Must begin with a letter or underscore (cannot begin with a number).
@@ -24,7 +23,7 @@ A variable is an abstraction for a memory location. It allows programmers to use
 > - Never use a variable before initializing them.
 > - Declare variables close to when you need them in your code.
 
-##### Initializing Variables
+### Initializing Variables
 
 ```cpp title:Variables
 int age;        // Unitialized

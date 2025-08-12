@@ -1,7 +1,7 @@
 #### 📝 Note: Iostream 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:22 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[C++ Headers Index]] 
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Built-in]] , [[C++ Syntax Reference]] , [[Variables and Constants]] , [[Standard Library(STUB)]] , [[Preprocessor Directives(STUB)]] , [[C++ Basics]]
 ___
 ### C++ iostream Library (Standard Input/Output Streams)
 

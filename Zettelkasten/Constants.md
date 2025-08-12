@@ -1,10 +1,9 @@
 #### 📝 Note: Constants 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:08 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[Variables and Constants]] , [[Data Types]] , [[Literals]] , [[Pointers and References]] , [[Classes and Objects]] , [[Enums]] 
+ 🔗 **Related Concepts**: #note #cpp [[Variables and Constants]] , [[Data Types]] , [[Operators]] , [[C++ Basics]] , [[C++ Syntax Reference]] , [[Preprocessor Directives(STUB)]]
 ___
 ## What is a Constant?
-
 Like C++ variables, **constants** have names, occupy storage, are *usually* typed. 
 
 >[!warning] 
@@ -12,7 +11,6 @@ Like C++ variables, **constants** have names, occupy storage, are *usually* type
 
 ___
 ## Types of Constants in C++
-
 #### Literal Constants
  The literal constant is the most obvious kind of constant, e.g.:
  
@@ -29,20 +27,14 @@ You can also declare a constant explicitly:
 >`12U; // an unsigned integer`
 >`12L; // a long integer`
 >`12LL; // a long long integer`
-
 ##### Character Literal Constants
-
-
 #### Declared Constants (`const` keyword)
-
 Constant declared using the const keyword are the most common.
 
 >[!Example]
 >`const double pi{3.1415926};`
 >`const int months_in_year{12};`
-
 #### Defined Constants (`#define`)
-
 The defined constants are used in old C++ code, and the way it works is as a preprocessor directive.
 
 >[!Example] 
@@ -52,5 +44,4 @@ The defined constants are used in old C++ code, and the way it works is as a pre
 >Don't use defined constants in Modern C++
 
 #### Constant Expressions (`constexpr` keyword)
-
 #### Enumerated Constants (`enum` keyword)

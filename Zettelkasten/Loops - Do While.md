@@ -1,17 +1,15 @@
 #### 📝 Note: Loops - Do While 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:24 pm  📆 Sat Aug 2
- 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops]]
+ 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops - Overview]]
 ___
 ## ➰ `Do While` **Loop**
-
 
 ```cpp
 do {
 	statements;
 } while (expression);
 ```    
-
 #### **How It Works**
 1. Execute the statements inside the loop.
 2. Evaluate the condition.
@@ -19,7 +17,6 @@ do {
 4. If `false`, exit the loop.
 
 This is why `do-while` loops always execute **at least once**, even if the condition starts off false.
-
 #### ✅ **Example 1:** Input Validation
 ```cpp
 int number {};
@@ -30,8 +27,6 @@ do {
 } while (number < 1 || number > 5);
 std::cout << "Thanks";
 ```
-
-
 #### ✅ **Example 2:** Menu System
 ```cpp
 int choice {};
@@ -46,8 +41,6 @@ do {
 std::cout << "Exiting Program...\n";
 return 0;
 ```
-
-
 #### ✅ **Example 3:** Menu System (User driven continuation)
 ```cpp
 char selection {};
@@ -64,8 +57,6 @@ do {
 } while (selection == 'Y' || selection == 'y');
 std::cout << "Come back soon!";
 ```
-
-
 #### ✅ **Example 4:** Iterating Through Vector
 ```cpp
 std::vector<char> vowels {'a', 'e', 'i', 'o', 'u'};
@@ -88,7 +79,5 @@ Use a `do-while` loop when you want a block of code to execute **at least once**
 - ✅ Menu systems where the menu should display at least once
 - ✅ Input prompts where the user should be asked at least once before validation
 - ✅ Retry mechanisms where the action should attempt first, then check for continuation
-
-
 ### ✅ **Key Difference from `while`**
 While the `while` loop is a pre-test loop, a `do while` loop is a post-test loop meaning that the **condition is evaluated after** the loop body runs once. Therefore, the loop body **always executes at least once**, even if the condition is false initially.

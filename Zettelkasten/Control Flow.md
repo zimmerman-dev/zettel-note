@@ -1,18 +1,13 @@
 #### 📝 Note: Control Flow 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚8:04 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: #cpp #note [[Operators]] , [[Statements and Expressions]] , [[Conditionals]] , [[Boolean Logic]] , [[Functions]]
+ 🔗 **Related Concepts**: #note #cpp [[C++ Basics]] , [[Boolean Logic]] , [[Conditionals]] , [[Loops - Overview]] , [[Jump Statements(STUB)]] , [[Functions - Overview]]
 ___
-
 ## ✅ What is Control Flow?
-
 - The **order** in which individual statements, instructions, or function calls are executed.
 - In C++, there are **three primary structures** of control flow:
-
 ## Big Ideas
-
 #### 1️⃣ Sequence
-
 - **Default** flow of a program: statements execute **top to bottom**.
 - Example: variable declarations, assignments, function calls in order.
 
@@ -38,22 +33,9 @@ see: [[Conditionals]]
 ___
 #### 3️⃣ Iteration (Loops)
 - Repeats a block of code **while** or **until** a condition is met.
-
-🔹 For Loop
+##### 🔹 [[Loops - For]]
 - Used when the number of iterations is known or count-controlled.
-
-🔹 While Loop
+##### 🔹 [[Loops - While]]
 - Used when the condition is checked **before** each iteration.
-
-🔹 Do-While Loop
+##### 🔹 [[Loops - Do While]]
 - Similar to `while`, but the condition is checked **after** the first iteration (executes at least once).
-??
-🔹 Continue and Break
-??
-🔹 Infinite Loop
-??
-🔹 Nested Loops
-??
-
-
-

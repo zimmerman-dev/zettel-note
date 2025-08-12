@@ -1,19 +1,14 @@
 #### 📝 Note: Increment and Decrement
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚ 11:36 pm  🗓️: Tue Jul 22
- 🔗 **Related Concepts**: #cpp #note [[Operators]] , [[Statements and Expressions]] , [[Operator Overloading]] , [[Loops]] , [[Conditionals]] , [[Jump Statements]]
-
+ 🔗 **Related Concepts**: #note #cpp [[Operators]] , [[Loops - For]] , [[Loops - While]] , [[Loops - Nesting]] , [[Arrays]] , [[Vectors]] , [[C++ Basics]]
 ___
 ## ➕➖ Increment and Decrement Operators
-
 Increment (`++`) and decrement (`--`) operators increase or decrease a value by one. Though they look simple, they behave differently depending on where they appear in an expression.
-
 ### 📚 What are they?
-
 - `++` adds one to a variable.
 - `--` subtracts one from a variable.
 #### Syntax:
-
 ```cpp
 i++;   // post-increment
 ++i;   // pre-increment
@@ -22,15 +17,12 @@ i--;   // post-decrement
 --i;   // pre-decrement
 ```
 #### Are they arithmetic or assignment?
-
 They’re technically **unary operators**—not assignment operators—but they do **perform arithmetic** and then **assign the result** back to the variable.
 
 ---
 ### ⚙️ Prefix vs Postfix
-
 #### What’s the difference?
 - `++x`: pre-increment happens **before** the value is used
-
 ```cpp
 sum = ++num;
 // Means:
@@ -39,15 +31,12 @@ sum = num;
 ```
 
 - `x++`: post-increment happens **after** the value is used
-
 ```cpp
 sum = num++;
 // Means:
 sum = num;
 num = num + 1;
 ```
-
-
 
 Prefix vs Postfix – Execution Breakdown
 
@@ -87,9 +76,7 @@ Final values:
 - Post-increment (x++): "Use *then* increment"
 - The result affects the expression it's used in, not the whole statement.
 ```
-
 ### 🔁 Common Use Cases
-
 - Most often used in **loops**:
 
     ```cpp
@@ -101,7 +88,6 @@ Final values:
 
 ---
 ## 🧠 Expression Side Effects
-
 - Inside complex expressions, `++` and `--` can be error-prone:
     ```cpp
     int x = 5;
@@ -109,11 +95,8 @@ Final values:
 ```
 
 - **Avoid using the same variable more than once in an expression involving `++` or `--`.**
-
 ### 👷‍♂️ Can they be overloaded?
-
 Yes—C++ allows you to define `++` and `--` for your own classes.
-
 #### Syntax:
 ```cpp
 MyClass& operator++();       // Prefix

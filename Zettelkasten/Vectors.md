@@ -1,20 +1,15 @@
 #### 📝 Note: Vectors 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[C++ Headers Index]] , [[Arrays]] , [[Standard Template Library]] , [[C++ Syntax Reference]] 
+ 🔗 **Related Concepts**: #note #cpp [[Arrays]] , [[Loops - Ranged-based For]] , [[Loops - Nesting]] , [[Sizeof]] , [[Functions - Parameters & Arguments]] , [[Templates and Generics(STUB)]] , [[Data Types]]
 ___
 ## 🔢 Vectors (C++)
-
 A vector is an *class template* container defined in the **Standard Template Library (STL)**. 
 * You must include the `<vector>` header.
 * It belongs to the `std` namespace.
 ### Syntax
-
 `std::vector<element_type>` `vector_name;`
-
----
 ### What is a vector?
-
 - **A compound data structure** — a dynamically sized collection of elements.
 - All elements are of the **same type**, stored contiguously in memory.
 - Each element can be **accessed directly** by index.
@@ -27,7 +22,6 @@ A vector is an *class template* container defined in the **Standard Template Lib
 
 ---
 ### Vector Declaration Styles
-
 ```cpp title:Declarations
 std::vector<char> vowels;
 // Empty, clean – contains no elements
@@ -46,11 +40,8 @@ std::vector<int> tops = {3, 3, 3, 3, 3};
 ```
 
 ---
-
 ### Indexing and Access
-
 Accessing vector elements using **array syntax** (no bounds checking):
-
 `vector_name[element_index];`
 
 ```cpp title:Access
@@ -71,9 +62,7 @@ std::cout << names[4] << std::endl;
 
 ---
 ### Access cont'd - `.at()` 
-
 Accessing vector elements (vector syntax):
-
 `vector_name.at(element_index);`
 
 ```cpp title:.at(element_index)
@@ -85,7 +74,6 @@ std::cout << names.at(2) << std::endl;
 std::cout << names.at(3) << std::endl;
 std::cout << names.at(4) << std::endl;
 ```
-
 This provides bounds-checked access -- throws `std::out_of_range` if invalid.
 
 >[!note] Overwrite
@@ -97,9 +85,7 @@ This provides bounds-checked access -- throws `std::out_of_range` if invalid.
  > 	- **Write** to an element: `names.at(1) = "tim";`
 
 ---
-
 ### Dynamic Growth - `.push_back()`
-
 Adds an element to the end of the vector. Space is automatically managed.
 
 `vector_name.push_back(element);`
@@ -112,9 +98,7 @@ nums.push_back(5); // 1, 2, 3, 4, 5
 ```
 
 ---
-
 ### Memory - `.size()`
-
 Returns the number of elements currently stored in the vector. 
 
 `vector_name.size()`
@@ -124,11 +108,9 @@ std::vector<int> nums {1,2,3,4};
 
 std::cout << nums.size() << std::endl; // 4
 ```
-
 It does **not** return the allocated memory capacity, only the number of the elements present.
 
 ---
-
 ## 🟦 **2D Vectors in C++**
 
 A **2D vector** is simply a `std::vector` where each element is another `std::vector`:
@@ -138,7 +120,6 @@ std::vector<std::vector<type>> vector_name;
 ```
 
 Essentially, A 2D vector is a **vector** of **vectors**. You can create individual vectors and add them to the **2D vector**, Like so:
-
 ```cpp
 std::vector<int> vector1 {1, 2, 3};
 std::vector<int> vector2 {4, 5, 6};
@@ -158,7 +139,6 @@ vector2D.push_back(vector2);
 ```
 
 **OR** you can cleanly initialize your 2D vector directly:
-
 ```cpp
 std::vector<std::vector<int>> vector2D {
 	{1, 2, 3},
@@ -167,14 +147,11 @@ std::vector<std::vector<int>> vector2D {
 ```
 
 ### ✅ **Linear Mental Model**
-
 Think of it as a **linear plot of points** where the points on the line are organized into **containers**. The common way to think of 2D vectors is with outer and inner vectors with rows and columns. In the linear mental model, we don't use those words as they don't represent the linear mental model.
 
  Here's a visualization:
  ![[2DVectorModel.png]]
-
 ### 🧠 Accessing a 2D Vector (Linear Mental Model)
-
 Lets continue with the example above. 
 ```cpp
 std::vector<std::vector<char>> letters {
@@ -213,9 +190,7 @@ letters[i][j];
 See [[Loops - Nesting]] for information on iterating through vectors and 2D vectors.
 
 ---
-
 ### Vector Rules (C++)
-
 - Vectors must be declared with a single, specific element type.
 - All elements are stored contiguously in memory (like arrays).
 - Vectors are dynamically resizable -- they grow as needed.

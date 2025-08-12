@@ -1,10 +1,9 @@
 #### 📝 Note: Type Casting 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #cpp #note [[Mixed-Type Expressions]] , [[Statements and Expressions]] , [[Standard Library Reference]] , [[Data Types]] , 
+ 🔗 **Related Concepts**: #note #cpp [[Mixed-Type Expressions]] , [[Data Types]] , [[Operators]] , [[climits]] , [[cfloat(STUB)]] , [[cmath(STUB)]]
 ___
 ### 💥 Type Casting
-
 When you explicitly tell the compiler, "Treat this value as a different type," it's called **Explicit Type Casting**.
 ```cpp title:Syntax
 static_cast<type>(value)

@@ -1,14 +1,11 @@
 #### 📝 Note: Conditionals 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:48 am  📆 Tue Jul 29
- 🔗 **Related Concepts**: #cpp #note [[Control Flow]] , [[Operators]] , [[Boolean Logic]] , [[Loops]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #note #cpp [[Boolean Logic]] , [[Control Flow]] , [[Operators]] , [[Statements and Expressions]] , [[C++ Basics]] , [[Loops - While]] , [[Loops - For]]
 ___
 ### 📓 Selection Statements
-
 *"While statements are executed in the same order in which they appear, programs are not limited to a linear sequence of the statements."* – [cplusplus.com](https://cplusplus.com/doc/tutorial/control/)
-
 #### 🔹 `if` Statements
-
 ```cpp
 if (condition) {
     statement;
@@ -19,7 +16,6 @@ if (condition) {
 
 ---
 #### 🔹 `if-else` Statements
-
 ```cpp
 if (condition) {
     statement_1;
@@ -32,7 +28,6 @@ if (condition) {
 
 ---
 #### 🔹 Nested `if-else` Statements
-
 ```cpp
 if (condition_1) {
     if (condition_1a) {
@@ -49,7 +44,6 @@ if (condition_1) {
 
 ---
 #### 🔹 `else if` Statements
-
 ```cpp
 if (condition_1) {
     statement_1;
@@ -64,7 +58,6 @@ if (condition_1) {
 
 ---
 #### 🔹 `switch` Statements
-
 ```cpp
 switch (control_expression) {
     case constant_1:
@@ -98,7 +91,6 @@ switch (x) {
 
 ---
 #### 🔹 Conditional (Ternary) Operator `?:`
-
 ```cpp
 (condition) ? expr_1 : expr_2;
 ```
