@@ -4,11 +4,7 @@
  🔗 **Related Concepts**: #cpp #toolchain #note
 ___
 ## ⚙️ CMake Basics – Minimal Reference
-
-
 ### 📂 Typical Project Structure
-
-
 ```title:tree
 my-project/  
 ├── CMakeLists.txt  
@@ -16,12 +12,8 @@ my-project/
 │ └── main.cpp  
 └── build/
 ```
-
-
 ---
 ### 📝 Minimal CMakeLists.txt
-
-
 ```title:FileContents
 cmake_minimum_required(VERSION 3.16)
 project(my_project LANGUAGES CXX)
@@ -31,20 +23,22 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_executable(${PROJECT_NAME} src/main.cpp)
 ```
-
-
 ---
 ### 🏗️ Building the Project
-
-
 ```bash
 mkdir -p build
 cd build
 cmake ..
 make
 ```
-
-
+### 🏗️ Rebuilding the Project
+```bash
+rm -rf build
+mkdir build
+cd build
+cmake ..
+cmake --build .
+```
 ---
 ### 🧠 Useful Tips
 - Use `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` for editor integration
