@@ -58,5 +58,5 @@ See [[Functions - User-defined]].
 - [[Functions - Scope]]
 - [[Functions - Prototypes]]
 - [[Functions - Default Arguments]]
-- [[Functions - Overloading]] *(planned)*
+- [[Functions - Overloading]] 
 - [[Functions - References & Pointers(STUB)]] *(planned)*
