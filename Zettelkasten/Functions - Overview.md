@@ -48,15 +48,18 @@ int add(int x, int y) {
 
 See [[Functions - User-defined]].
 
+____
+#### ✅ To-do: Functions - Overview   
+ ⌚9:58 pm  📆 Wed Aug 13
+ 🔗 **Related Concepts**: #todo
+___
+### 🚀 Immediate Action
+- [ ]  [[Functions - Overloading]] 
 ---
-### 📁 Function Notes Backlinks
-- [[Functions - Overview]] (this note)
-- [[Functions - Built-in]]
-- [[Functions - User-defined]]
-- [[Functions - Anatomy]]
-- [[Functions - Parameters & Arguments]]
-- [[Functions - Scope]]
-- [[Functions - Prototypes]]
-- [[Functions - Default Arguments]]
-- [[Functions - Overloading]] 
-- [[Functions - References & Pointers(STUB)]] *(planned)*
+- [ ] [[Functions - References & Pointers(STUB)]] *(planned)*
+---
+- [ ] 
+---
+- [ ] 
+---
+
