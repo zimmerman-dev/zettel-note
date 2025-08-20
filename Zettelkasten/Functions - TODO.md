@@ -20,8 +20,8 @@ ___
 - [ ] **Inline Functions** → ([[Functions - Overview]] – "Function Types" section)
 - [ ] **Recursive Functions** → ([[Functions - Overview]] – alongside inline)
 - [ ] **Auto Return Types (`auto`)** → ([[Functions - Anatomy]] or [[Functions - User-defined]])
-- [ ] **Function Overloading** → (New note, link from [[Functions - Overview]], [[Functions - Anatomy]], [[Functions - User-defined]])
-- [ ] **Function Pointers & References** → (STUB now, revisit after [[Pointers]] & [[References]])
+- [x] **Function Overloading** → (New note, link from [[Functions - Overview]], [[Functions - Anatomy]], [[Functions - User-defined]])
+- [ ] **Function Pointers & References** → (STUB now, revisit after [[Functions - References & Pointers(STUB)]])
 - [ ] **`constexpr` Functions** → (Short note or [[Functions - Overview]])
 - [ ] **Lambdas** → (Later in advanced section, link to [[Functions - Overview]] and [[Functions - Anatomy]])
 

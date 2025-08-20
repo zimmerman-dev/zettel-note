@@ -30,7 +30,7 @@ When you declare multiple functions with the same name, the compiler uses their 
 **⚠️ Reminder:** The return type **is not** part of the function signature and cannot be used to distinguish overloads.
 
 > 💡 So even though two functions have the same name, they're treated as completely different functions by the compiler if their parameter lists are different.
-### ### 🧪 Overload Resolution in Action
+### 🧪 Overload Resolution in Action
 You can define overloaded functions directly or by using prototypes (forward declarations).
 ```cpp
 #include <iostream>

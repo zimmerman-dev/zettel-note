@@ -1,7 +1,7 @@
 #### 🎨 Diagram: Types Hierarchy 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:34 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: #cpp #diagram #cpp [[Data Types]] , [[Type Casting]] , [[Mixed-Type Expressions]] , [[Operators]] , [[C++ Basics]]
+ 🔗 **Related Concepts**: #cpp #diagram #cpp [[Data Types]] , [[Type Casting]] , [[Mixed Expressions & Type Conversions & Promotion]] , [[Operators]] , [[C++ Basics]]
 ___
 ```mermaid
 flowchart TD
@@ -19,20 +19,22 @@ flowchart TD
     D[double]
     LD[long double]
 
-    %% Promotion chain (solid vertical arrows)
+    %% Signed Promotion chain (solid vertical arrows)
     B --> C
     C --> S
     S --> I
-    I --> UI
-    UI --> L
-    L --> UL
-    UL --> LL
-    LL --> ULL
-    ULL --> F
+    I --> L
+    L --> LL
+    LL --> F
     F --> D
     D --> LD
 
-    %% Integer -> Float auto promotions (angled solid arrows)
+    %% Unsigned types – no auto-promotion from signed
+    I -->|mixed op| UI
+    L -->|mixed op| UL
+    LL -->|mixed op| ULL
+
+    %% Integer → Float auto promotions (angled solid arrows)
     I -->|auto-promote| F
     UI -->|auto-promote| F
     L -->|auto-promote| F
@@ -42,16 +44,15 @@ flowchart TD
 
     %% Demotion paths (dotted upward arrows)
     LD -.-> D
-    D -.-> F
-    F -.-> I
+    D  -.-> F
+    F  -.-> I
     ULL -.-> LL
-    LL -.-> UL
-    UL -.-> L
-    L -.-> I
+    LL -.-> L
+    L  -.-> I
     UI -.-> I
-    I -.-> S
-    S -.-> C
-    C -.-> B
+    I  -.-> S
+    S  -.-> C
+    C  -.-> B
 ```
 
 - `-->` **Promotion** (automatic widening, safe)
