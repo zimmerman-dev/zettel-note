@@ -1,7 +1,7 @@
 #### 📝 Note: C++ Syntax Reference 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:06 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[C++ Basics]] , [[Statements and Expressions]] , [[Operators]] , [[Variables and Constants]] , [[Control Flow]] , [[Functions - Overview]] , [[Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]], [[Operators]], [[Data Types]]
 ___
 # 📘 C++ Syntax Reference
 A concise, topic-driven reference for fundamental C++ syntax, with links to more detailed notes on each concept. See [[C++ Basics]].

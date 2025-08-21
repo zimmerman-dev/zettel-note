@@ -1,7 +1,7 @@
 #### 📝 Note: Functions - Scope 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:00 pm  📆 Mon Aug 11
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - User-defined]] , [[Functions - Anatomy]] , [[Functions - Parameters & Arguments]] , [[Statements and Expressions]] , [[Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Variables and Constants]]
 ___
 ### 🔭 Scope
 #### 🔬 Local Scope (a.k.a. Block Scope)

@@ -1,7 +1,7 @@
 #### 📝 Note: Functions - Parameters & Arguments 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:58 pm  📆 Mon Aug 11
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Anatomy]] , [[Functions - Default Arguments]] , [[Functions - Scope]] , [[C++ Syntax Reference]] , [[Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Data Types]], [[Functions - Passing Arrays & Vectors]], [[Functions - User-defined]]
 ___
 ### 🥅 Function Parameters
 Functions can accept **input values** when they're called. These values let the function do its job using real data.

@@ -1,7 +1,7 @@
 #### 📝 Note: Statements and Expressions 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:26 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Operators]] , [[Data Types]] , [[Boolean Logic]] , [[Conditionals]] , [[Loops - Overview]] , [[Functions - Scope]] , [[C++ Basics]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #note #cpp [[C++ Syntax Reference]], [[Operators]]
 ___
 ## 🔣 Expressions
 At it's core, an **expression** is most basic building blocks of a program—a sequence of **operands** and **operators** that evaluates to a value.

@@ -1,7 +1,7 @@
 #### 📝 Note: Functions - Default Arguments 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:04 pm  📆 Mon Aug 11
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Parameters & Arguments]] , [[Functions - Prototypes]] , [[C++ Syntax Reference]] , [[Functions - User-defined]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Parameters & Arguments]], [[Functions - User-defined]]
 ___
 ### 📈 Default Arguments (and Default Parameter Values)
 When a function is called, all arguments must be supplied—**unless** you provide **default values** for parameters ahead of time. These default values are known as **default parameter values**, and the value actually used during a function call (when the caller omits an argument) is called a **default argument**.

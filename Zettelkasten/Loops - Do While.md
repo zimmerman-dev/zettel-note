@@ -1,7 +1,7 @@
 #### 📝 Note: Loops - Do While 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:24 pm  📆 Sat Aug 2
- 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops - Overview]]
+ 🔗 **Related Concepts**: #cpp #note  [[Loops - Overview]]
 ___
 ## ➰ `Do While` **Loop**
 

@@ -1,7 +1,7 @@
 #### 📝 Note: Strings
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[C-Style Strings]] , [[cstring(STUB)]] , [[Data Types]] , [[C++ Syntax Reference]] , [[Functions - Built-in]]
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Iostream]]
 ___
 ## String vs. `<string>`
 - In C++, a string is sequence of `chars`, similar to an array. They are indexed like an array, and can be accessed like an array.

@@ -1,7 +1,7 @@
 #### 📝 Note: Type Casting 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Mixed Expressions & Type Conversions & Promotion]] , [[Data Types]] , [[Operators]] , [[climits]] , [[cfloat(STUB)]] , [[cmath(STUB)]]
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Functions - Parameters & Arguments]], [[Mixed Expressions & Type Conversions & Promotion]]
 ___
 ### 💥 Type Casting (Explicit Conversion)
 When you *manually* tell the compiler: ==*“Hey — treat this value as if it's a different type,”*==  that’s called **explicit type casting**.

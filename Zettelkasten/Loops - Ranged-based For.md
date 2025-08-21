@@ -1,7 +1,7 @@
 auto#### 📝 Note: Ranged-based For 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚4:13 pm  📆 Sat Aug 2
- 🔗 **Related Concepts**: #note #cpp [[Loops - Overview]] , [[Vectors]] , [[Arrays]] , [[C-Style Strings]] , [[Increment and Decrement]] , [[C++ Syntax Reference]] , [[Functions - Parameters & Arguments]]
+ 🔗 **Related Concepts**: #note #cpp [[Vectors]], [[Loops - Overview]]
 
 ___
 ## 🔹 **Range-based `for` Loop**

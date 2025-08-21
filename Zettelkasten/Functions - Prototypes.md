@@ -1,7 +1,7 @@
 #### 📝 Note: Functions - Prototypes 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:01 pm  📆 Mon Aug 11
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - User-defined]] , [[Functions - Anatomy]] , [[Functions - Parameters & Arguments]] , [[Functions - Default Arguments]] , [[C++ Syntax Reference]] , [[Preprocessor Directives(STUB)]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Overview]], [[Functions - User-defined]]
 ___
 #### 📝 Note: Functions - Prototypes 
 ♻️ (*MinGW, Windows11, Codelite*)   

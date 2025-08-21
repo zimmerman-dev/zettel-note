@@ -1,7 +1,7 @@
 #### 📝 Note: Pre-College Development Roadmap 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:06 am  📆 Thu Aug 14
- 🔗 **Related Concepts**: #note #cpp
+ 🔗 **Related Concepts**: #note #cpp [[Constants]]
 ___
 ## 🧭 Pre-College Development Roadmap (Aug 2025 – Jan 2026)
 **Objective:** Enter college with 6 months of hands-on coding experience, a working SDL2-based engine, and a clear technical foundation that puts me months (or years) ahead of the average first-semester student.

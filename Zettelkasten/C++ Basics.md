@@ -1,7 +1,7 @@
 #### 📝 Note: C++ Basics 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:04 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Variables and Constants]] , [[Data Types]] , [[Operators]] , [[Statements and Expressions]] , [[Control Flow]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Statements and Expressions]], [[Variables and Constants]], [[Control Flow]]
 ___
 ### What is C++?
 **C++ is a cross platform language that can be used to create high performance applications.**

@@ -1,7 +1,7 @@
 #### 📝 Note: cstring 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚1:01 am  📆 Wed Aug 6
- 🔗 **Related Concepts**: #note #cpp [[C-Style Strings]] , [[Data Types]] , [[Functions - Built-in]] , [[Standard Library(STUB)]] , [[Sizeof]]
+ 🔗 **Related Concepts**: #note #cpp [[C-Style Strings]] 
 ___
 ### 📚 `<cstring>` — String Manipulation Functions
 

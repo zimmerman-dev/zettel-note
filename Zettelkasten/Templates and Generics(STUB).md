@@ -1,7 +1,7 @@
 #### 📝 Note: Templates and Generics 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Functions - User-defined]] , [[Vectors]] , [[Pair(STUB)]] , [[Tuple.md]] , [[Standard Library(STUB)]] , [[Classes and Objects(STUB)]]
+ 🔗 **Related Concepts**: #note #cpp [[Templates]]
 ___
 ## 🧬 Templates and Generics (C++)
 **Templates** are a powerful C++ feature that allows you to write **generic code**—functions and classes that work with *any* data type.

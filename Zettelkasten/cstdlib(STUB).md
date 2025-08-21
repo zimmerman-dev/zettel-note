@@ -1,7 +1,7 @@
 #### 📝 Note: cstdlib 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:32 pm  📆 Wed Aug 6
- 🔗 **Related Concepts**: #note #cpp [[Functions - Built-in]] , [[Standard Library(STUB)]] , [[Data Types]] , [[Type Casting]] , [[random(STUB)]]
+ 🔗 **Related Concepts**: #note #cpp [[C++ Syntax Reference]]
 
 ___
 

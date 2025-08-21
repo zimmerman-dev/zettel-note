@@ -1,7 +1,7 @@
 #### 📝 Note: Boolean Logic 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:27 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: #note #cpp [[Conditionals]] , [[Control Flow]] , [[Operators]] , [[Data Types]] , [[Statements and Expressions]]
+ 🔗 **Related Concepts**: #note #cpp [[Operators]], [[Control Flow]], [[Data Types]]
 ___
 ### ✅ What is Boolean Logic?
 - Named after **George Boole**, based on true/false values.

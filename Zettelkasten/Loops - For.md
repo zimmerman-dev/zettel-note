@@ -1,7 +1,7 @@
 #### 📝 Note: For 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚4:12 pm  📆 Sat Aug 2
- 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops - Overview]]
+ 🔗 **Related Concepts**: #cpp #note [[Loops - Overview]], [[Increment and Decrement]]
 ___
 ## 🔹 `for` **Loop**
 A traditional `for` loop is ideal when you need to iterate a **specific number of times** or require control over the loop variable.

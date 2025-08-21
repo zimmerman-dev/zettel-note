@@ -1,7 +1,7 @@
 #### 📝 Note: C-Style Strings 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:18 pm  📆 Wed Aug 6
- 🔗 **Related Concepts**: #note #cpp [[Arrays]] , [[cstring(STUB)]] , [[cctype(STUB)]] , [[string]] , [[Data Types]] , [[Sizeof]]
+ 🔗 **Related Concepts**: #note #cpp [[Arrays]], [[cstring(STUB)]], [[Iostream]]
 ___
 ## 🧠 Overview
 C-style strings are arrays of characters (`char[]`) terminated by a **null character** (`'\0'`).  

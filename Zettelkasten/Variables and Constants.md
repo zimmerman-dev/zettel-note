@@ -1,7 +1,7 @@
 #### 📝 Note: Variables and Constants 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[C++ Basics]] , [[Constants]] , [[Data Types]] , [[Operators]] , [[Iostream]] , [[Statements and Expressions]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Constants]]
 ___
 ## What is a variable?
 A variable is an abstraction for a memory location. It allows programmers to use meaningful names and not memory addresses.

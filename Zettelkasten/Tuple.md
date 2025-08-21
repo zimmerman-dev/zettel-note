@@ -1,7 +1,7 @@
 #### 📝 Note: Tuple 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Pair(STUB)]] , [[Templates and Generics(STUB)]] , [[Data Types]] , [[C++ Syntax Reference]]
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]]
 ___
 ## 📦 So, what’s a tuple?
 A **tuple** is a way to **bundle multiple values together** into a single unit, even if those values are different types.

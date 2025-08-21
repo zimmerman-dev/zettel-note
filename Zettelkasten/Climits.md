@@ -1,7 +1,7 @@
 #### 📝 Note: Climits 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:07 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Data Types]] , [[Standard Library(STUB)]] , [[Mixed Expressions & Type Conversions & Promotion]] , [[Functions - Built-in]] , [[Type Casting]]
+ 🔗 **Related Concepts**: #note #cpp [[Sizeof]], [[Data Types]], [[Constants]]
 ___
 ### Sizes of integral types
 

@@ -1,7 +1,7 @@
 #### 📝 Note: Loops - Nesting 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:02 pm  📆 Tue Aug 5
- 🔗 **Related Concepts**: #cpp #note [[Boolean Logic]] , [[Conditionals]] , [[Increment and Decrement]] , [[Statements and Expressions]] , [[Control Flow]] , [[Loops - Overview]] , [[Loops - For]]
+ 🔗 **Related Concepts**: #cpp #note [[Loops - Overview]], [[Control Flow]]
 ___
 ## ➰ Nested Loops
 A nested loop is simply a loop placed inside of a loop. For this note, we will only consider nested `for` loops.

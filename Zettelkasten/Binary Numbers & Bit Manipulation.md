@@ -1,7 +1,7 @@
 #### 📝 Note: Binary Numbers & Bit Manipulation
  ♻️ (*insert comment*)   
  ⌚9:37 pm  📆 Tue Aug 19
- 🔗 **Related Concepts**: #note
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Boolean Logic]]
 ___
 ## 8-bit Binary
 

@@ -7,5 +7,14 @@
       ],
       "key": "T"
     }
+  ],
+  "publish:open-in-live-site": [
+    {
+      "modifiers": [
+        "Mod",
+        "Shift"
+      ],
+      "key": "H"
+    }
   ]
 }

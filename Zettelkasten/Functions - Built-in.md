@@ -1,7 +1,7 @@
 #### 📝 Note: Functions - Built-in 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚5:03 pm  📆 Mon Aug 11
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Standard Library(STUB)]] , [[Preprocessor Directives(STUB)]] , [[C++ Syntax Reference]] , [[cmath(STUB)]] , [[cstdlib(STUB)]] , [[cstring(STUB)]] , [[cctype(STUB)]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]], [[Functions - Parameters & Arguments]]
 ___
 ## 🧰 Built-In Functions (C++)
 

@@ -1,7 +1,7 @@
 #### 📝 Note: One Year Roadmap 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:22 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #project #note
+ 🔗 **Related Concepts**: #project #note [[Pre-College Development Roadmap]]
 ___
 # C++, Embedded Systems & AI-Aware Development
 ## 🗓️ Month 1–2: C++ Fundamentals (with Depth)

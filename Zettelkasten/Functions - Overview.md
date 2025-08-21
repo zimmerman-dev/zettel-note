@@ -1,7 +1,7 @@
 #### 📝 Note: Functions - Overview 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:48 pm  📆 Mon Aug 11
- 🔗 **Related Concepts**: #note #cpp [[Functions - Built-in]] , [[Functions - User-defined]] , [[Functions - Parameters & Arguments]] , [[Functions - Default Arguments]] , [[Functions - Prototypes]] , [[Functions - Anatomy]] , [[Functions - Scope]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Built-in]] , [[Functions - User-defined]] , [[Functions - Parameters & Arguments]] , [[Functions - Default Arguments]] , [[Functions - Prototypes]] , [[Functions - Anatomy]] , [[Functions - Scope]] , [[Functions - Passing Arrays & Vectors]] , [[Functions - References & Pointers(STUB)]]
 ___
 ## 🧠 Functions — Why Use Them?
 > *“Why not just write everything in `main()`?”*

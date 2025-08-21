@@ -1,7 +1,7 @@
 #### 📝 Note: Arrays 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:04 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Data Types]] , [[Variables and Constants]] , [[Vectors]] , [[C-Style Strings]] , [[Increment and Decrement]] , [[Loops - For]] , [[Loops - Nesting]] , [[Sizeof]]
+ 🔗 **Related Concepts**: #note #cpp[[Data Types]], [[Sizeof]], [[Functions - Passing Arrays & Vectors]], [[Vectors]]
 ___
 ## 🧮 Arrays (C++)
 ### Syntax
