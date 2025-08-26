@@ -1,7 +1,7 @@
 #### 📝 Note: Functions - Scope 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:00 pm  📆 Mon Aug 11
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Variables and Constants]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Variables and Objects]]
 ___
 ### 🔭 Scope
 #### 🔬 Local Scope (a.k.a. Block Scope)

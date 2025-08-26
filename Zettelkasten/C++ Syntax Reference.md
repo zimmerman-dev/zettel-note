@@ -13,7 +13,7 @@ A concise, topic-driven reference for fundamental C++ syntax, with links to more
   → Arithmetic, logical, relational, assignment, and more.
 - [[Data Types]]  
   → Primitive types (`int`, `float`, `char`, etc.) and user-defined types.
-- [[Variables and Constants]]  
+- [[Variables and Objects]]  
   → Declaring, initializing, and using `const` and `constexpr`.
 - [[Functions]]  
   → Syntax, arguments, return types, and function overloading.

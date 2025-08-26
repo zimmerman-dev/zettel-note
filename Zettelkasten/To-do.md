@@ -3,6 +3,15 @@
  🔗 **Related Concepts**: #todo #cpp 
 ___
 ### 🚀 Today / ASAP
+- [ ] [1.5 — Introduction to iostream: cout, cin, and endl – Learn C++](https://www.learncpp.com/cpp-tutorial/introduction-to-iostream-cout-cin-and-endl/)
+---
+- [ ] 
+---
+- [ ] 
+---
+- [ ] 
+---
+
 ### 📌 Still to Cover
 - [x] **Passing Arrays to Functions** → ([[Functions - Passing Arrays & Vectors]] + link from [[Arrays]] and [[Vectors]])
 - [ ]  **Passing Vectors to Functions** → ([[Functions - Passing Arrays & Vectors]] + link from [[Arrays]] and [[Vectors]])

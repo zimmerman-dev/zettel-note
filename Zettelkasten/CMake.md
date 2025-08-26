@@ -66,6 +66,13 @@ mkdir -p build
 cd build
 cmake ..
 make
+
+
+//OR
+// Project specific with CMake
+cmake -S . -B build
+cmake --build build
+
 ```
 ### 🏗️ Clean rebuild
 ```bash

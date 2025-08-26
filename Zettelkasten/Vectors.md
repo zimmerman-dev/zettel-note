@@ -10,7 +10,7 @@ A vector is an *class template* container defined in the **Standard Template Lib
 ### Syntax
 `std::vector<element_type>` `vector_name;`
 ### What is a vector?
-- **A compound data structure** — a dynamically sized collection of elements.
+- **A compound data structure** that is dynamically sized and holds collection of elements.
 - All elements are of the **same type**, stored contiguously in memory.
 - Each element can be **accessed directly** by index.
 

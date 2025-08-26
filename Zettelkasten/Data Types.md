@@ -1,7 +1,7 @@
 #### 📝 Note: Data Types 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:19 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Variables and Constants]], [[Constants]], [[Operators]]
+ 🔗 **Related Concepts**: #note #cpp [[Variables and Objects]], [[Constants]], [[Operators]]
 ___
 #### Primitive Data Types:
 These are the fundamental data types implemented directly by the C++ language. These include:

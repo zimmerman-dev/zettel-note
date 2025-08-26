@@ -1,8 +1,8 @@
-#### 📝 Note: C++ Basics 
- ♻️ (*MinGW, Windows11, Codelite*)   
+  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:04 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Statements and Expressions]], [[Variables and Constants]], [[Control Flow]]
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Statements and Expressions]], [[Variables and Objects]], [[Control Flow]]
 ___
+## 📝 Note: C++ Basics
 ### What is C++?
 **C++ is a cross platform language that can be used to create high performance applications.**
 ### Difference between C++ and C?
@@ -17,3 +17,9 @@ C++ was developed as an extension of [[C]], and they share the almost the same s
 - [[Iostream|Basic I/O]] means basic input and output streams to and from the console. In other words, I/O is how the user communicates with the program. 
 
 [C++ Keywords - link](https://cppreference.com/w/cpp/keywords.html)
+___
+### 📌 Key Definitions
+
+
+---
+### 🧠 Flashcards

@@ -6,7 +6,7 @@ ___
 ### 🧱 Function Anatomy
 A **function definition** provides the **actual implementation** of what a function does when it's called. It includes:
 - **Return type** — the type of value the function gives back (`int`, `void`, etc.)
-- **Function name** — how the function is called (see [[Variables and Constants]] for naming rules)
+- **Function name** — how the function is called (see [[Variables and Objects]] for naming rules)
 - **Parameters** — the inputs it receives (not always required)
 - **Body** — the actual statements (inside `{}`)
 

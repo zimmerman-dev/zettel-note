@@ -94,7 +94,7 @@ ___
 ---
 ### ==S==
 
-- `Statement` - A syntactic unit of an imperative programming language that expresses some action to be carried out.
+- `Statement` - A type of instruction that causes the program to perform some action.
 ---
 ### ==T==
 
