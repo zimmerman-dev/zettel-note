@@ -1,7 +1,7 @@
 #### 📝 Note: Mixed-Type Expressions 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:31 am  📆 Thu Jul 24
- 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Operators]], [[Type Casting]]
+ 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Literals & Operators]], [[Type Casting]]
 ___
 ### 🎭 Mixed-Type Expressions
 An expression involving **two or more different data types**, such as `int` and `double`.

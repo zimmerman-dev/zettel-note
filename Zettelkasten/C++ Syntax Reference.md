@@ -1,7 +1,7 @@
 #### 📝 Note: C++ Syntax Reference 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:06 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]], [[Operators]], [[Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]], [[Literals & Operators]], [[Data Types]]
 ___
 # 📘 C++ Syntax Reference
 A concise, topic-driven reference for fundamental C++ syntax, with links to more detailed notes on each concept. See [[C++ Basics]].
@@ -9,7 +9,7 @@ A concise, topic-driven reference for fundamental C++ syntax, with links to more
 ## 🧱 Core Building Blocks
 - [[Statements and Expressions]]  
   → Learn how C++ programs are structured at the smallest level.
-- [[Operators]]  
+- [[Literals & Operators]]  
   → Arithmetic, logical, relational, assignment, and more.
 - [[Data Types]]  
   → Primitive types (`int`, `float`, `char`, etc.) and user-defined types.

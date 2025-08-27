@@ -1,7 +1,7 @@
 #### 📝 Note: Data Types 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:19 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Variables and Objects]], [[Constants]], [[Operators]]
+ 🔗 **Related Concepts**: #note #cpp [[Variables and Objects]], [[Constants]], [[Literals & Operators]]
 ___
 #### Primitive Data Types:
 These are the fundamental data types implemented directly by the C++ language. These include:
@@ -51,9 +51,9 @@ These are the fundamental data types implemented directly by the C++ language. T
 >- Zero is false.
 >- Non-zero is true.
 
-| Type Name | Size/Precision                               |
-| --------- | -------------------------------------------- |
-| bool      | Usually 8 bits, true or false (C++ Keywords) |
+| Type Name | Size/Precision                |
+| --------- | ----------------------------- |
+| bool      | Usually 8 bits, true or false |
 
 
 >[!question] Remember:

@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:27 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: #note #cpp [[Operators]], [[Control Flow]], [[Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Literals & Operators]], [[Control Flow]], [[Data Types]]
 ___
 ## 📝 Note: Boolean Logic
 ### ✅ What is Boolean Logic?
@@ -97,23 +97,24 @@ Boolean logic in C++ deals with **true/false values** and **expressions** that e
 	1. using the syntax: `condition ? expression : expression;
 ---
 ### 🧠 Flashcards
+
 - In C++, what values evaluate to `false` in a boolean context?|||Only values equivalent to `0` — everything else is treated as `true`. #flashcards
-<!--SR:!2025-08-29,4,270-->
----
+<!--SR:!2025-08-30,4,278-->
+
 - What does the `&&` operator do?|||Logical AND — evaluates to `true` only if **both** operands are true. #flashcards
-<!--SR:!2025-08-28,3,250-->
----
-- What does the `||` operator do?|||Logical OR — evaluates to `true` if **at least one** operand is true.
-<!--SR:!2025-08-29,4,270-->
----
-- What does the `!` operator do???|||Logical NOT — flips `true` to `false` and vice versa.
-<!--SR:!2025-08-29,4,270-->
----
-- What is a *short-circuit evaluation* mean?|||For `&&` and `||`, C++ stops evaluating once the result is known. #flashcards
-<!--SR:!2025-08-29,4,270-->
----
+<!--SR:!2025-08-29,3,258-->
+
+- What does the `||` operator do?|||Logical OR — evaluates to `true` if **at least one** operand is true. #flashcards
+<!--SR:!2025-08-30,4,278-->
+
+- What does the `!` operator do???|||Logical NOT — flips `true` to `false` and vice versa. #flashcards
+<!--SR:!2025-08-30,4,278-->
+
+- What does a *short-circuit evaluation* mean for `&&` and `||`?|||Short-circuit evaluation is a programming language feature that skips evaluating the rest of a logical expression (like && or ||) once the overall result is already determined. #flashcards
+<!--SR:!2025-08-30,4,278-->
+
 - What does `std::boolalpha` do?|||Makes `std::cout` print `true`/`false` instead of `1`/`0`. #flashcards
-<!--SR:!2025-08-29,4,270-->
----
+<!--SR:!2025-08-30,4,278-->
+
 - What’s the opposite of `std::boolalpha`?|||`std::noboolalpha` — resets output to `1`/`0`. #flashcards
-<!--SR:!2025-08-29,4,270-->
+<!--SR:!2025-08-30,4,278-->

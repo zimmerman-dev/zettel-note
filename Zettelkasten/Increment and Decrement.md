@@ -1,7 +1,7 @@
 #### 📝 Note: Increment and Decrement
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚ 11:36 pm  🗓️: Tue Jul 22
- 🔗 **Related Concepts**: #note #cpp [[Operators]], [[Loops - For]]
+ 🔗 **Related Concepts**: #note #cpp [[Literals & Operators]], [[Loops - For]]
 ___
 ## ➕➖ Increment and Decrement Operators
 Increment (`++`) and decrement (`--`) operators increase or decrease a value by one. Though they look simple, they behave differently depending on where they appear in an expression.

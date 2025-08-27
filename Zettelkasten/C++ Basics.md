@@ -16,7 +16,6 @@ C++ was developed as an extension of [[C]], and they share the almost the same s
 - Comments are human readable notes inside the source code. The comments never make it to the compiler.
 - [[Iostream|Basic I/O]] means basic input and output streams to and from the console. In other words, I/O is how the user communicates with the program. 
 
-[C++ Keywords - link](https://cppreference.com/w/cpp/keywords.html)
 ___
 ### 📌 Key Definitions
 

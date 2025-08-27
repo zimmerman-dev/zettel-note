@@ -1,9 +1,9 @@
-**Book**:   
-**Author**:  
-⌚ {{time:h:mm a}} 📆 {{date:ddd MMM D}}  
+**Book**: But How Do it Know?  
+**Author**: J. Clark Scott
+⌚ 1:04 am 📆 Tue Aug 26  
 **Tags**: #note 
 ___
-## Book-Note: {{title}}  
+## Book-Note: Gates  
 ### 📝 Chapter / Section Summary
 > Summarize _in your own words_ what this part covers.
 
@@ -13,19 +13,15 @@ ___
 ---
 ### 🌱 Key Concepts
 > Terms, definitions, and any “building block” ideas introduced.
-- **Register** → fast storage inside CPU
-- **ALU** → performs arithmetic & logic
-- **Program Counter** → tracks next instruction
+
+
 ---
 ### 🧩 Diagrams & Models
-> Use sketches or ASCII diagrams where useful.  
+Here's drawings of a simple AND, OR, and NOT gates.
 
-```ascii
-CPU --> Control Signals --> Memory
- |                          ^    
- v                          |   
-ALU <-----------------------
-```
+
+
+
 ---
 ### 💡 Insights & Connections
 > “Aha” moments, patterns you noticed, or connections to other topics.

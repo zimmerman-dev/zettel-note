@@ -1,7 +1,7 @@
 #### 📝 Note: Terminology Index
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚4:12 pm  📆 Thu Aug 7
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Classes and Objects(STUB)]] , [[Operators]] , [[Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Classes and Objects(STUB)]] , [[Literals & Operators]] , [[Data Types]]
 ___
 
 ### ==A==

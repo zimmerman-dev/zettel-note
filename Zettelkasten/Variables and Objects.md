@@ -54,16 +54,7 @@ int x, y;  // Legal declaration of multiple variables
 ```
 - Type: integer, real number, string, etc., ...
 - Value: the contents i.e. 1, 10.2, "string", etc., ...
-#### Naming Standards:
- - Can contain letters, numbers, and underscores. Case sensitive.
- - Must begin with a letter or underscore (cannot begin with a number).
- - Cannot use C++ reserved keywords.
- - Cannot redeclare a name in the same scope 
-#### Best Practices:
- - Be consistent with your naming conventions. 
- - Use meaningful names.
- - Never use a variable before initializing them.
- - Declare variables close to when you need them in your code.
+#### 
 ### Initializing Variables
 ```cpp
 int age;        // Unitialized
