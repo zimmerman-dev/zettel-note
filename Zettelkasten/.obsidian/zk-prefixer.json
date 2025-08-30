@@ -1,0 +1,5 @@
+{
+  "folder": "/",
+  "template": "Templates/Note",
+  "format": "[{{title}}]"
+}

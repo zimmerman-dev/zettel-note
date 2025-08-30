@@ -76,18 +76,14 @@ g++ -Wall -Wextra -Wuninitialized main.cpp
 ```
 ---
 ### 🧠 Flashcards
-What is an uninitialized variable?|||A variable declared but **not assigned a value** before use. #flashcards
-<!--SR:!2025-08-29,3,250-->
+What is an initialized variable?|||A variable declared and assigned a value upon its creation. 
 
-What happens if you use an uninitialized variable?|||It triggers **undefined behavior** — unpredictable results #flashcards
-<!--SR:!2025-08-30,4,270-->
+What happens if you use an uninitialized variable?|||It triggers **undefined behavior** — unpredictable results 
 
-T/F - Local variables auto-initialized in C++?|||❌ No, they hold **indeterminate garbage values**. #flashcards
-<!--SR:!2025-08-30,4,270-->
+T/F - Local variables auto-initialized in C++?|||❌ No, they hold **indeterminate garbage values**. 
 
-Best way to safely initialize variables?|||`int x{};  // ✅ zero-initialize` #flashcards
-<!--SR:!2025-08-27,1,230-->
+Best way to safely initialize variables?|||`int x{};  // ✅ zero-initialize` 
 
-How to catch UB at compile time?|||`g++ -Wall -Wextra -Wuninitialized` #flashcards
-<!--SR:!2025-08-27,1,230-->
+How to catch UB at compile time?|||`g++ -Wall -Wextra -Wuninitialized` 
+#flashcards
 

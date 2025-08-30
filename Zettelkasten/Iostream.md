@@ -106,18 +106,14 @@ std::cout << "You entered " << a << " and " << b << '\\n';
 ---
 ### 🧠 Flashcards
 
-- Why is `std::endl` considered less efficient than `'\n'`?|||Because `std::endl` **flushes the output buffer** every time it’s used, which is an expensive operation, while `'\n'` just inserts a newline without flushing. #flashcards
-<!--SR:!2025-08-30,4,270-->
+- Why is `std::endl` considered less efficient than `'\n'`?|||Because `std::endl` **flushes the output buffer** every time it’s used, which is an expensive operation, while `'\n'` just inserts a newline without flushing.
 
-- The `<<` operator used with `std::cout` is called the ==insertion== operator because it sends data into an output stream. #flashcards
-<!--SR:!2025-08-30,4,270--> 
+- The `<<` operator used with `std::cout` is called the ==insertion== operator because it sends data into an output stream. 
 
-- What actually happens if your program crashes before the output buffer is flushed?|||Any data still sitting in the buffer is **lost** and never reaches the console (or file, DB, etc.). #flashcards
-<!--SR:!2025-08-30,4,270-->
+- What actually happens if your program crashes before the output buffer is flushed?|||Any data still sitting in the buffer is **lost** and never reaches the console (or file, DB, etc.). 
 
-- `std::cin` uses the ==extraction== operator to take data from the user and place it into a variable. #flashcards
-<!--SR:!2025-08-30,4,270--> 
+- `std::cin` uses the ==extraction== operator to take data from the user and place it into a variable. 
 
-- Why does the program need `#include <iostream>` before using `std::cout` or `std::cin`?|||Because `iostream` is a **header file** that **declares** these objects and related functionality. Without it, the compiler doesn’t know they exist. #flashcards
-<!--SR:!2025-08-30,4,270-->
+- Why does the program need `#include <iostream>` before using `std::cout` or `std::cin`?|||Because `iostream` is a **header file** that **declares** these objects and related functionality. Without it, the compiler doesn’t know they exist. 
+#flashcards
 

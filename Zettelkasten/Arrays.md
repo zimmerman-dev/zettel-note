@@ -96,48 +96,32 @@ Vectors behave like flexible arrays:
 ---
 ### 🧠 Flashcards
 
-- What is an array?|||A fixed-size, contiguous sequence of elements of the same type stored under one name. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- What is an array?|||A fixed-size, contiguous sequence of elements of the same type stored under one name.
 
-- What is an array element?|||A single value inside an array, accessed using its index. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- What is an array element?|||A single value inside an array, accessed using its index. 
 
-- What is an index in an array?|||The position of an element relative to the start of the array; starts at `0` in C++. #flashcards
-<!--SR:!2025-08-27,2,249-->
+- What is an index in an array?|||The position of an element relative to the start of the array; starts at `0` in C++.
 
-- What is zero-indexing?|||The convention where the first element of a sequence is always at index `0`. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- What is zero-indexing?|||The convention where the first element of a sequence is always at index `0`. 
 
-- What happens if you access an array index outside its size?|||It’s undefined behavior (UB). There is no automatic bounds checking for raw arrays. #flashcards
-<!--SR:!2025-08-27,2,249-->
+- What happens if you access an array index outside its size?|||It’s undefined behavior (UB). There is no automatic bounds checking for raw arrays. 
 
-- How are arrays stored in memory?|||As a single, contiguous block of memory where elements are laid out back-to-back with no gaps. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- How are arrays stored in memory?|||As a single, contiguous block of memory where elements are laid out back-to-back with no gaps. 
 
-- What does it mean when an array “decays” to a pointer?|||In most expressions, the array name evaluates to the address of its first element. #flashcards
-<!--SR:!2025-08-26,1,229-->
+- What does it mean when an array “decays” to a pointer?|||In most expressions, the array name evaluates to the address of its first element. 
 
-- Does an array variable always decay to a pointer?|||No. It does **not** decay when used with `sizeof`, `&array`, or in template argument deduction. #flashcards
-<!--SR:!2025-08-27,2,249-->
+- The size of a built-in array must be known at ==compile time==. 
 
-- The size of a built-in array must be known at ==compile time==. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- True or False, the size of a built-in array cannot change after creation? ==true== 
 
-- True or False, the size of a built-in array cannot change after creation? ==true== #flashcards
-<!--SR:!2025-08-28,3,269-->
+- To zero-initialize an array, you use ==empty curly braces== during initialization. 
 
-- To zero-initialize an array, you use ==empty curly braces== during initialization. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- Use a ==std::vector== when you need a dynamic, resizable container. 
 
-- Use a ==std::vector== when you need a dynamic, resizable container. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- Use a ==raw array== when the size is fixed and known at compile time. 
 
-- Use a ==raw array== when the size is fixed and known at compile time. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- Unlike raw arrays, vectors handle ==memory management== automatically. 
 
-- Unlike raw arrays, vectors handle ==memory management== automatically. #flashcards
-<!--SR:!2025-08-28,3,269-->
-
-- Unlike raw arrays, vectors provide built-in ==bounds== checks. #flashcards
-<!--SR:!2025-08-28,3,269-->
+- Unlike raw arrays, vectors provide built-in ==bounds== checks. 
+#flashcards
 

@@ -96,72 +96,35 @@ int main() {
 
 ---
 ### 🧠 Flashcards
+A ==literal== is a hardcoded data value written directly in source code. 
 
-A program is made of instructions that manipulate ==data== to produce a desired result. #flashcards
-<!--SR:!2025-08-29,4,270-->
+**What is a value?**|||A single piece of data, such as a number, letter, symbol, or string.
 
-**What do we mean by “data” in programming?**|||The information the program works with to produce a result. #flashcards
-<!--SR:!2025-08-28,3,250-->
+**Why are literals unique kinds of data?**|||Read‑only data; they cannot be modified during program execution. 
 
-A ==literal== is a hardcoded data value written directly in source code. #flashcards
-<!--SR:!2025-08-29,4,270-->
+**To store or modify data, instead of using literals directly, we use…**|||Objects and variables. 
+**What is the main purpose of RAM?**|||It’s the computer’s main working memory where programs and data are loaded while running. 
 
-**What is a value?**|||A single piece of data, such as a number, letter, symbol, or string. #flashcards
-<!--SR:!2025-08-28,3,250-->
+**Why does the OS reserve additional space after loading a program into RAM?**|||Reserves space for variables and calculations that happen during run time. 
 
-**What is a literal?**|||A hardcoded data value written directly in source code. #flashcards
-<!--SR:!2025-08-29,4,270-->
+**Think of RAM as…**|||A series of numbered boxes where data is temporarily stored while the program executes. 
 
-**Why are literals unique kinds of data?**|||Read‑only data; they cannot be modified during program execution. #flashcards
-<!--SR:!2025-08-29,4,270-->
+**Why don’t we usually access memory directly in C++?**|||Because we use objects to represent storage locations, letting the compiler handle memory addresses. 
 
-**To store or modify data, instead of using literals directly, we use…**|||Objects and variables. #flashcards
-<!--SR:!2025-08-29,4,270-->
+**Ultimately, what does an object represent?**|||A region of storage (RAM or CPU register) that holds a value. 
 
-**What is the main purpose of RAM?**|||It’s the computer’s main working memory where programs and data are loaded while running. #flashcards
-<!--SR:!2025-08-28,3,250-->
+An object with a name is called a ==variable==. 
 
-**When a program starts, the OS does what with the program?**|||Loads it into RAM and reserves additional space for variables and calculations. #flashcards
-<!--SR:!2025-08-29,4,270-->
+**What does a variable represent in C++?**|||An abstraction for a memory location, using a meaningful name instead of an address. 
 
-**Think of RAM as…**|||A series of numbered boxes where data is temporarily stored while the program executes. #flashcards
-<!--SR:!2025-08-29,4,270-->
+Variables must be ==declared== before they are used.
 
-**Name three common uses for RAM while a program runs.**|||Storing user input; holding data read from files, networks, or databases; keeping intermediate values during calculations. #flashcards
-<!--SR:!2025-08-29,4,270-->
+**What is a local variable?**|||A variable declared inside a function, visible only within that function. 
 
-**Why don’t we usually access memory directly in C++?**|||Because we use objects to represent storage locations, letting the compiler handle memory addresses. #flashcards
-<!--SR:!2025-08-26,1,230-->
+**What is a global variable?**|||A variable declared outside all functions, visible to the entire program. 
 
-**What does an object represent?**|||A region of storage (RAM or CPU register) that holds a value. #flashcards
-<!--SR:!2025-08-26,1,230-->
+If a local and global variable share the same name, the ==local== variable shadows the ==global== one. 
 
-An object with a name is called a ==variable==. #flashcards
-<!--SR:!2025-08-29,4,270-->
+Global variables are automatically initialized to ==zero== if no value is given. 
 
-Instead of saying “Go get the value at mailbox 23,” we say “Go get the value stored in this ==object==,” and let the compiler figure out where it lives. #flashcards
-<!--SR:!2025-08-29,4,270-->aZ
-
-**What does a variable represent in C++?**|||An abstraction for a memory location, using a meaningful name instead of an address. #flashcards
-<!--SR:!2025-08-28,3,250-->
-
-Variables must be ==declared== before they are used. #flashcards
-<!--SR:!2025-08-29,4,270-->
-
-**Give an example of declaring multiple variables at once.**|||`int x, y;` #flashcards
-<!--SR:!2025-08-29,4,270-->
-
-**What defines what kind of data a variable can store?**|||Its type, such as int, double, char, etc. #flashcards
-<!--SR:!2025-08-29,4,270-->
-
-**What is a local variable?**|||A variable declared inside a function, visible only within that function. #flashcards
-<!--SR:!2025-08-29,4,270-->
-
-**What is a global variable?**|||A variable declared outside all functions, visible to the entire program. #flashcards
-<!--SR:!2025-08-29,4,270-->
-
-If a local and global variable share the same name, the ==local== variable shadows the ==global== one. #flashcards
-<!--SR:!2025-08-29,4,270!2025-08-29,4,270-->  
-
-Global variables are automatically initialized to ==zero== if no value is given. #flashcards
-<!--SR:!2025-08-29,4,270-->  
+#flashcards

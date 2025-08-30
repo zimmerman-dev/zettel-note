@@ -1,0 +1,15 @@
+{
+  "DefaultEase": 250,
+  "EasyBonus": 1,
+  "HardBonus": 1,
+  "WordTTSURL": "",
+  "WaitingTimeoutBase": 7,
+  "HideContext": false,
+  "OneLineDelimeter": "|?|",
+  "OneLineReversedDelimeter": "||?||",
+  "MultiLineDelimeter": "?|?",
+  "AosrDbPath": ".obsidian/aosr.db",
+  "ExcludeWorkingPathesPattern": "**/*.excalidraw\\n**/*.png",
+  "ShowHardCardsArrangement": false,
+  "UseNewLineAsSplitter": false
+}

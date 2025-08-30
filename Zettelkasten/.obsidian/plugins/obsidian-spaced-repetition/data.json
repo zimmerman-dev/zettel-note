@@ -6,7 +6,7 @@
     "convertFoldersToDecks": false,
     "burySiblingCards": false,
     "randomizeCardOrder": null,
-    "flashcardCardOrder": "DueFirstRandom",
+    "flashcardCardOrder": "NewFirstSequential",
     "flashcardDeckOrder": "PrevDeckComplete_Sequential",
     "convertHighlightsToClozes": true,
     "convertBoldTextToClozes": false,
@@ -14,15 +14,15 @@
     "clozePatterns": [
       "==[123;;]answer[;;hint]=="
     ],
-    "singleLineCardSeparator": "|||",
-    "singleLineReversedCardSeparator": ":::",
-    "multilineCardSeparator": "?",
+    "singleLineCardSeparator": "|?|",
+    "singleLineReversedCardSeparator": "||?||",
+    "multilineCardSeparator": "?|?",
     "multilineReversedCardSeparator": "??",
     "multilineCardEndMarker": "",
     "editLaterTag": "#edit-later",
     "enableNoteReviewPaneOnStartup": true,
     "tagsToReview": [
-      "#review"
+      ""
     ],
     "noteFoldersToIgnore": [
       "**/*.excalidraw.md",

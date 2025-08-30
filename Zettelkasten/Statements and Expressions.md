@@ -55,26 +55,19 @@ for (int i = 0; i < 10; i++) {};    // Iteration statement
 6. Initialization: A definition that gives an entity it's first value.
 ---
 ### 🧠 Flashcards
-- What is an *Expression*?|||An expression is fragment of code -- a sequence of operators and operands -- that evaluate to a value. #flashcards
-<!--SR:!2025-08-29,4,270-->
+- What is an *Expression*?|||An expression is fragment of code -- a sequence of operators and operands -- that evaluate to a value. 
 
-- What is a *Statement*?|||A statement is an instruction that causes the program to perform some action. #flashcards
-<!--SR:!2025-08-29,4,270-->
+- What is a *Statement*?|||A statement is an instruction that causes the program to perform some action. 
 
-- Every expression produces a ==value==. #flashcards
-<!--SR:!2025-08-29,4,270-->
+- Every expression produces a ==value==. 
 
-- `int x;` is what type of statement?|||Declaration statement (also a definition, since it allocates storage). #flashcards
-<!--SR:!2025-08-29,4,270-->
+- `int x;` is what type of statement?|||Declaration statement (also a definition, since it allocates storage). 
 
-- `num = 5;` is what type of statement?|||Assignment statement. #flashcards
-<!--SR:!2025-08-28,3,250-->
+- `num = 5;` is what type of statement?|||Assignment statement. 
 
-- `int num = 5;` is both definition and declaration. What else is it and what is it's purpose?|||An initialization and it's purpose is to inform the program the name and type of an entity and allocate memory. #flashcards
-<!--SR:!2025-08-29,4,270-->
+- `int num = 5;` is both definition and declaration. What else is it and what is it's purpose?|||An initialization and it's purpose is to inform the program the name and type of an entity and allocate memory. 
 
-- `"Hello"` is a ==literal== expression. #flashcards
-<!--SR:!2025-08-29,4,270-->
+- `"Hello"` is a ==literal== expression. 
 
-- What is the difference between `23 + 45` and `23 + 45;`?|||The first block is an expression and the second block is an expression statement. #flashcards
-<!--SR:!2025-08-29,4,270-->
+- What is the difference between `23 + 45` and `23 + 45;`?|||The first block is an expression and the second block is an expression statement. 
+#flashcards

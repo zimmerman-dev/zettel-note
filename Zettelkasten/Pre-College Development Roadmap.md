@@ -1,71 +1,179 @@
-#### 📝 Note: Pre-College Development Roadmap 
  ♻️ (*MinGW, Windows11, Codelite*)   
- ⌚2:06 am  📆 Thu Aug 14
- 🔗 **Related Concepts**: #note #cpp [[Constants]]
+ ⌚8:12 pm  📆 Wed Aug 27
+ 🔗 **Related Concepts**: #note #cpp
 ___
-## 🧭 Pre-College Development Roadmap (Aug 2025 – Jan 2026)
-**Objective:** Enter college with 6 months of hands-on coding experience, a working SDL2-based engine, and a clear technical foundation that puts me months (or years) ahead of the average first-semester student.
-___
-### 🎓 Academic Context
-- **Program:** Associate of Applied Science – Web Software Development
-- **School Start:** January 2026
-- **Why this path?**
-    - Offers the most hands-on programming coursework (Java, Python, JS, C#, DBs)
-    - Builds practical career skills (e.g., backend dev) while leaving space for side projects
-    - Other tracks (SysAdmin, DevOps, Data Science) lacked programming focus
+## 📝 Note: Pre-College Development Roadmap
+**Main goal:** Complete _all_ **LearnCpp** modules in 16 weeks  
+**Daily time:** 2–4 hours  
+**Method:**
+- No skipping sections, even if they feel easy.
+- Use weekends to **push forward** if you’re ahead, or **catch up** if you’re behind.
+- Coding exercises, notes, and flashcards baked into every block.
+- Architecture reading sprinkled in **lightly** where it deepens understanding without slowing us down.
 ---
-### 🧱 Core Philosophy
-- Use school as a springboard, not a destination.
-- Build personal projects in the areas I care about (systems, engines, embedded, C++).
-- Focus on _internalization_, not just surface-level completion.
-- Create a GitHub trail and codebase that reflect depth—not flash.
+## **Phase 1 — Fundamentals & Functions (Weeks 1–3)**
+_Build a rock-solid foundation before diving into advanced topics._
+### **Week 1 — Functions & Program Structure**
+📍 **Chapter 2** — _Functions and Files_
+- **Block 1:** (2.1 → 2.6) Functions, returns, void vs non-void, parameters, scope
+- **Block 2:** (2.7 → 2.9) Forward declarations, multi-file projects, namespaces
+- **Block 3:** (2.10 → 2.13) Preprocessor, headers, guards, project design
+- **Weekend:** Chapter 2 quiz + first multi-file mini-project
 ---
-### 📆 6-Month Roadmap
-#### **Month 1–2 (Aug–Mid Sept): C++ Mastery**
-- Deep practice: pointers, references, constructors, destructors, RAII
-- STL mastery: vectors, maps, iterators
-- OOP: class hierarchies, virtual functions, function overloading
-- Smart pointers: `unique_ptr`, `shared_ptr`, ownership semantics
-- Project: `contact-list v2.0`, text RPG with class hierarchy
-- Habit building: debugging, step-through analysis, clean header usage
-#### **Month 3 (Mid Sept–Oct): SDL2 Fundamentals**
-- Build and link SDL2 with CMake
-- Open window, handle input, render shapes & textures
-- Intro to rendering pipelines and event loops
-- SDL_image, SDL_ttf integration
-- Project: interactive sandbox app with moving sprite, basic input
-#### **Month 4 (Oct): Engine Skeleton + Game Loop**
-- Game class with `Init()`, `Run()`, `Shutdown()` 
-- Timing & frame limiting (delta time)
-- Separation of concerns: `Renderer`, `Window`, `AssetManager`
-- Project: small demo scene with a sprite and simple game loop
-#### **Month 5 (Nov): ECS Architecture & Entities**
-- Component-based design (no deep inheritance trees)
-- Entity manager, Transform, Sprite, Input components
-- Simple animation system
-- Project: side-scroller demo with character movement and camera follow
-#### **Month 6 (Dec–Jan): Scenes, Assets, Audio, Polish**
-- Asset manager (caching, cleanup, texture reuse)
-- Scene manager (menus, transitions)
-- SDL_mixer for music & SFX
-- Project: showcase demo game (mini platformer or horror room)
-- Refactor into engine/game module split
+### **Week 2 — Variables, Types, & Memory Basics**
+📍 **Chapter 3** — _Variables & Constants_
+- Data types, `constexpr`, type inference
+- `const` vs `constexpr` vs `#define`
+- Scoped enums, symbolic constants
+- Practice: Build a constants header + calculator project
 ---
-### 🛠 Tools in Use
-- **Language:** C++
-- **Libraries:** SDL2, SDL_image, SDL_mixer (eventually ImGui)
-- **Build System:** CMake
-- **Editor:** Neovim/Clion
-- **Version Control:** Git (daily commits, branching, tagging releases)
+### **Week 3 — Operators, Expressions, and Debugging**
+📍 **Chapter 4** — _Operators_
+- Arithmetic, relational, logical operators
+- Pre/post-increment, operator precedence
+- Floating-point caveats
+- Project: Write a scientific calculator (multi-file, with constants & operators separated)
 ---
-### 🔥 Advantages by January 2026
-- 6 months of commits + project history on GitHub
-- Full SDL2 engine core built from scratch
-- Debugging and problem-solving experience far ahead of peers
-- Familiar with tools (Git, CMake, GDB) that most students haven’t touched
-- Able to leverage school time for polish, not catch-up
-- Prepared to freelance, intern, or build tools for fun _during_ school
+## **Phase 2 — Control Flow & Compound Structures (Weeks 4–6)**
+_We go deeper into branching, looping, and structured program flow._
+### **Week 4 — Program Flow**
+📍 **Chapter 5**
+- If/else chains, `switch`, ternary ops
+- Error handling basics
+- Project: Text-based menu-driven app
 ---
-### 📌 Mindset
-> While others are still learning what a pointer is, I’ll be building games, engines, and tooling.
-- I’m not aiming for easy wins—I’m building depth now to make everything easier later.
+### **Week 5 — Loops & Scope**
+📍 **Chapter 6**
+- `for`, `while`, `do-while` loops
+- Nested loops & sentinel values
+- Project: Implement a number-guessing game
+---
+### **Week 6 — Arrays & Vectors**
+📍 **Chapter 7**
+- Fixed arrays, dynamic arrays, `std::vector`
+- Multidimensional vectors (Train Car mental model 🚂)
+- Project: Tic-tac-toe grid simulator
+---
+## **Phase 3 — Modular Design & Memory Foundations (Weeks 7–9)**
+_We shift from “just code” to “engineer programs” and begin memory mastery._
+### **Week 7 — Functions Deep Dive**
+📍 **Chapter 8**
+- Pass by value vs reference
+- Passing arrays & vectors
+- Default arguments, inline functions
+- Project: Math utilities library
+---
+### **Week 8 — Pointers & References I**
+📍 **Chapter 9**
+- Understanding addresses
+- Pointers vs references
+- Null, dangling, and wild pointers
+- Project: Write a pointer visualizer using diagrams in Obsidian
+---
+### **Week 9 — Pointers & References II**
+📍 **Chapter 9 cont.**
+- Pointer arithmetic
+- Pointers to arrays, functions, and strings
+- Project: Manual implementation of `strlen`, `strcpy`, etc.
+---
+## **Phase 4 — OOP, Dynamic Memory & Architecture Integration (Weeks 10–13)**
+_We level up: classes, dynamic allocation, and hands-on architecture links._
+### **Week 10 — Intro to Classes & Objects**
+📍 **Chapter 10**
+- Constructors, destructors
+- Encapsulation, getters/setters
+- Project: Simple `Account` class
+---
+### **Week 11 — Inheritance & Polymorphism**
+📍 **Chapter 11**
+- Inheritance chains
+- Virtual functions, overrides
+- Project: Polymorphic shape renderer
+---
+### **Week 12 — Dynamic Memory & RAII**
+📍 **Chapter 12**
+- `new`, `delete`, `unique_ptr`, `shared_ptr`
+- RAII & resource safety
+- Project: Memory-safe linked list
+---
+### **Week 13 — Exceptions & Error Handling**
+📍 **Chapter 13**
+- Exception basics
+- Stack unwinding
+- Writing robust code under failure conditions
+---
+## **Phase 5 — Advanced Concepts & Capstone (Weeks 14–16)**
+_Wrap up remaining modules, integrate everything, build portfolio-ready project._
+### **Week 14 — Templates & STL**
+📍 **Chapter 14**
+- Function templates
+- Class templates
+- Using standard containers `std::map`, `std::set`
+---
+### **Week 15 — Miscellaneous & Optimization**
+📍 **Chapters 15+**
+- Type casting
+- Compile-time vs runtime
+- Lambdas, constexpr functions
+---
+### **Week 16 — Capstone Project**
+Build a **multi-file, modular, memory-safe** app using everything learned.  
+Examples:
+- Task manager CLI
+- Tiny math expression evaluator
+- Minimal text-based adventure game
+---
+## **Tracking System**
+I’ll make a **chapter-by-chapter checklist** for Obsidian:
+- ✅ Block-level tick boxes
+- 🔖 Flashcards embedded
+- 🧩 Project links
+- 🎯 Weekly milestones
+---
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+---
+### 📌 Key Definitions
+
+
+
+
+
+
+
+
+
+
+---
+### 🧠 Flashcards
+
+\

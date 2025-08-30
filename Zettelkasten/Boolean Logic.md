@@ -98,23 +98,15 @@ Boolean logic in C++ deals with **true/false values** and **expressions** that e
 ---
 ### 🧠 Flashcards
 
-- In C++, what values evaluate to `false` in a boolean context?|||Only values equivalent to `0` — everything else is treated as `true`. #flashcards
-<!--SR:!2025-08-30,4,278-->
+- In C++, what values evaluate to `false` in a boolean context?|||Only values equivalent to `0` — everything else is treated as `true`.
 
-- What does the `&&` operator do?|||Logical AND — evaluates to `true` only if **both** operands are true. #flashcards
-<!--SR:!2025-08-29,3,258-->
+- What does the `&&` operator do?|||Logical AND — evaluates to `true` only if **both** operands are true. 
 
-- What does the `||` operator do?|||Logical OR — evaluates to `true` if **at least one** operand is true. #flashcards
-<!--SR:!2025-08-30,4,278-->
+- What does the `||` operator do?|||Logical OR — evaluates to `true` if **at least one** operand is true. 
 
-- What does the `!` operator do???|||Logical NOT — flips `true` to `false` and vice versa. #flashcards
-<!--SR:!2025-08-30,4,278-->
+- What does the `!` operator do???|||Logical NOT — flips `true` to `false` and vice versa. 
 
-- What does a *short-circuit evaluation* mean for `&&` and `||`?|||Short-circuit evaluation is a programming language feature that skips evaluating the rest of a logical expression (like && or ||) once the overall result is already determined. #flashcards
-<!--SR:!2025-08-30,4,278-->
+- What does a *short-circuit evaluation* mean for `&&` and `||`?|||Short-circuit evaluation is a programming language feature that skips evaluating the rest of a logical expression (like && or ||) once the overall result is already determined. 
 
-- What does `std::boolalpha` do?|||Makes `std::cout` print `true`/`false` instead of `1`/`0`. #flashcards
-<!--SR:!2025-08-30,4,278-->
-
-- What’s the opposite of `std::boolalpha`?|||`std::noboolalpha` — resets output to `1`/`0`. #flashcards
-<!--SR:!2025-08-30,4,278-->
+- What does `std::boolalpha` and `std::noboolalpha` mean? Explain the difference.||| `std::boolalpha` makes `std::cout` print true/false instead of 1/0. `std::noboolalpha` sets it back to the numeric representation of bool.  
+#flashcards

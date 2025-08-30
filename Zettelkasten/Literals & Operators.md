@@ -126,13 +126,13 @@ Associativity rules decide which side binds first when operators share precedenc
 - **Statement** → A complete instruction; often contains expressions.
 ---
 ### 🧠 Flashcards
-What is a literal?|||A hardcoded value written directly in the source code. #flashcards 
+What is a literal?|||A hardcoded value written directly in the source code. 
 
-Is a variable the same thing as a literal?|||No, variables store values, literals **ARE** their values. #flashcards 
+Variables store values, literals **ARE** their values. 
 
-What’s the difference between an operator and an operand?|||Operators act on operands. #flashcards 
+What’s the difference between an operator and an operand?|||Operators act on operands.  
 
-What's the ternary operator used for?|||A shorthand conditional: `condition ? expr1 : expr2` #flashcards 
+What's the ternary operator used for?|||A shorthand conditional: `condition ? expr1 : expr2` 
 
-Which has higher precedence, `&&` or `||`? |||`&&` binds tighter. Use parentheses when mixing. #flashcards 
-
+Which has higher precedence, `&&` or `||`? |||`&&` binds tighter. Use parentheses when mixing. 
+#flashcards 

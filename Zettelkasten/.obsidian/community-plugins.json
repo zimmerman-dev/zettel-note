@@ -1,11 +1,12 @@
 [
   "table-editor-obsidian",
   "codeblock-customizer",
-  "obsidian-spaced-repetition",
   "obsidian-emoji-toolbar",
   "obsidian-excalidraw-plugin",
   "obsidian-style-settings",
   "obsidian-icons-plugin",
   "excalibrain",
+  "obsidian-to-anki-plugin",
+  "obsidian-spaced-repetition",
   "dataview"
 ]
