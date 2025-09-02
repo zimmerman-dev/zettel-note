@@ -1,4 +1,4 @@
-#### 📝 Note: CMake 
+=#### 📝 Note: CMake 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:07 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #cpp #toolchain #note

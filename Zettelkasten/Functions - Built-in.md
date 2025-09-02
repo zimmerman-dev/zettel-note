@@ -37,7 +37,7 @@ int main() {
 - C++ uses angle brackets for standard headers: `#include <cmath>`
 - Some older C-style headers exist (`<stdio.h>`) but are rarely used in modern C++
 
-> See [[Preprocessor]] for more on `#include`
+> See [[Preprocessor Directives]] for more on `#include`
 ### 🔍 Categories of Built-In Functions
 #### 1. I/O Functions
 - `std::cout`, `std::cin`, `std::getline`

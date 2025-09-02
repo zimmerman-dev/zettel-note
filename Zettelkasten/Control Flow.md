@@ -1,7 +1,7 @@
 #### 📝 Note: Control Flow 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚8:04 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: #note #cpp [[Loops - Overview]], [[Conditionals]], [[Jump Statements(STUB)]]
+ 🔗 **Related Concepts**: #note #cpp [[Loops - Overview]], [[Conditionals]], [[Jump Statements]]
 ___
 ## ✅ What is Control Flow?
 - The **order** in which individual statements, instructions, or function calls are executed.

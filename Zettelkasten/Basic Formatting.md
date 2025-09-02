@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:07 am  📆 Wed Aug 27
- 🔗 **Related Concepts**: #note #cpp [[Introduction to Programming]] , [[C++ Basics]]
+ 🔗 **Related Concepts**: #note #cpp [[Introduction to Programming]] 
 ___
 ## 📝 Note: Basic Formatting
 

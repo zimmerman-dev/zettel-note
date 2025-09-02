@@ -88,7 +88,7 @@ int main() {
 }
 ```
 
-> See: [[Preprocessor Directives(STUB)]] for more details on `#include` and `#pragma once`.
+> See: [[Preprocessor Directives]] for more details on `#include` and `#pragma once`.
 >___
 
 See also: [[Functions - Default Arguments]] for more function-related details.*

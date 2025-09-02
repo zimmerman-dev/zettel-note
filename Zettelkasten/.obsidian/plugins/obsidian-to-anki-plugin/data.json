@@ -118,13 +118,13 @@
     "Functions - Scope.md": "3428f275f0aaf73e21ee6c4260523111",
     "Functions - Return.md": "affb70da6a6c2851b49378f51e885c94",
     "Functions - References & Pointers(STUB).md": "8611b8fb59c12b011dbad0f6ac1f2176",
-    "Functions - Prototypes.md": "064920de60ea1c7a5777b0ada30de369",
+    "Functions - Prototypes.md": "6b3815e54025ffe0c64de79872d18a37",
     "Functions - Recursive.md": "6331ac976a4288f3142afe8bef719067",
     "Functions - Passing Arrays & Vectors.md": "82c1a01fcdb410ae8123bd3f67fa3a15",
-    "Functions - Parameters & Arguments.md": "4be24d77dbbfbc7d3fbc0fa5c3998686",
+    "Functions - Parameters & Arguments.md": "ffe75e7a6b042590bcf5188e0939660e",
     "Functions - Overview.md": "1c53283c9f9da59b77f5d423195a8419",
     "Functions - Overloading.md": "75ede41f659da3ed7a9d2475169cca3f",
-    "Functions - Default Arguments.md": "0c7b794bdaed72342db2ea89f5a4bb2b",
+    "Functions - Default Arguments.md": "28dfdd80457fc78aa778fe66c928be59",
     "Functions - Built-in.md": "decf2e39b58a464bc2f427b93f2d630a",
     "Functions - Anatomy.md": "6cfa34cfa4efb288a0ca41466938bede",
     "Floating-Point Types.md": "5f9b1c591d1b13ba3b42ac7a22977707",
@@ -150,7 +150,10 @@
     "Basic Formatting.md": "b6143129d0bdf583caf48e7ce80e827e",
     "Binary Numbers & Bit Manipulation.md": "4b254f662a9ab6a2d4318081a29fb09e",
     "Arrays.md": "1b8d74476a10070bf86914c7ebb215d0",
-    "Functions - Scope, Lifetime, and Temporaries.md": "165d9cad199c6043bfc6884b0b14f605"
+    "Functions - Scope, Lifetime, and Temporaries.md": "165d9cad199c6043bfc6884b0b14f605",
+    "Transistors.md": "8a141c57c7b211252a1f5a41b328b155",
+    "Multi-File Programs.md": "5df9d5ff5bca567dfab1264f27eb0497",
+    "Charts & Diagrams/Transistor.md": "f792281ef963fcc56ade6473deee445c"
   },
   "fields_dict": {
     "Basic": [

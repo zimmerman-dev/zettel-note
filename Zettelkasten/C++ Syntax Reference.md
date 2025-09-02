@@ -4,8 +4,7 @@
  🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]], [[Literals & Operators]], [[Data Types]]
 ___
 # 📘 C++ Syntax Reference
-A concise, topic-driven reference for fundamental C++ syntax, with links to more detailed notes on each concept. See [[C++ Basics]].
-
+A concise, topic-driven reference for fundamental C++ syntax
 ## 🧱 Core Building Blocks
 - [[Statements and Expressions]]  
   → Learn how C++ programs are structured at the smallest level.
@@ -15,7 +14,7 @@ A concise, topic-driven reference for fundamental C++ syntax, with links to more
   → Primitive types (`int`, `float`, `char`, etc.) and user-defined types.
 - [[Variables and Objects]]  
   → Declaring, initializing, and using `const` and `constexpr`.
-- [[Functions]]  
+- [[Functions - Overview]]  
   → Syntax, arguments, return types, and function overloading.
 
 ---
@@ -24,7 +23,7 @@ A concise, topic-driven reference for fundamental C++ syntax, with links to more
   → `if`, `else`, `switch`, ternary operator
 - [[Loops - Overview]]  
   → `for`, `while`, `do-while`, range-based loops
-- [[Jump Statements(STUB)]]  
+- [[Jump Statements]]  
   → `break`, `continue`, `return`, `goto`
 
 ---
@@ -35,7 +34,7 @@ A concise, topic-driven reference for fundamental C++ syntax, with links to more
   → Static and dynamic collections
 - [[Functions - User-defined|Scope and Lifetime]]  
   → Block scope, global scope, static duration
-- [[Preprocessor Directives(STUB)]]  
+- [[Preprocessor Directives]]  
   → `#include`, `#define`, `#pragma once`
 
 ---
@@ -52,9 +51,9 @@ A concise, topic-driven reference for fundamental C++ syntax, with links to more
 ---
 ## 🧪 Additional Features
 
-- [[Namespaces(STUB)]]  
+- [[Namespaces]]  
   → Avoiding name collisions
-- [[Templates and Generics(STUB)]]  
+- [[Templates]]  
   → Generic programming syntax (`template<typename T>`)
 - [[Operator Overloading]]  
   → Custom operator behavior
@@ -66,8 +65,6 @@ A concise, topic-driven reference for fundamental C++ syntax, with links to more
 ---
 
 ## 🔗 See Also
-- [[Standard Library(STUB)]]  
-  → Containers, algorithms, strings, etc.
 - [[CMake|CMakeLists.txt Reference]]  
   → For building and compiling C++ projects
 * [[Git|Git Essentials]]
