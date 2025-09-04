@@ -3,19 +3,19 @@
  🔗 **Related Concepts**: #note #toolchain 
 ___
 ## 🛠️ Safe Fedora WSL Update Guide
-### 🔄 1. Simulate the Update (Dry Run)
+### 🔹 1. Simulate the Update (Dry Run)
 Check what packages *would* be updated without applying changes:
 ```bash
 sudo dnf upgrade --refresh --assumeno
 ```
 - `--refresh` updates repo metadata
 - `--assumeno` prevents changes (dry run)
-### ✅ 2. Apply All Safe Updates
+### 🔹 2. Apply All Safe Updates
 ```bash
 sudo dnf upgrade --refresh
 ```
 This pulls in the latest **stable** package versions from enabled repositories.
-### 🧹 3. Clean System Post-Upgrade
+### 🔹 3. Clean System Post-Upgrade
 #### Check for Broken Dependencies:
 ```bash
 sudo dnf check
@@ -30,7 +30,7 @@ sudo dnf repoquery --extras
 ```
 
 ---
-### 🔍 4. (Optional) Double-Check Before `autoremove`
+### 🔹 4. (Optional) Double-Check Before `autoremove`
  1. Before confirming package removal, review the list that `dnf autoremove` wants to remove:
 ```bash
 sudo dnf autoremove --assumeno
@@ -55,13 +55,13 @@ This prevents `dnf` from cleaning it up in the future.
 ```bash
 sudo dnf autoremove
 ```
-### 🔁 5. Restart WSL to Clear Environment
+### 🔹 5. Restart WSL to Clear Environment
 ```bash
 exit
 wsl --shutdown
 ```
 Then reopen your WSL terminal to start fresh.
-### 🔋 6. Shutdown / Reboot
+### 🔹 6. Shutdown / Reboot
 ```bash
 sudo shutdown now
 ```

@@ -3,7 +3,7 @@
  🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Boolean Logic]], [[Statements and Expressions]]
 ___
 ## 📝 Note: Literals & Operators
-### Literals
+### 🔹 Literals
 Consider the following two statements:
 ```cpp
 std::cout << "Hello world!";
@@ -11,10 +11,10 @@ int x { 5 };
 ```
 > `"Hello world!"` is a **string literal**, and `5` is an **integer literal**.  
 `x` is **not** a literal — it’s a variable initialized **with** a literal. // NEW clarification
-### Key insight
+### 🔹 Key insight
 - Literals are values that are inserted directly into the source code. These values usually appear directly in the executable code (unless they are optimized out).
 - Objects and variables represent memory locations that hold values. These values can be fetched on demand.
-### Types of Literals
+### 🔹 Types of Literals
 
 |**Type**|**Example**|**Description**|
 |---|---|---|
@@ -25,7 +25,7 @@ int x { 5 };
 |String|`"Hello"`, `"Hi\n"`|Sequences of characters|
 
 ---
-### ⚙️ Operators
+### 🔹 Operators
 An **operator** is a special symbol or keyword that performs operations on one or more operands. They're the core tools used within **expressions** to compute values, assign data, compare, or manipulate logic and memory.
 
 ```cpp title:Operators
@@ -54,7 +54,7 @@ An **operator** is a special symbol or keyword that performs operations on one o
 .     // Member access via object
 /*==========================================================================*/
 ```
-### 🧮 Operator Types
+### 🔹 Operator Types
 Operators are classified by the **number of operands** they act on:
  
 - **Unary** → One operand: `-x`, `!flag`, `++i`   
@@ -76,24 +76,24 @@ ___
 |   `<=`   |       Less or Equal to        |
 |  `<=>`   | Three way comparison (C++ 20) |
 
-### 📐 Testing for Equality
+### 🔹 Testing for Equality
 ```cpp title:Syntax
 expr1 == expr2 // Equals
 expr1 != expr2 // Not Equals
 ```
 ---
-### ☑️ Logical Operators
+### 🔹 Logical Operators
 
 | Operator |       Relation       | Class  |
 | :------: | :------------------: | ------ |
 |   `!`    |  Not<br>(Negation)   | Unary  |
 |   `&&`   | And<br>(Logical and) | Binary |
 |   \|\|   |  Or<br>(Logical or)  | Binary |
-### 🚛 Operator Precedence 
+### 🔹 Operator Precedence 
 Associativity rules decide which side binds first when operators share precedence:
 - `!` > `&&` > `||`
 - Always use **parentheses** when mixing logical operators — it avoids surprises.
-### 🎱 Compound Assignment Operators
+### 🔹 Compound Assignment Operators
 
 | Operator | Example |  Relation  |
 | :------: | :-----: | :--------: |
@@ -109,7 +109,7 @@ Associativity rules decide which side binds first when operators share precedenc
 |  `\|=`   | x \|= y | x = x \| y |
 
 ---
-### 💡 Notes
+### 🔹 Notes
 - Operators are used **within expressions** to produce values or cause side effects.
 - The same symbol can have **different meanings** depending on context—e.g., `*` for both multiplication and pointer dereference.
 - Operators obey **precedence** (who binds first) and **associativity** (who binds tighter when equal), which affect how expressions are evaluated.

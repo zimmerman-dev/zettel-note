@@ -3,7 +3,7 @@
  🔗 **Related Concepts**: #note #cpp
 ___
 ## 📝 Note: Variables and Objects
-### 🔑 Key Insights
+###  🔹 Key Insights
 A **computer program** is a collection of instructions that manipulate data to produce a desired result. Programs themselves, whether source code or compiled executables, are also **data**. In context, we typically use **“code”** to mean the program itself. **Data** refers to the information the program works with to produce a result.
 
 - A **data value** is a single piece of data: numbers, letters, symbols, or sequences of letters.
@@ -19,7 +19,7 @@ std::cout << 3.0f; // float literal
 > Literals are **read-only** data. To store or manipulate values, we need a way to put them into memory — that’s where objects and variables come in.
 
 ---
-### 📦 Random Access Memory (RAM)
+### 🔹 Random Access Memory (RAM)
 Random Access Memory, or **RAM**, is the computer’s main working memory. When a program runs, the **OS** loads it into RAM. Any hardcoded data (literals) in the program gets loaded at this time. The OS also reserves additional RAM for the program to use while running.  
 
 Common uses include:
@@ -35,7 +35,7 @@ Think of RAM as a series of numbered boxes where data is temporarily stored whil
 > In older languages, programmers could directly access these “boxes.” In C++, we almost never do.
 
 ---
-### 🍎 Objects and Variables
+### 🔹 Objects and Variables
  In C++, **direct memory access** is discouraged. Instead, we work with **objects**, which represent regions of storage (RAM or CPU registers) that hold values.
     
 - Rather than saying, _“Go get the value at mailbox 23,”_ we say,  
@@ -44,7 +44,7 @@ Think of RAM as a series of numbered boxes where data is temporarily stored whil
     
 - Objects can be **unnamed**, but typically we assign them identifiers.  
     An object **with** a name is called a **variable**.
-### Variables
+### 🔹 Variables
 A variable is an abstraction for a memory location. It allows programmers to use meaningful names and not memory addresses.
 
 Variables must be declared before used.
@@ -54,8 +54,7 @@ int x, y;  // Legal declaration of multiple variables
 ```
 - Type: integer, real number, string, etc., ...
 - Value: the contents i.e. 1, 10.2, "string", etc., ...
-#### 
-### Initializing Variables
+### 🔹 Initializing Variables
 ```cpp
 int age;        // Unitialized
 
@@ -68,7 +67,7 @@ int age {21};   // C++11 list initialization syntax
 
 ___
 
-### 'Global' and 'Local' Variables
+### 🔹 'Global' and 'Local' Variables
 - Up to this point we've declared our variables within the curly braces of the main function. This is what's known as a *local variable* because their scope or visibility is limited to statements within the main function.
 - Variables declared outside of any function are called *global variables.* Unlike local variables, global variables are automatically initialized to zero.
 ```cpp

@@ -1,9 +1,8 @@
-#### 📝 Note: Loops - Nesting 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:02 pm  📆 Tue Aug 5
  🔗 **Related Concepts**: #cpp #note [[Loops - Overview]], [[Control Flow]]
 ___
-## ➰ Nested Loops
+## 📝 Note: Loops - Nesting 
 A nested loop is simply a loop placed inside of a loop. For this note, we will only consider nested `for` loops.
 
 ```cpp
@@ -14,14 +13,14 @@ for (initialization; condition; increment) {
 	// outer statement
 }
 ```
-#### Basics:
+### 🔹 Basics:
 - The **outer loop** controls the overall iterations.
 - For **each** iteration of the outer loop, the **inner loop** runs through all it's iterations
 - This creates a layered, *grid-like* iteration pattern.
 - The inner loop fully completes before the outer loop increments.
 
 ---
-## 🔁 Nested Loop Flow
+### 🔹 Nested Loop Flow
 Iteration flow for nested `for` loops example:
 
 ```cpp
@@ -32,7 +31,7 @@ for (int i {1}; i <= 2; ++i) {        // <--> Outer Loop
 	std::cout << std::endl;
 }
 ```
-#### 🌊 Flow Breakdown:
+### 🔹 Flow Breakdown:
 1. **Outer loop begins**
    - `i` is initialized to `1`.
    - Condition `i <= 2` is `true` ➡️ **enter outer loop**
@@ -54,9 +53,9 @@ for (int i {1}; i <= 2; ++i) {        // <--> Outer Loop
    - Program continues with code after the loops (if any).
 
 ---
-#### 🔢 **Arrays & Vectors**
+### 🔹 **Arrays & Vectors**
 You can use nested loops to process a 1D array multiple times or compare elements.
-#### ✅ Example: Comparing every element with every other
+####  Example: Comparing every element with every other
 ```cpp
 int arr[3] {10, 20, 30};
 
@@ -74,9 +73,9 @@ In this example, there’s **only one array** (`arr`), but we have **two loops**
 
 The logic is identical to arrays, but you use `.size()` instead of a hardcoded length.
 
-###  🔢 **2D Vectors and Arrays**
+###  🔹 **2D Vectors and Arrays**
 With **2D structures**, the outer loop goes through **rows**, and the inner loop goes through **columns**.
-#### ✅ Example: Printing a 2D Vector
+####  Example: Printing a 2D Vector
 ```cpp
 std::vector<std::vector<int>> matrix {
 	{1, 2, 3}, {4, 5, 6}
@@ -106,7 +105,7 @@ Member functions present:
 *`size_t` is often used for loop indices because it matches the type returned by `.size()`. Also, the fact that it's unsigned means negative indices don't make sense. See [[climits | size_t and limits]] for more details.*
 
 ---
-#### 🌩️ **Jagged Arrays**
+### 🔹 **Jagged Arrays**
 Inner vectors can have **different sizes**.
 
 ```cpp
@@ -123,7 +122,7 @@ for (size_t i = 0; i < jagged.size(); ++i) {      // outer: 3 rows
 
 If you had used `jagged.size()` instead, the inner loop would always think there are **3 elements** and crash when `i = 2`.
 
-#### ✅ **In short:**
+####  **In short:**
 - `jagged.size()` → **number of rows** (outer dimension).
 - `jagged.at(i).size()` → **number of columns in row i** (inner dimension).
 - This distinction matters **only for jagged structures**—in a perfectly rectangular 2D array, both would effectively be constant per row.

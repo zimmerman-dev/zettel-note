@@ -1,13 +1,12 @@
-#### 📝 Note: Type Casting 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Functions - Parameters & Arguments]], [[Mixed Expressions & Type Conversions & Promotion]]
 ___
-### 💥 Type Casting (Explicit Conversion)
+## 📝 Note: Type Casting 
 When you *manually* tell the compiler: ==*“Hey — treat this value as if it's a different type,”*==  that’s called **explicit type casting**.
 
 C++ gives you two ways to do this:
-#### ✅ Preferred: `static_cast`
+### 🔹Preferred: `static_cast`
 ```cpp
 static_cast<type>(value)
 ```
@@ -36,7 +35,7 @@ return 0;
 }
 ```
 > 🧠 _If you didn’t cast `total` to `double`, integer division would occur and the result would be wrong (truncated)._
-#### ⚠️ Avoid C-style Cast
+### 🔹Avoid C-style Cast
 ```cpp
 (type)value
 ```

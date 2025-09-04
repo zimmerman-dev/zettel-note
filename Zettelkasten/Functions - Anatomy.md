@@ -3,7 +3,7 @@
  ⌚10:56 pm  📆 Mon Aug 11
  🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Parameters & Arguments]], [[Functions - User-defined]] [[Functions - Return]]
 ___
-### 🧱 Function Anatomy
+###  🔹Function Anatomy
 A **function definition** provides the **actual implementation** of what a function does when it's called. It includes:
 - **Return type** — the type of value the function gives back (`int`, `void`, etc.)
 - **Function name** — how the function is called (see [[Variables and Objects]] for naming rules)
@@ -18,7 +18,7 @@ return_type function_name(parameter_type parameter_name, ...) {
 ```
 
 ---
-### 🔁 What Does "Return" Mean?
+### 🔹 What Does "Return" Mean?
 Returning a value means sending **a result back** to wherever the function was called. It's not the same as printing something on screen.
 
 ```cpp
@@ -32,14 +32,14 @@ int add(int x, int y) {
 int result = add(2, 3);
 std::cout << result; // prints 5
 ```
-###  🏷️ C++ Return Types 
+###  🔹 C++ Return Types 
 - `int` - Returns an integer 
 - `double` - Returns a floating point number
 - `bool` - Returns a true or false
 - `char` - Returns a single character
 - `std::string` - Returns a string
 - `void` - The No Return Value
-#### 🧤 Special Case: `void`
+####  Special Case: `void`
 If a function doesn’t return a value, use `void`:
 ```cpp
 void greet() {
@@ -49,7 +49,7 @@ void greet() {
 ```
 - You can still use `return;` to exit early
 - But **you cannot return a value**
-### 🧠 Pro Tips
+### 🔹 Pro Tips
 1. **Return Type Must Match**  
     If your function promises to return `int`, it must do so.  
     Otherwise, the compiler will throw an error.

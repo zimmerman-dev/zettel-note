@@ -1,9 +1,8 @@
-#### 📝 Note: Tuple 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Data Types]]
 ___
-## 📦 So, what’s a tuple?
+## 📝 Note: Tuple 
 A **tuple** is a way to **bundle multiple values together** into a single unit, even if those values are different types.
 
 Think of it like a tiny, unnamed package:
@@ -26,7 +25,7 @@ You can mix and match _any_ types:
 The only constraint is that **you must specify each type in order**, and you can only access elements by position—not by name.
 
 ---
-### 🧱 Declaring a Tuple
+### 🔹 1. Declaring a Tuple
 ```cpp title:Example.1
 std::tuple<int, std::string, bool> person;
 ```
@@ -36,7 +35,7 @@ The tuple above is holding three distinct types:
 2. a `std::string`
 3. a `bool`
 
-### 🏗 2. Initializing a Tuple
+###  🔹 2. Initializing a Tuple
 ```cpp title:Example.2
 std::tuple<int, std::string, bool> person = std::make_tuple(7, "Kepler", true);
 ```
@@ -49,7 +48,7 @@ The tuple above is holding three distinct types, initialized with values:
 question about the term "inferred types"
 
 ---
-### 📦 3. Accessing Tuple Elements
+###  🔹 3. Accessing Tuple Elements
 Syntax:   `std::get<N>(tuple_name);`
 
 - Like an array or vector, tuples are zero-indexed, but you can't access them exactly like an array or vector due to different types.
@@ -73,7 +72,7 @@ std::cout << "No..." << std::endl;
 }
 return 0;
 ```
-### 🪄 4. Structured Bindings (C++17+)
+###  🔹 4. Structured Bindings (C++17+)
 Syntax:   `auto [id, name, alive] = person;`
 
 - This unpacks the tuple into name variables
@@ -93,12 +92,12 @@ Syntax:   `auto [id, name, alive] = person;`
 > `"Kepler"` is a C-string literal, it often gets stored as `const char*` unless explicitly converted to `std::string`.)
 
 ---
-#### 🎯 Why Tuples Are Useful
+####  Why Tuples Are Useful
 Tuples are like **ad hoc structs** for when:
 - You don’t want to define a full struct or class
 - You just need to pass or return multiple values quickly
 - You don’t need named fields—just a temporary bundle
-#### 🤔 When _not_ to use a tuple
+####  When _not_ to use a tuple
 - If the values need **names**, not just positions → use a `struct`
 - If there are **too many elements** → it becomes unreadable
 - If you want **clarity over brevity** → tuples can get cryptic fast

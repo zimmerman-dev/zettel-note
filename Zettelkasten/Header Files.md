@@ -37,7 +37,7 @@ int add(int x, int y)
 
 Here is a diagram of what happens when you build this project.
 ![[headerfile.png]]
-### 🛡️ Header Guards
+### 🔹 Header Guards
 When a header file is included in **multiple translation units**, it may be processed **more than once**—which can lead to **multiple definition errors**.
 ####  Header Guards prevent this.
 The classic pattern looks like:

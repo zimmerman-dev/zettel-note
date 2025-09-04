@@ -1,10 +1,9 @@
-#### 📝 Note: While 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚4:30 pm  📆 Sat Aug 2
  🔗 **Related Concepts**: #note #cpp [[Loops - Overview]]
 
 ___
-## ➰ `While` **Loop**
+## 📝 Note: While 
 The `while` loop is a **pre-test loop** because the **condition is evaluated before** the loop body executes. If the condition is false initially, the loop body will never run. The loop continues to execute as long as the condition remains true.
 
 ```cpp
@@ -12,11 +11,11 @@ while (condition) {
     statements;
 }
 ```    
-#### **How It Works**
+### 🔹 **How It Works**
 1. Evaluates the condition **before every iteration**.
 2. If the condition evaluates to `true`, the loop body executes, and the condition is checked again.
 3. This process repeats until the condition evaluates to `false`, or a `break` keyword forces the loop to terminate.
-#### ✅ **Example 1:** Infinite Loop
+####  **Example 1:** Infinite Loop
 ```cpp
 int i {1};
 
@@ -25,7 +24,7 @@ while (i < 5) {
 }
 ```
 In this example, the condition `i < 5` is **always true** because `i` is never modified inside the loop. Without an increment or a `break`, there’s nothing to make the condition false. This called an **infinite loop.**
-#### ✅ **Example 2:** Incrementing Loop
+####  **Example 2:** Incrementing Loop
 ```cpp
 int i {1};
 
@@ -34,7 +33,7 @@ std::cout << i << std::endl;
 ++i; 
 ```
 In this example, the loop iterates 5 times, because the condition *remains*  true 'while' i is **less** than 5.  Logically, it prints `i` once, then iterates, checks the condition, and prints `i` again *while* the condition remains true.
-#### ✅ **Example 3:** Even Numbers
+####  **Example 3:** Even Numbers
 ```cpp
 int i {1};
 int j {1};
@@ -56,7 +55,7 @@ std::cout << "Iteration count: " << j << std::endl;
 >- `++i` (prefix) increments `i` **before** its value is used in an expression.
 >- `i++` (postfix) increments `i` **after** its value is used in an expression.
 >- Here, because the increment is a standalone statement, there’s no difference in behavior.
-#### ✅ **Example 4:** Arrays
+####  **Example 4:** Arrays
 ```cpp
 int scores [] {100,90,80};
 int i {0};
@@ -73,7 +72,7 @@ In this example, the loop continues **as long as** `i` is less than `3` (the num
 - **Iteration 2**: `i = 1`, prints `scores[1]` → 90
 - **Iteration 3**: `i = 2`, prints `scores[2]` → 80 
 - After this, `i` becomes `3`, the condition `i < 3` fails, and the loop exits.
-#### ✅ **Example 5:** Input Validation
+####  **Example 5:** Input Validation
 ```cpp
 int number {};
 
@@ -88,7 +87,7 @@ std::cin >> number;
 std::cout << "Thanks!";
 ```
 In this example, the program asks for an integer. *if* the user enters an integer 100 or more, the condition is `true` so it asks again. The loop continues until the user enters a valid number.
-#### ✅ **Example 6:** Input Validation - Bool Flag
+####  **Example 6:** Input Validation - Bool Flag
 ```cpp
 bool done {false};
 int number {0};
@@ -107,13 +106,13 @@ while (!done) {
 n this example, a **Boolean flag** (`done`) controls the `while` loop. The loop continues running as long as `done` is `false`. Each iteration, the program asks for user input and checks if it falls within the valid range. If the input is invalid, it prompts the user again. When the input is valid, the program sets `done` to `true`, causing the loop to terminate.
 #### Difference?: 
 The first input validation uses the loop condition directly, while the second uses a Boolean flag to explicitly control when to exit.
-#### 📝 **When to Use**
+####  **When to Use**
 Use a `while` loop when you want a block of code to keep executing **as long as** a certain condition remains true. 
 
 - ✅ Input validation 
 - ✅ Waiting for events
 - ✅ repeating actions until a stop condition occurs.
-#### ✅ **Key Difference from `for`**
+### 🔹 **Key Difference from `for`**
 - `for` puts **initialization**, **condition**, and **increment** neatly at the top.
 - `while` only handles the condition—you control everything else explicitly.
 This makes `while` **better for loops where you don’t know how many iterations are needed** (e.g., reading input until EOF).

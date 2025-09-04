@@ -3,19 +3,19 @@
  🔗 **Related Concepts**: #note #cpp [[Literals & Operators]], [[Control Flow]], [[Data Types]]
 ___
 ## 📝 Note: Boolean Logic
-### ✅ What is Boolean Logic?
+### 🔹 What is Boolean Logic?
 - Named after **George Boole**, based on true/false values.
 - In C++, `bool` is a built-in type:  
   - `true` → 1  
   - `false` → 0  
-#### 🤓 The "truthy-falsey" Caveat
+####  The "truthy-falsey" Caveat
 - While it is true that `true` prints as `1` and `false` prints as `0` by default; under the hood, any non-zero scalar type, even negative numbers are "*truthy*" and treated as `true` in Boolean context.
 - This concept is used everywhere but especially in `if`, `while`, `for`, ternary `?:`, etc.
-### ✅ Boolean Operators (Logical)
+### 🔹 Boolean Operators (Logical)
 - `&&` → Logical AND (true if **both** conditions are true)  
 - `||` → Logical OR (true if **at least one** condition is true)  
 - `!`  → Logical NOT (inverts true/false)  
-### ✅ Boolean Operators (Relational)
+### 🔹 Boolean Operators (Relational)
 - `==` → Equal to  
 - `!=` → Not equal to  
 - `<`, `>`, `<=`, `>=` → Comparisons that also return `bool`
@@ -27,12 +27,12 @@ This is why **non-boolean expressions** can still be used directly in conditions
 if (x)   // true if x != 0
 if (!x)  // true if x == 0
 ```
-### ✅ Short-Circuit Evaluation
+### 🔹 Short-Circuit Evaluation
 - **Logical operators (`&&` and `||`) evaluate from left to right**.  
 - Evaluation **stops** as soon as the result is determined:
   - `A && B` → if `A` is **false**, `B` is not evaluated.  
   - `A || B` → if `A` is **true**, `B` is not evaluated.  
-#### 🔹 **Why this matters**
+####  **Why this matters**
 - **Prevents errors**:
   ```cpp
   if (x != 0 && (10 / x > 2)) { ... } // avoids division by zero
@@ -51,7 +51,7 @@ if (!x)  // true if x == 0
 | Enums    | `0` / `RED=1`     | `false` / `true`   | Same rule — zero = false            |
 
 ---
-### ✅ Using `boolalpha`
+### 🔹 Using `boolalpha`
 ```cpp
 std::cout << (5 > 3);                     // prints 1 (true as numeric)
 std::cout << std::boolalpha << (5 > 3);   // prints true (flag changes representation)
@@ -62,12 +62,12 @@ std::cout << std::noboolalpha << (5 > 3); // prints 1 again (reset to default)
 - When enabled, Booleans print as `true` or `false` instead of `1` or `0`.
 - `std::noboolalpha` resets the stream back to the **default numeric representation**.
 ---
-### ✅ Conditional Expressions
+### 🔹 Conditional Expressions
 - `if`, `while`, `for`, and the ternary `?:` all rely on Boolean results.  
 - Any non-zero value in a condition is treated as `true`. (We can reconsider this as we learn more about implicit conversions later)
 
 ---
-### ✅ Examples
+### 🔹 Examples
 ```cpp
 bool isAdult = (age >= 18);
 if (isAdult && hasID) {
@@ -75,7 +75,7 @@ if (isAdult && hasID) {
 }
 ```
 ___
-## 🧠 Boolean Logic Recap
+##  Boolean Logic Recap
 Boolean logic in C++ deals with **true/false values** and **expressions** that evaluate to those values.
 - In C++, `bool` is a built-in type.
 - `true` → stored as `1`

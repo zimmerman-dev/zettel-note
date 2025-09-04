@@ -1,9 +1,8 @@
-#### 📝 Note: Loops 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:36 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Boolean Logic]] , [[Literals & Operators]] , [[Statements and Expressions]] , [[Loops - For]] , [[Loops - While]] , [[Loops - Do While]] , [[Loops - Ranged-based For]] , [[Loops - Nesting]] , [[C++ Basics]]
 ___
-## ➿ **What are Loops?**
+## 📝 Note: Loops
  Loops are part of the third basic building block of programming, **iteration.** Iteration, or repetition allows the execution of a statement or block of statements repeatedly. These loops are made up of "loop conditions" and a body which contains the statements to repeat.
 ##### **Universal Concepts**
 - **Loop Control Variable** – governs iteration and determines when the loop stops.
@@ -15,7 +14,7 @@ ___
 - Modifying a container incorrectly while iterating.
 
 ---
-### 🎛️ **Control Statements**
+### 🔹 **Control Statements**
 - `break` – exits the loop early.
 	- No further statements in the body of the loop are executed
 	- Loop is immediately terminated
@@ -28,7 +27,7 @@ ___
 - `return` – exits the entire function, not just the loop.
 
 ---
-### 📚 **Loop Types**
+### 🔹 **Loop Types**
 #### [[Loops - For |For Loops]] 
 - Controlled iteration with explicit index handling.
 #### [[Loops - Ranged-based For | Ranged based For loops]] 

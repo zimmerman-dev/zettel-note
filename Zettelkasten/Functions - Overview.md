@@ -18,8 +18,8 @@ As programs grow, writing everything in one block becomes messy and hard to mana
 - **main()**: A function where to program starts execution when it is run.
 - We can create [[Functions - Built-in|our own functions]] and their are [[Functions - Built-in|built-in functions]].
 - The function initiating the function call is the **caller**, and the function being called (executed) is called the **callee**
-### 📚 Built-in vs. User-defined Functions
-#### 🛠️ User-defined Functions
+### 🔹 Built-in vs. User-defined Functions
+####  User-defined Functions
 Functions you write yourself to encapsulate logic specific to your program.
 **Example**:
 ```cpp
@@ -31,13 +31,13 @@ int add(int x, int y) { // Function Header
 > **Function Header** tells the compiler about existence of the function. 
 > **Function Body** tells the compiler what the function does.
 > ___
-#### ✅ Built-in Functions
+####  Built-in Functions
 Provided by the language or standard library headers like `<iostream>`, `<cmath>`, `<algorithm>`, etc.
 **Example**:
 ```cpp
 std::cout << std::sqrt(16); // Uses built-in functions from <iostream> and <cmath>
 ```
-### What's in a function?
+### 🔹 What's in a function?
 ![[Function Structure.png]]
 In the image above, we see:
 - the `returnType` in blue. 

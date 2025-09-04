@@ -2,7 +2,7 @@
  ⌚6:21 pm  📆 Sun Aug 31
  🔗 **Related Concepts**: #note #cpp  [[Functions - Built-in]] , [[Iostream]] , [[C++ Syntax Reference]] , [[Constants]] , [[Standard Library(STUB)]]
 ___
-### 🧩 What is the Preprocessor?
+###  🔹 What is the Preprocessor?
 The **preprocessor** runs _before_ compilation. It prepares your source code by performing a series of **text transformations**.
 #### What it does:
 - Strips blank lines (not all whitespace)
@@ -12,16 +12,16 @@ The **preprocessor** runs _before_ compilation. It prepares your source code by 
 
 >These changes happen **in-memory or via temp files**—your actual `.cpp` source isn't modified.
 > ---
-### 📦 Translation Unit
+###  🔹 Translation Unit
 Once preprocessing is complete, you get a **translation unit**:
 > A single `.cpp` file + all its headers (recursively `#included`) + all macro expansions.
 
 This translation unit is what the **compiler** then compiles.
 > Related fact: The full process of preprocessing → compiling → linking is called **translation** (as in “translating to machine code”).
 ---
-### 🛠 Preprocessor Directives
+###  🔹 Preprocessor Directives
 These start with `#` and end with a **newline** (not a semicolon). They are instructions to the **preprocessor**, not the compiler.
-#### 📥 `#include`
+####  `#include`
 Replaces the directive with the full contents of the included file.
 ```cpp
 #include <iostream>   // standard library
@@ -44,7 +44,7 @@ int main() {
 
 We'll explore `#include` more in [[Header Files]].
 ___
-### Macro Defines
+### 🔹 Macro Defines
 The `#define` directive can be used to create a macro. In C++, a **macro** is a rule that defines how input text is converted into replacement output text.
 #### object-like & function-like macros
 The two basic types of macros are *object and function-like* macros. **Function-like** macros act like functions, and serve a similar purpose. Their use is generally considered unsafe, and almost anything they can do can be done by a normal function. On the other hand, *object-like* macros can be defined in one of two ways.

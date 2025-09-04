@@ -3,9 +3,9 @@
  🔗 **Related Concepts**: #note #cpp [[C-Style Strings]] [[string]] [[Iostream]] 
 ___
 ## 📝 Note: Text & Stream Manipulation
-##  `<cctype>` & `(ctype.h)`
+###  🔹`<cctype>` & `(ctype.h)`
 This header declares a set of functions to classify and transform individual characters.
-#### 🔹 **Character Classification**
+####  **Character Classification**
 These check what kind of character you’re dealing with:
 - `std::isalnum(c)` → checks if `c` is alphanumeric (letter or digit) 
 - `std::isalpha(c)` → checks if `c` is alphabetic
@@ -14,7 +14,7 @@ These check what kind of character you’re dealing with:
 - `std::isupper(c)` → checks if `c` is uppercase
 - `std::isspace(c)` → checks if `c` is whitespace (`' '`, `\n`, `\t`, etc.)
 - `std::ispunct(c)` → checks if `c` is punctuation (`! , . ;` etc.)
-#### 🔹 **Character Conversion**
+####  **Character Conversion**
 These transform characters:
 - `std::tolower(c)` → converts `c` to lowercase
 - `std::toupper(c)` → converts `c` to uppercase
@@ -23,7 +23,7 @@ These transform characters:
 - `std::isprint(c)` → checks if `c` is printable (including space)
 - `std::isgraph(c)` → checks if `c` is any printable character except space
 - `std::isxdigit(c)` → checks if `c` is a valid hexadecimal digit (`0–9, A–F, a–f`)
-## ✅ **Example Usage**
+####  **Example Usage**
 ```cpp
 #include <iostream> 
 #include <cctype>  
@@ -44,7 +44,7 @@ You’ll often use `<cctype>` functions when:
 
 These functions are **the building blocks** for a lot of string manipulation.
 ___
-### 📚 `<cstring>` — String Manipulation Functions
+###  `<cstring>` — String Manipulation Functions
 These functions work directly on C-style strings (`char*` or `char[]`):
 
 |         Function         |                  Purpose                  |

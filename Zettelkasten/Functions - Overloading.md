@@ -1,11 +1,10 @@
-#### 📝 Note: Functions - Overloading 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:11 am  📆 Tue Aug 12
  🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Parameters & Arguments]], [[Type Casting]]
 ___
-## ✍️ What is Function Overloading?
+## 📝 Note: Functions - Overloading 
 Function overloading lets you define multiple functions with the same name, as long as their **parameter lists** are different.
-### 😮 Why?
+### 🔹 Why?
 - Makes code cleaner and more intuitive
 - Allows you to use the same function name for related operations that logically belong together, like printing or arithmetic. This keeps your code clean and avoids bizarre, complex naming conventions.
 - Improves readability when the function's *concept* is the same, but the data types are different
@@ -30,7 +29,7 @@ When you declare multiple functions with the same name, the compiler uses their 
 **⚠️ Reminder:** The return type **is not** part of the function signature and cannot be used to distinguish overloads.
 
 > 💡 So even though two functions have the same name, they're treated as completely different functions by the compiler if their parameter lists are different.
-### 🧪 Overload Resolution in Action
+### 🔹 Overload Resolution in Action
 You can define overloaded functions directly or by using prototypes (forward declarations).
 ```cpp
 #include <iostream>
@@ -55,7 +54,7 @@ int main() {
 	return 0;
 }
 ```
-### ⚠️ **Rules and Behaviors**
+### 🔹 **Rules and Behaviors**
 1. ✅ Overloaded functions must differ by parameter type, number, or order,
 2. ⛔ You **cannot** overload by just changing the return type
 3. ✅ Overloading happens at compile time (this is static polymorphism - more on that later)
@@ -65,7 +64,7 @@ int main() {
 void foo(int x = 10);  // Ambiguous if there's also a foo()
 void foo();            // ❌ Compiler error: call to foo() is now ambiguous
 ```
-### 🚫 When **Not** to Use Function Overloading
+### 🔹 When **Not** to Use Function Overloading
 Function overloading is powerful, but it can hurt more than help when misused. Avoid it when:
 - Function meaning diverges too much
 - Ambiguity creeps in

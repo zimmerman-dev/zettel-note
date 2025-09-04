@@ -3,7 +3,7 @@
  ⌚2:07 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Sizeof]], [[Data Types]], [[Constants]]
 ___
-### Sizes of integral types
+### 🔹 Sizes of integral types
 
 >[!info]
 >This header defines constants with the limits of fundamental integral types for the specific system and compiler implementation used.

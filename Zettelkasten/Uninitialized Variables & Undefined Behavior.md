@@ -3,7 +3,6 @@
  🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]] , [[Variables and Objects]] , [[Memory Management - Basics]]
 ___
 ## 📝 Note: Uninitialized Variables & Undefined Behavior
-### Uninitialized Variables - Important Rules!
 - In **C/C++**, local variables are **not automatically initialized**.
     
 ```cpp
@@ -14,7 +13,7 @@ int x;   // ❌ contains garbage until initialized
     _(We’ll get into globals later.)_
 - When a variable is declared but **not initialized**, the memory at its address already holds **whatever random bits** were there before. That’s your **“garbage value.”**
 ---
-### ⚡ Key Definitions
+### 🔹 Key Definitions
 - **Initialized** → The object **was** given a value **at the point of definition**.
 - **Uninitialized** → The object **hasn’t been assigned** a known value yet.
 - **Assigned** ≠ **Initialized** → Assigning a value later **doesn’t retroactively make it initialized at declaration**.
@@ -35,7 +34,7 @@ In other words:
 > The compiler _doesn’t know_ what’s supposed to happen…  
 > and therefore _anything_ can happen.
 ---
-### 🤒 Symptoms of UB
+### 🔹 Symptoms of UB
 Your program **might**:
 1. Produce different results every run.
 2. Produce the **same wrong** result every time.
@@ -48,20 +47,20 @@ Your program **might**:
 > 💡 **The insidious part:**  
 > UB doesn’t always **look** broken. Sometimes it “works” — until it doesn’t.
 ---
-### Quick Mental Model — **Schrödinger’s Box 🧠**
+### 🔹Quick Mental Model — **Schrödinger’s Box** 
 _(Keeps the concept sticky without breaking your tone.)_
 
 Think of an uninitialized variable as a **sealed box**:
 - You **know** the box exists ✅
 - But you have **no idea** what’s inside ❌
 - Inside could be:
-    - 🎁 A valid value
-    - 🧨 A crash trigger
-    - 🦑 Random garbage data
+    -  A valid value
+    -  A crash trigger
+    -  Random garbage data
     - 
 Until you **put a value in** (initialize it), **opening the box** (using the variable) = **chaos**.
 ---
-## Best Practices
+### 🔹Best Practices
 
 Always initialize variables:
 ```cpp
@@ -85,5 +84,6 @@ T/F - Local variables auto-initialized in C++?|||❌ No, they hold **indetermina
 Best way to safely initialize variables?|||`int x{};  // ✅ zero-initialize` 
 
 How to catch UB at compile time?|||`g++ -Wall -Wextra -Wuninitialized` 
-#flashcards
 
+
+#flashcards

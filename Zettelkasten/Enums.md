@@ -102,11 +102,11 @@ switch (input) {
 }
 ```
 💡 _Note:_ Enums don't automatically support input/output. They must be **converted** to/from a type like `int` or `char`.
-### 🧭 Where Should You Define an `enum`?
+### 🔹 Where Should You Define an `enum`?
 You can define an enum:
 1. **Outside of** `main()` *(most common)*
 2. **Inside of** `main()` *(legal, but often limiting)*
-#### ✅ Defining Outside `main()`
+####  Defining Outside `main()`
 ```cpp
 enum TaskOption {
 Add,
@@ -126,7 +126,7 @@ return 0;
 - Makes future reuse easier (e.g., if you split your menu into separate functions).
 
 >🔧 _Think of this like defining a custom data type — you wouldn’t want that locked inside `main()`._
-#### 😐 Defining Inside `main()`
+####  Defining Inside `main()`
 ```cpp
 int main() {
 	enum TaskOption {
@@ -144,10 +144,10 @@ int main() {
 - Can't reuse in other functions
 - Makes refactoring a pain in the balls
 - Can feel "buried" in a large function
-#### 🧪 Side Note: Function Scope vs Global Scope
+####  Side Note: Function Scope vs Global Scope
 You *can* technically define an enum inside any block scope, like inside a function, loop, or class, but it's rarely worth doing so unless you're isolating something on purpose. General rule of thumb is to define enums globally if they describe general concepts used across functions.
 ___
-### 🔚 `#define` vs `const` vs `enum`
+###  `#define` vs `const` vs `enum`
 
 | Feature         | `#define`            | `const`                     | `enum`                     |
 | --------------- | -------------------- | --------------------------- | -------------------------- |
@@ -157,5 +157,5 @@ ___
 | Debuggable?     | ❌ Hard to debug      | ✅ Shows in debugger         | ✅ Shows in debugger        |
 | Named grouping? | ❌ No                 | ❌ No                        | ✅ Groups related constants |
 | Const expr?     | ❌ Not evaluated      | ✅ Evaluated at compile-time | ✅ Same                     |
-### 🚀 **`enum` vs `enum class`**
+###  **`enum` vs `enum class`**
 TBD

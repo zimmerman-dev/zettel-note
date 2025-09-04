@@ -1,9 +1,8 @@
-#### 📝 Note: Data Types 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:19 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Variables and Objects]], [[Constants]], [[Literals & Operators]]
 ___
-#### Primitive Data Types:
+## Primitive Data Types
 These are the fundamental data types implemented directly by the C++ language. These include:
 
 >[!info] Character Types
@@ -58,7 +57,7 @@ These are the fundamental data types implemented directly by the C++ language. T
 
 >[!question] Remember:
 >Unlike higher level programming languages, strings are not built in data types. String manipulation requires the use of the [[string|<string>]] library.
-#### Type Sizes
+### 🔹 Type Sizes
 The size of the data types are expressed in bits, which means that the more bits a data type can hold means the more values that can be represented. Thus the more bits also means the more storage required. Memory management is an important feature to understand in C++.
 
 | Size (in bits) | Representable Values       |      |
@@ -68,3 +67,18 @@ The size of the data types are expressed in bits, which means that the more bits
 | 32             | 4,294,967,296              | 2^32 |
 | 64             | 18,446,744,073,709,551,615 | 2^64 |
 [[Sizeof|see more on the sizeof operator for more details]]
+
+## Primitive Data Types
+### `char` 
+- Variables of type `char` can hold 8-bit ASCII characters A-Z. It can also be used as a small `int` within the `char` range. 
+- **8 bits / 1 bytes** 
+```css
+|  Type  | Typical Range |
+|--------|---------------|
+|  Char  | -128 to 127   |
+| S-char | -128 to 127   |
+| U-char |   0 to 255    |
+```
+---
+### `int`
+Variables of type `int` can hold non-fractional numbers. There are several varieties of `int` defined in C++, and we will cover those as well.

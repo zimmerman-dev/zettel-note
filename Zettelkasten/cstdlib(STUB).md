@@ -5,7 +5,7 @@
 
 ___
 
-### 🎲 `<cstdlib>` — String Conversion Functions
+### 🔹 `<cstdlib>` — String Conversion Functions
 
 These functions convert `char*` → numeric types (and vice versa in some cases):
 

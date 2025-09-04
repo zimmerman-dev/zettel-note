@@ -2,16 +2,16 @@
  ⌚11:00 pm  📆 Mon Aug 11
  🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Variables and Objects]]
 ___
-### ## 📝 Note: Functions - Scope, Lifetimes, and Temporaries
-### Local Variables
+## 📝 Note: Functions - Scope, Lifetimes, and Temporaries
+### 🔹Local Variables
  Variables defined within the body of a function are called **local variables**. Function parameters are generally considered to be local as well.  
-### Local Variable Lifetime
+### 🔹Local Variable Lifetime
 - When a variable is defined (e.g. `int x;`), it is **instantiated** — meaning memory is allocated — when that statement is executed.
 - Function parameters are instantiated and initialized **when the function is entered**.
 - Variables inside the function body are instantiated at the **point of definition**, not at the start of the function.
 
 > “An object’s **lifetime** is defined as the time between its creation and destruction.”
-### 🌀 LIFO (Last-In, First-Out) Lifetime Rule
+###  LIFO (Last-In, First-Out) Lifetime Rule
 When variables go out of scope (such as at the end of a function or block), they are destroyed in the **reverse order** they were instantiated.
 
 ```cpp
@@ -31,8 +31,8 @@ return 0;
 ```
 
 When an object is destroyed, its memory becomes invalid and it can no longer be used.
-### 🔭 Scope
-#### 🔬 Local Scope (a.k.a. Block Scope)
+### 🔹 Scope
+####  Local Scope (a.k.a. Block Scope)
 An identifier’s **scope** determines where the identifier can be seen and used within the source code.
 - If an identifier is **in scope**, it can be referenced.
 - If it is **out of scope**, it cannot be referenced.
@@ -52,7 +52,7 @@ Local variable identifiers have **local scope** — they are accessible from the
 
 > Scope is a **compile-time property**, and trying to use an identifier that is not in scope will result in a compile-time error.
 > ___
-#### ⛔ Out-of-scope vs. "Going Out of Scope"
+####  Out-of-scope vs. "Going Out of Scope"
 - **Out of scope**  
 Means a variable or identifier **cannot be accessed** from the current location in the code.
 - **"Going out of scope"**
@@ -75,7 +75,7 @@ int main() {
 ```
 >You could rename `a` and `b` to `x` and `y`, and the program would still run correctly — because **each set of variables exists in its own scope**. Their names don’t conflict.
 
-### 🧪 Temporary Objects
+### 🔹 Temporary Objects
 - A **temporary object** (aka **anonymous object**) is an unnamed object created by the compiler to hold a value **briefly**.
 - Temporary objects have **no identifier**, **no scope**, and are destroyed **at the end of the full expression** in which they are created.
 **Example:**

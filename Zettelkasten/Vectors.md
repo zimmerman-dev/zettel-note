@@ -1,15 +1,14 @@
-#### 📝 Note: Vectors 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Arrays]], [[Functions - Passing Arrays & Vectors]], [[Loops - Ranged-based For]]
 ___
-## 🔢 Vectors (C++)
+## 📝 Note: Vectors 
 A vector is an *class template* container defined in the **Standard Template Library (STL)**. 
 * You must include the `<vector>` header.
 * It belongs to the `std` namespace.
-### Syntax
+### 🔹 Syntax
 `std::vector<element_type>` `vector_name;`
-### What is a vector?
+### 🔹 What is a vector?
 - **A compound data structure** that is dynamically sized and holds collection of elements.
 - All elements are of the **same type**, stored contiguously in memory.
 - Each element can be **accessed directly** by index.
@@ -20,8 +19,8 @@ A vector is an *class template* container defined in the **Standard Template Lib
 >- Vectors provide tools like `.sort()` , `.reverse()` , `.find()`  , etc.
 >- Vectors support **bounds-checked access** with `.at()`; arrays do not.
 
----
-### Vector Declaration Styles
+___
+### 🔹 Vector Declaration Styles
 ```cpp title:Declarations
 std::vector<char> vowels;
 // Empty, clean – contains no elements
@@ -38,9 +37,8 @@ std::vector<int> tops(5, 3);
 std::vector<int> tops = {3, 3, 3, 3, 3};
 // Initializer list: explicitly sets each value
 ```
-
 ---
-### Indexing and Access
+### 🔹 Indexing and Access
 Accessing vector elements using **array syntax** (no bounds checking):
 `vector_name[element_index];`
 
@@ -59,9 +57,8 @@ std::cout << names[4] << std::endl;
 // Index:     0        1         2         3          4
 // Value:    tom      jon       joe       bob        jim
 ```
-
 ---
-### Access cont'd - `.at()` 
+### 🔹 Access cont'd - `.at()` 
 Accessing vector elements (vector syntax):
 `vector_name.at(element_index);`
 
@@ -98,7 +95,7 @@ nums.push_back(5); // 1, 2, 3, 4, 5
 ```
 
 ---
-### Memory - `.size()`
+### 🔹 Memory - `.size()`
 Returns the number of elements currently stored in the vector. 
 
 `vector_name.size()`
@@ -111,7 +108,7 @@ std::cout << nums.size() << std::endl; // 4
 It does **not** return the allocated memory capacity, only the number of the elements present.
 
 ---
-## 🟦 **2D Vectors in C++**
+### 🔹 **2D Vectors in C++**
 
 A **2D vector** is simply a `std::vector` where each element is another `std::vector`:
 
@@ -146,12 +143,12 @@ std::vector<std::vector<int>> vector2D {
 };
 ```
 
-### ✅ **Linear Mental Model**
+### 🔹 **Linear Mental Model**
 Think of it as a **linear plot of points** where the points on the line are organized into **containers**. The common way to think of 2D vectors is with outer and inner vectors with rows and columns. In the linear mental model, we don't use those words as they don't represent the linear mental model.
 
  Here's a visualization:
  ![[2DVectorModel.png]]
-### 🧠 Accessing a 2D Vector (Linear Mental Model)
+### 🔹 Accessing a 2D Vector (Linear Mental Model)
 Lets continue with the example above. 
 ```cpp
 std::vector<std::vector<char>> letters {
@@ -190,7 +187,7 @@ letters[i][j];
 See [[Loops - Nesting]] for information on iterating through vectors and 2D vectors.
 
 ---
-### Vector Rules (C++)
+### 🔹 Vector Rules (C++)
 - Vectors must be declared with a single, specific element type.
 - All elements are stored contiguously in memory (like arrays).
 - Vectors are dynamically resizable -- they grow as needed.

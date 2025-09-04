@@ -1,9 +1,9 @@
-#### 📝 Note: Strings
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Iostream]]
 ___
-## String vs. `<string>`
+## 📝 Note: Strings
+### 🔹 String vs. `<string>`
 - In C++, a string is sequence of `chars`, similar to an array. They are indexed like an array, and can be accessed like an array.
 
 - `std::string` is a **class** in the **Standard Template Library (STL)**.
@@ -18,7 +18,7 @@ ___
 	- Can be converted to C-style strings
 
 ---
-### 🛠 Syntax – Declaring and Initializing
+### 🔹 Syntax – Declaring and Initializing
 ```cpp
 #include <string>
 
@@ -31,7 +31,7 @@ std::string s6 (3, 'X');    // XXX (repeated char)
 ```
 
 ---
-### 🐈 Concatenation
+### 🔹 Concatenation
 👉 **LEGAL**
 ```cpp
 std::string part1 {"C++"};
@@ -47,28 +47,28 @@ sentence = "C++" + " is powerful";  // C-style string literals can't be added
 ```
 
 ---
-### 🔡 Access Characters – `[]` and `.at()`
+### 🔹 Access Characters – `[]` and `.at()`
 ```cpp
 std::string name {"John"};
 
 std::cout << name[1];     // o
 std::cout << name.at(0);  // J
 ```
-### 🧵 Iteration
+###  🔹 Iteration
 ```cpp
 std::string name {"John"};
 for (char c : name) {
     std::cout << c;
 }
 ```
-### 📓 Comparing Strings
+###  🔹 Comparing Strings
 Operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
 - Compared character-by-character using ASCII values
 - Can compare:
     - Two `std::string` objects
     - `std::string` and C-style literals
     - `std::string` and C-style variables
-### 🔁 Substrings – `.substr()`
+### 🔹 Substrings – `.substr()`
 ```cpp
 std::string s1 {"This is a test"};
 
@@ -80,7 +80,7 @@ s1.substr(10, 4);  // "test"
 - Second argument: **number of characters to extract**
 
 ---
-### 🚿 Erasing and Clearing – `.erase()` and `.clear()`
+### 🔹 Erasing and Clearing – `.erase()` and `.clear()`
 ```cpp
 std::string s1 {"This is a test"};
 s1.erase(0, 5);  // "is a test"
@@ -88,7 +88,7 @@ s1.clear();      // Empties the entire string
 ```
 
 ---
-### 📏 Length – `.length()` / `.size()`
+### 🔹 Length – `.length()` / `.size()`
 ```cpp
 std::string s1 {"John"};
 s1.length();  // 4
@@ -97,7 +97,7 @@ s1.length();  // 4
 - Returns number of characters in the string
 
 ---
-### 📍 Searching – `.find()`
+### 🔹 Searching – `.find()`
 ```cpp
 std::string s1 {"This is a test"};
 
@@ -110,13 +110,13 @@ s1.find("pizza");  // std::string::npos
 - If not found: returns `std::string::npos`  
 - Optional second argument = start index
     - `s1.find('o', 5);`
-#### 🔁 Pattern Example:
+####  Pattern Example:
 ```cpp
 if (s1.find("pizza") == std::string::npos) {
     std::cout << "Not found!\n";
 }
 ```
-### 🧪 Checking Emptiness – `.empty()`
+### 🔹 Checking Emptiness – `.empty()`
 ```cpp
 std::string s1 {""};
 if (s1.empty()) {
@@ -125,7 +125,7 @@ if (s1.empty()) {
 ```
 
 ---
-### 〰 Input – `.getline()`
+### 🔹 Input – `.getline()`
 ```cpp
 std::string fullName;
 std::getline(std::cin, fullName);
@@ -133,7 +133,7 @@ std::getline(std::cin, fullName);
 
 - `std::cin >>` stops at whitespace and leaves `\n` behind
 - `getline()` reads the entire line including spaces
-#### 😬 Common Gotcha:
+####  Common Gotcha:
 ```cpp
 int age;
 std::string name;
@@ -141,7 +141,7 @@ std::string name;
 std::cin >> age;
 std::getline(std::cin, name);  // gets leftover \n
 ```
-#### 🛠 Fix:
+####  Fix:
 ```cpp
 std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 ```

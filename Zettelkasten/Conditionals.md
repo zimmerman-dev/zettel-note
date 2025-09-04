@@ -3,9 +3,9 @@
  ⌚12:48 am  📆 Tue Jul 29
  🔗 **Related Concepts**: #note #cpp [[Boolean Logic]] , [[Control Flow]] , [[Literals & Operators]], [[Statements and Expressions]] 
 ___
-### 📓 Selection Statements
+### 🔹 Selection Statements
 *"While statements are executed in the same order in which they appear, programs are not limited to a linear sequence of the statements."* – [cplusplus.com](https://cplusplus.com/doc/tutorial/control/)
-#### 🔹 `if` Statements
+####  `if` Statements
 ```cpp
 if (condition) {
     statement;
@@ -15,7 +15,7 @@ if (condition) {
 > If the condition is false, the block is skipped and the program continues.
 
 ---
-#### 🔹 `if-else` Statements
+####  `if-else` Statements
 ```cpp
 if (condition) {
     statement_1;
@@ -27,7 +27,7 @@ if (condition) {
 > In an `if-else`, **exactly one** of the two blocks executes.
 
 ---
-#### 🔹 Nested `if-else` Statements
+####  Nested `if-else` Statements
 ```cpp
 if (condition_1) {
     if (condition_1a) {
@@ -43,7 +43,7 @@ if (condition_1) {
 > However, **deep nesting** can hurt readability—`else if` is often cleaner.
 
 ---
-#### 🔹 `else if` Statements
+####  `else if` Statements
 ```cpp
 if (condition_1) {
     statement_1;
@@ -57,7 +57,7 @@ if (condition_1) {
 > If the first condition is false, the program checks the next `else if`, and finally executes the `else` block if none match.
 
 ---
-#### 🔹 `switch` Statements
+####  `switch` Statements
 ```cpp
 switch (control_expression) {
     case constant_1:
@@ -90,7 +90,7 @@ switch (x) {
 ```
 
 ---
-#### 🔹 Conditional (Ternary) Operator `?:`
+####  Conditional (Ternary) Operator `?:`
 ```cpp
 (condition) ? expr_1 : expr_2;
 ```

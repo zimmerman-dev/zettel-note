@@ -1,11 +1,10 @@
-#### 📝 Note: C++ Syntax Reference 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:06 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]], [[Literals & Operators]], [[Data Types]]
 ___
-# 📘 C++ Syntax Reference
+## 📘 C++ Syntax Reference
 A concise, topic-driven reference for fundamental C++ syntax
-## 🧱 Core Building Blocks
+### 🔹 Core Building Blocks
 - [[Statements and Expressions]]  
   → Learn how C++ programs are structured at the smallest level.
 - [[Literals & Operators]]  
@@ -18,7 +17,7 @@ A concise, topic-driven reference for fundamental C++ syntax
   → Syntax, arguments, return types, and function overloading.
 
 ---
-## 🧮 Control Flow
+###  🔹 Control Flow
 - [[Conditionals]]  
   → `if`, `else`, `switch`, ternary operator
 - [[Loops - Overview]]  
@@ -27,7 +26,7 @@ A concise, topic-driven reference for fundamental C++ syntax
   → `break`, `continue`, `return`, `goto`
 
 ---
-## 🧠 Advanced Basics
+###  🔹 Advanced Basics
 - [[Pointers and References]]  
   → Address-of (`&`), dereference (`*`), and memory basics
 - [[Arrays]]   &  [[Vectors]]  
@@ -38,7 +37,7 @@ A concise, topic-driven reference for fundamental C++ syntax
   → `#include`, `#define`, `#pragma once`
 
 ---
-## 🧰 Object-Oriented Tools
+###  🔹 Object-Oriented Tools
 - [[Classes and Objects(STUB)]]  
   → Defining and using classes
 - [[Constructors and Destructors]]  
@@ -49,8 +48,7 @@ A concise, topic-driven reference for fundamental C++ syntax
   → Base classes, virtual functions, and overrides
 
 ---
-## 🧪 Additional Features
-
+###  🔹 Additional Features
 - [[Namespaces]]  
   → Avoiding name collisions
 - [[Templates]]  
@@ -63,8 +61,7 @@ A concise, topic-driven reference for fundamental C++ syntax
   → `static_cast`, `dynamic_cast`, `reinterpret_cast`
 
 ---
-
-## 🔗 See Also
+###  🔹 See Also
 - [[CMake|CMakeLists.txt Reference]]  
   → For building and compiling C++ projects
 * [[Git|Git Essentials]]

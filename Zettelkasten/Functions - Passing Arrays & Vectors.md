@@ -1,9 +1,8 @@
-#### 📝 Note: Functions - Passing Arrays & Vectors 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:56 pm  📆 Wed Aug 20
  🔗 **Related Concepts**: #note #cpp [[Arrays]], [[Vectors]], [[Functions - Parameters & Arguments]], [[Functions - References & Pointers(STUB)]], [[Sizeof]]
 ___
-### Passing Arrays to Functions
+## 📝 Note: Functions - Passing Arrays & Vectors 
 We can pass an array to a function by providing square brackets in the formal parameter description like this:
 ```cpp
 void print_array(int nums[]); // ⚠️ Missing size info! The function has no idea how many elements to process. 
@@ -32,7 +31,7 @@ void print_array(int nums[], size_t size) {
 ```
 #### Potential Caveats
 Since we are passing the location of the array, a function can modify the actual array!
-#### 🔒 Preventing Modification with `const`
+####  Preventing Modification with `const`
 - We can tell the compiler that function parameters are const, which can help mitigate a problem where we don't want to modify the array.
 ```cpp
 void print_array(const int nums[], size_t size) {
@@ -43,7 +42,7 @@ void print_array(const int nums[], size_t size) {
 	}
 ```
 ___
-#### 📉 TLDR Arrays 
+####  TLDR Arrays 
 - When passed to a function, arrays **decay into raw pointers**
 - What the function receives is actually a `T*`, not a true array
 - This means:
@@ -61,8 +60,8 @@ void modifyArray(int* arr, int size);
 - You're passing a pointer to the first element.  
 - You must pass the size manually.
 ___
-### 🔍 Vectors and Arrays Are Not Passed the Same Way
-#### 📦 `std::vector<T>` behaves like a **normal object**
+### 🔹 Vectors and Arrays Are Not Passed the Same Way
+####  `std::vector<T>` behaves like a **normal object**
 - Can be passed **by value**, **by reference**, or **by const reference**
 - Passing it by value creates a **full copy** (like copying a `std::string`)
 - Passing it by reference allows the function to **modify the original**
@@ -73,9 +72,7 @@ ___
 
 void printV(std::vector<int>)
 ```
-
-
-### Passing Vectors to Functions
+### 🔹 Passing Vectors to Functions
 Explain _why_ this matters:
 - Vectors are large, dynamic containers.
 - Copying them is expensive unless necessary.

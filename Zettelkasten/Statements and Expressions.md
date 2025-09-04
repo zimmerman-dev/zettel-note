@@ -3,7 +3,7 @@
  🔗 **Related Concepts**: #note #cpp [[C++ Syntax Reference]], [[Literals & Operators]]
 ___
 ## 📝 Note: Statements and Expressions
-### 🔣 Expressions
+###  🔹Expressions
 At it's core, an **expression** is most basic building blocks of a program—a sequence of **operands** and **operators** that evaluates to a value.
 
 Expressions can be as simple as a *literal* or as complex as chain of operations. They're used to compute values, assign data, or make decisions.
@@ -16,13 +16,13 @@ fav_num              // Variable Expression (eval's to the value stored in fav_n
 a < b                // Relational Expression (eval's to true or false)
 a = b                // Assignment Expression (assigns b to a, returns the value of a)
 ```
-####  💡 Notes
+####   Notes
 - Every expression **produces a value**.
 - Even the assignment expression `a = b` yields the value assigned.
 - Expressions **can also have side-effects**, especially assignments or function calls.
 
 ---
-###  🧾 Statements
+###   🔹Statements
 A statement is a complete instruction that tells the computer to do something. In C++, a statement is the smallest unit of computation in C++, and they're terminated with a semicolon (`;`). Often contains expressions.
 
 C++ includes many types of statements:
@@ -41,7 +41,7 @@ for (int i = 0; i < 10; i++) {};    // Iteration statement
 ```
 
 ---
-#### 💡 Notes
+#### Notes
 - A statement may contain expression(s), but not all expressions are statements.
 -  Compound statements are blocks enclosed in `{}` that group multiple statements together.
 - Some statements, like `1.5 + 2.8`; , are valid but pointless if their result isn't used. They evaluate but produce no side-effects.

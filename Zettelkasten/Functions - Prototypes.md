@@ -3,7 +3,7 @@
  🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Overview]], [[Functions - User-defined]]
 ___
 ## 📝 Note: Functions - Prototypes 
-### 🤖 Function Prototypes
+### 🔹 Function Prototypes
 In small programs, it’s fine to define your functions before calling them. But in larger programs, this isn’t always practical — especially when functions are organized across multiple files.
 
 A **function prototype** (a type of *forward declaration*) is a declaration statement including the return type, function name, and parameter types to inform the compiler of the functions' existence before being defined.
@@ -24,7 +24,7 @@ void greet() {  // Function definition (can come later)
     std::cout << "Hello";
 }
 ```
-#### 🧠 Key Points
+####  Key Points
 - The prototype must match the function definition **exactly** — same return type, name, and parameter types.
 - If the prototype declares no parameters, you can’t pass arguments when calling the function.
 - A function can only have **one prototype** in a given scope.
@@ -32,7 +32,7 @@ void greet() {  // Function definition (can come later)
 - Default parameter values should be given **only** in the declaration, not in both places.
 
 ---
-### 📢 Forward Declarations
+### 🔹 Forward Declarations
 A **forward declaration** is a declaration the informs the compiler of an identifier (like a function, class, or variable) before its **full definition** appears in the code.
 In C++, a **function prototype** is itself a type of forward declaration.
 
@@ -52,7 +52,7 @@ int add(int a, int b) {
 ```
 
 ---
-### 📂 Forward Declarations Across Multiple Files
+### 🔹 Forward Declarations Across Multiple Files
 Forward declarations become especially important when your program spans **multiple files**.  
 In this setup, we typically place declarations in **header files** (`.h`) and definitions in **source files** (`.cpp`).
 #### Example Project Structure

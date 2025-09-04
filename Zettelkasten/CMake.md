@@ -3,8 +3,8 @@
  ⌚2:07 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #cpp #toolchain #note
 ___
-## ⚙️ CMake Basics – Minimal Reference
-### 📂 Typical Project Structure
+##  📝 CMake Basics – Minimal Reference
+### 🔹 Typical Project Structure
 ```title:tree
 ├── assets
 │   └── asset.jpg
@@ -17,7 +17,7 @@ ___
     ├── main.cpp
 
 ```
-### 📝 Minimal CMakeLists.txt
+###  🔹 Minimal CMakeLists.txt
 ```title:FileContents
 cmake_minimum_required(VERSION 3.16)
 
@@ -60,7 +60,7 @@ add_executable(${PROJECT_NAME} src/main.cpp)
 # Link additional libraries here
 # target_link_libraries(${PROJECT_NAME} PRIVATE your_library::your_library)
 ```
-### 🏗️ Building the Project
+### 🔹 Building the Project
 ```bash
 mkdir -p build
 cd build
@@ -74,7 +74,7 @@ cmake -S . -B build
 cmake --build build
 
 ```
-### 🏗️ Clean rebuild
+### 🔹 Clean rebuild
 ```bash
 rm -rf build
 mkdir build
@@ -82,7 +82,7 @@ cd build
 cmake ..
 cmake --build .
 ```
-### 🧠 Useful Tips
+### 🔹 Useful Tips
 - Use `-DCMAKE_EXPORT_COMPILE_COMMANDS=ON` for editor integration
 - `.gitignore` should exclude `build/`
 - CMake does not build inside your source directory—always use `/build/`

@@ -130,7 +130,7 @@ return 42; // ❌ error: cannot return a value from a void function
 }
 
 ```
-### **📌 Key Takeaways**
+### 🔹 Key Takeaways
 - Functions return **one value** to the caller via the `return` statement.
 - Returned values can be ignored, used directly, or stored.
 - `main()`’s return value is a **status code** for the operating system.

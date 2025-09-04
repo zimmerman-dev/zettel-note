@@ -1,9 +1,8 @@
-#### 📝 Note: Mixed-Type Expressions 
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:31 am  📆 Thu Jul 24
  🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Literals & Operators]], [[Type Casting]]
 ___
-### 🎭 Mixed-Type Expressions
+##  📝 Note: Mixed Expressions & Type Conversions & Promotion
 An expression involving **two or more different data types**, such as `int` and `double`.
 **Example:**
 
@@ -11,12 +10,11 @@ An expression involving **two or more different data types**, such as `int` and 
 - If operands are of different types, C++ will convert one
 - Important: automatic conversion can change the result of an expression (especially with `floats` and `ints` mixed together).
 - C++ will attempt to automatically convert types (coercion). If it can't, a compiler error will occur.
-### 🔄 Type Conversions 
-
->[!note] What is it?
->- Type conversion means **changing a value from one type to another.**
->- This happens all the time in C++ when you're doing math with different kinds of numbers.
-### 🔺Higher vs Lower Types
+###  🔹 Type Conversions 
+ What is it?
+- Type conversion means **changing a value from one type to another.**
+- This happens all the time in C++ when you're doing math with different kinds of numbers.
+### 🔹 Higher vs Lower Types
 Higher vs. Lower Types are based on the size of the values the **type** can hold. When C++ has to choose, it will **convert lower types to higher ones** to keep things safe.
 
 - `double` is **higher** than `int` (it can store decimals and bigger numbers)
@@ -33,10 +31,10 @@ auto result = a + b; //result is promoted to double
 - C++ *converts* `a` into a `double` automatically (**coercion**) so they match.
 
 ---
-### 🌀 Type Coercion 
+###  🔹 Type Coercion 
 As stated above, **Type Coercion** just means that C++ automatically (at compile time) converts one type into another without you doing anything.
 
-#### ✅ Widening Conversion **(Promotion)**
+####  Widening Conversion **(Promotion)**
 Promotion is when a type conversion/coercion moves from a smaller type to a larger type, i.e., `int -> double`, `char -> int`, etc. 
 - Bit size (e.g., `int` ➡️ `long`)
 - Range of values (e.g., `int` ➡️ `float`)
@@ -46,11 +44,11 @@ Promotion is when a type conversion/coercion moves from a smaller type to a larg
 short s = 42;
 int i = s; // short ---> int = widening ✅
 ```
-##### ☑️ Why it's **safe**??
+#####  Why it's **safe**??
 - Every `short` fits inside an `int`
 - No info lost
 - Compiler doesn't warn you
-#### ⚠️ Narrowing Conversion **(Demotion)**
+####  Narrowing Conversion **(Demotion)**
 Demotion is when conversion/coercion moves from a larger to smaller type, i.e., `double -> int` (*may* lose data!)
 - Inherent risk the destination type can't hold the value
 - you could lose:
@@ -64,10 +62,10 @@ float  f = d;      // double ➡️ float = narrowing (loss of precision)
 int    x = 50000;
 short  y = x;      // int ➡️ short = narrowing (possible overflow)
 ```
-##### 🚧 Why it's **unsafe**??
+#####  Why it's **unsafe**??
 - You might get wrong or surprising values
 - Compiler often warns (especially in modern C++)
-### 🧠 Numeric Ranges Cheat Sheet
+###  🔹Numeric Ranges Cheat Sheet
 |Type|Typical Bits|Range (signed)|
 |---|---|---|
 |`char`|8|-128 to 127|
@@ -75,21 +73,21 @@ short  y = x;      // int ➡️ short = narrowing (possible overflow)
 |`int`|32|±2 billion|
 |`float`|32|±3.4e38 (but ~6-7 digit prec)|
 |`double`|64|±1.7e308 (~15-16 digits prec)|
-### 📌 What You Actually Need to Know (Early On)
-##### 🥇 The  "Integer Ladder"
+### 🔹 What You Actually Need to Know (Early On)
+#####  The  "Integer Ladder"
 ```cpp
 bool >> char/short >> int >> long >> long long
 ```
 - Left to Right is "up the ladder" - Promotion"
 - Right to Left is "down the ladder" - "Demotion"
 >ℹ️ All values smaller than `int` are **promoted to `int`** in most arithmetic expressions, even `char`, `short`, and `bool`.
-##### 🥈 The "Floating Ladder"
+#####  The "Floating Ladder"
 ```cpp
 float >> double >> long double
 ```
 - ✅ Moving *up* is safe
 - ⚠️ Moving *down* loses precision
-##### 🥉 Signed vs. Unsigned 
+#####  Signed vs. Unsigned 
 ```cpp
 unsigned int u {10};
 int i {-1};
@@ -98,11 +96,11 @@ if (i < u) {...} // i gets converted to unsigned!
 ```
 - Signed + unsigned mixed together - unsigned wins.
 - if `i` is negative, it gets turned into a *huge* positive number
-### 📊 Types Hierarchy
+###  🔹Types Hierarchy
 Diagram for visual aid on types hierarchy for promotion and demotion here:
 [[Types Hierarchy]]
 
 ---
-### 🌡️ Type Casting
+###  Type Casting
 Continued: 
 [[Type Casting]]

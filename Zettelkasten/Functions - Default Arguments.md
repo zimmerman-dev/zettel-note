@@ -7,7 +7,7 @@ When a function is called, all arguments must be supplied—**unless** you provi
 
 **Default parameter** values can be written in the **prototype** or the **definition**, but **not both**. (Best practice is to put them in the prototype.)  
 They must also appear **at the tail end** of the parameter list—**you can’t follow a default parameter with a non-default one.**
-#### 🧩 So, What’s the Difference?
+####  So, What’s the Difference?
 A **default argument** is a value provided in a function declaration (or prototype) that is used if the caller does not supply an argument for that parameter.
 
 - A **default parameter value** is the value assigned in the function declaration or prototype:
@@ -20,16 +20,16 @@ A **default argument** is a value provided in a function declaration (or prototy
   ```
 
 Think of it this way:  
-👉 *You define the default parameter value once* — and  
-👉 *It becomes a default argument each time the caller omits that argument*.
+ *You define the default parameter value once* — and  
+ *It becomes a default argument each time the caller omits that argument*.
 
-##### ⚙️ Syntax
+#####  Syntax
 ```cpp
 return_type function_name(param1 = value1, param2 = value2, ...);
 ```
 > ⚠️ Default arguments must be placed **right to left**.  
 > ❌ You **cannot** have a parameter with a default followed by one without.
-##### ✅ Example
+#####  Example
 ```cpp
 void greet(std::string name = "Guest") {
 	std::cout << "Hello, " << name << "!\n";
@@ -48,12 +48,12 @@ int main() {
 
 >[!warning] ❗ **Use in Function Prototypes** ❗
 You typically place default arguments in function declarations (prototypes), not in definitions, to avoid redeclaration errors.
-### 🧠 When to Use
+### 🔹 When to Use
 Use default arguments and default parameter values when:
 - You want to provide optional parameters.
 - You want simpler function calls in most use cases.
 - You want to avoid writing multiple overloaded versions of a function.
-### 🛑 When **Not** to Use
+### 🔹 When **Not** to Use
 Avoid default arguments if:
 - They make the function's behavior hard to predict.
 - You're writing code for large teams or APIs where implicit behavior could be confusing.

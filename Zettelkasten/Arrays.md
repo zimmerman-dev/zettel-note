@@ -3,24 +3,24 @@
  🔗 **Related Concepts**: #note #cpp[[Data Types]], [[Sizeof]], [[Functions - Passing Arrays & Vectors]], [[Vectors]]
 ___
 ## 📝 Note: Arrays
-### Syntax
+### 🔹 Syntax
 ```cpp
 Element_Type array_name [constant number of elements] = { value1, value2, ...};
 ```
-### What is an array?
+### 🔹 What is an array?
 - A **compound data structure** — a fixed-size collection of elements.
 - All elements are of the **same type** and stored in **contiguous memory locations**.
 - Each element can be **accessed directly** by its index.
 
 ---
-### Array Declaration Styles
+### 🔹 Array Declaration Styles
 ```cpp title:Declarations
 int nums[5];               // Uninitialized — contains garbage
 int nums[3] = {};          // All elements zero-initialized
 int nums[] = {1, 2, 3, 4}; // Size inferred from initializer
 ```
 ---
-### Why use arrays?
+### 🔹 Why use arrays?
 Arrays let you group related data under a single name, instead of declaring many individual variables.
 
 ```cpp title:Syntax
@@ -34,7 +34,7 @@ std::string car4 = "Chrysler";
 std::string cars[4] = {"Volvo", "Ford", "BMW", "Chrysler"};
 ```
 ---
-### Indexing and Access
+### 🔹 Indexing and Access
 Arrays are **zero-indexed**, meaning the first element is at index `0`. The last element's index in an array is always `-1`.
 
 ```cpp title:Access
@@ -45,7 +45,7 @@ std::cout << cars[3]; // Chrysler
 ```
 >So for `cars[4]`, valid indices are `0` to `3`
 ---
-### Access cont'd
+### 🔹 Access cont'd
 Think of an array like a row of labelled boxes:
 
 ```cpp title:Index
@@ -61,7 +61,7 @@ You can:
 - **Read** an element: `std::string x = cars[2];`
 - **Write** to an element: `cars[0] = "Honda";`
 ---
-### Array Rules (C++)
+### 🔹 Array Rules (C++)
 - The **size** of a raw array must be known at **compile time**.
   - Cannot be based on user input or runtime values.
   - Must use a compile-time constant (e.g., `const int size = 5;`).
@@ -72,7 +72,7 @@ You can:
   std::cout << cars[4]; // ❌ No bounds checking in raw arrays
   ```
 ---
-### If you need dynamic sizing...
+### 🔹 If you need dynamic sizing...
 Use `std::vector`.
 
 Vectors behave like flexible arrays:

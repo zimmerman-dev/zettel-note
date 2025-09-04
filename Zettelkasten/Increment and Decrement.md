@@ -1,11 +1,10 @@
-#### 📝 Note: Increment and Decrement
- ♻️ (*MinGW, Windows11, Codelite*)   
+♻️ (*MinGW, Windows11, Codelite*)   
  ⌚ 11:36 pm  🗓️: Tue Jul 22
  🔗 **Related Concepts**: #note #cpp [[Literals & Operators]], [[Loops - For]]
 ___
-## ➕➖ Increment and Decrement Operators
+## 📝 Note: Increment and Decrement
 Increment (`++`) and decrement (`--`) operators increase or decrease a value by one. Though they look simple, they behave differently depending on where they appear in an expression.
-### 📚 What are they?
+### 🔹 What are they?
 - `++` adds one to a variable.
 - `--` subtracts one from a variable.
 #### Syntax:
@@ -20,7 +19,7 @@ i--;   // post-decrement
 They’re technically **unary operators**—not assignment operators—but they do **perform arithmetic** and then **assign the result** back to the variable.
 
 ---
-### ⚙️ Prefix vs Postfix
+### 🔹 Prefix vs Postfix
 #### What’s the difference?
 - `++x`: pre-increment happens **before** the value is used
 ```cpp
@@ -76,7 +75,7 @@ Final values:
 - Post-increment (x++): "Use *then* increment"
 - The result affects the expression it's used in, not the whole statement.
 ```
-### 🔁 Common Use Cases
+### 🔹 Common Use Cases
 - Most often used in **loops**:
 
     ```cpp
@@ -95,17 +94,15 @@ Final values:
 ```
 
 - **Avoid using the same variable more than once in an expression involving `++` or `--`.**
-### 👷‍♂️ Can they be overloaded?
+### 🔹 Can they be overloaded?
 Yes—C++ allows you to define `++` and `--` for your own classes.
 #### Syntax:
 ```cpp
 MyClass& operator++();       // Prefix
 MyClass operator++(int);     // Postfix — note the `int` is just a dummy parameter
 ```
-
 ---
-### ❌ When _not_ to use them
-
+### 🔹 When _not_ to use them
 - Don’t use `x++` or `--x` more than once in a single expression.
 - Avoid complex expressions where the evaluation order isn't obvious.
 - In performance-sensitive code (e.g., iterators), prefer `++i` over `i++`:

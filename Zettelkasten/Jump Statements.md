@@ -3,9 +3,7 @@
  🔗 **Related Concepts**: #note #cpp [[Control Flow]]
 ___
 ## 📝 Note: Jump Statements
-### 📊 Jump Statements in C++
 A jump statement is a control flow statement that unconditionally transfers the flow of the program execution to a different part of the code. Unlike conditional statements that rely on specific conditions to alter the flow, jump statements provide an immediate change in execution path.
-### 🔁 C++ Provides Several Types of Jump Statements:
 ### 🔹 `break`
 **Use Case:** When you want to **stop a loop or switch** early.
 ```cpp

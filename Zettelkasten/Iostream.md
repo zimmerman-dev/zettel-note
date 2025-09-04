@@ -3,12 +3,12 @@
  🔗 **Related Concepts**: #note #cpp [[C++ Syntax Reference]], [[Variables and Objects]], [[Type Casting]]
 ___
 ## 📝 Note: Iostream
-### The Input/Output Library
+### 🔹 The Input/Output Library
 The **IO library** is part of the **C++ Standard Library** and handles **basic input and output**.  
 In short, it lets your programs:  
 - **Get input** from the keyboard  
 - **Send output** to the console, files, databases, etc.
-### Including the IO Library
+### 🔹 Including the IO Library
 To use this functionality, we **include a header file** at the top of our code. We’ll cover **preprocessor directives** later, but for now, just remember the syntax:  
 
 ```cpp
@@ -25,7 +25,7 @@ int main() {
 > **Remember**: header files always go **above** `main()`.
 
 ---
-### 💨 `std::cout`
+### 🔹 `std::cout`
 Once we include `<iostream>`, we gain access to an object called **`std::cout`**, which sends data to the console.  
 Think of `cout` as “**character output**.”
 
@@ -45,7 +45,7 @@ std::cout << "Hello, " << "World!\\n";
 ```
 > `\\n` is an **escape sequence** that moves the output to a new line.
 ---
-### ⏬ `std::endl` vs. `\\n`
+### 🔹 `std::endl` vs. `\\n`
 There are two ways to create a new line:
 - `\\n` → Adds a new line.
 - `std::endl` → Adds a new line **and** forces the buffer to **flush** (send everything immediately).
@@ -56,7 +56,7 @@ std::cout << "World!\\n";            // Just new line
 > Best practice: **prefer `\\n`** unless you specifically need to flush the buffer.
 ---
 
-### 🚽 Buffering Explained *(optional)*
+### 🔹 Buffering Explained *(optional)*
 When you use `std::cout`, your output isn’t always sent to the console right away.  
 It’s **buffered** — stored temporarily in memory and sent later in batches for efficiency.  
 
@@ -65,7 +65,7 @@ Think of it like a **train station**:
 - Once the train fills up or it’s time to leave, everyone goes to the console.  
 - If your program crashes before the train leaves, anything still waiting in the buffer is lost.
 ---
-### ⌨️ `std::cin`
+### 🔹 `std::cin`
 `std::cin` (short for **character input**) is another predefined object from `<iostream>` that lets you **read input from the keyboard**.  
 We use the **extraction operator** `>>` to store user input into variables:
 
@@ -90,7 +90,7 @@ std::cin >> a >> b;
 std::cout << "You entered " << a << " and " << b << '\\n';
 ```
 ---
-### 🧩 Key Takeaways
+### 🔹 Key Takeaways
 1. Include `<iostream>` whenever you need keyboard input or console output.  
 2. `std::cout` uses the **insertion operator** `<<` to send data out.  
 3. `std::cin` uses the **extraction operator** `>>` to read data in.  
