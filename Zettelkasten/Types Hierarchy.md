@@ -1,7 +1,7 @@
 #### 🎨 Diagram: Types Hierarchy 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:34 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: #cpp #diagram #cpp [[Data Types]], [[Type Casting]]
+ 🔗 **Related Concepts**: #cpp #diagram #cpp [[Fundamental Data Types]], [[Type Casting]]
 ___
 ```mermaid
 flowchart TD

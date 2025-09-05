@@ -1,7 +1,7 @@
 #### 📝 Note: Constants 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:08 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Variables and Objects]], [[Enums]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Variables and Objects]], [[Enums]]
 ___
 ## 📝 Note: Constants
 Like C++ variables, **constants** have names, occupy storage, are *usually* typed. 

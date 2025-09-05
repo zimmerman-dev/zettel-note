@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Arrays]], [[Functions - Passing Arrays & Vectors]], [[Loops - Ranged-based For]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Arrays]], [[Functions - Passing Arrays & Vectors]], [[Loops - Ranged-based For]]
 ___
 ## 📝 Note: Vectors 
 A vector is an *class template* container defined in the **Standard Template Library (STL)**. 

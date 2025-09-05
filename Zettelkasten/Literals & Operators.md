@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:23 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Boolean Logic]], [[Statements and Expressions]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Boolean Logic]], [[Statements and Expressions]]
 ___
 ## 📝 Note: Literals & Operators
 ### 🔹 Literals

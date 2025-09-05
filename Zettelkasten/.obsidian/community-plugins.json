@@ -1,6 +1,5 @@
 [
   "table-editor-obsidian",
-  "codeblock-customizer",
   "obsidian-emoji-toolbar",
   "obsidian-excalidraw-plugin",
   "obsidian-style-settings",
@@ -10,5 +9,7 @@
   "obsidian-spaced-repetition",
   "dataview",
   "vault-stats",
-  "multi-column-markdown"
+  "multi-column-markdown",
+  "codeblock-customizer",
+  "obsidian-advanced-codeblock"
 ]

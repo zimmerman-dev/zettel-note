@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:00 pm  📆 Thu Aug 14
- 🔗 **Related Concepts**: #note #cpp [[Data Types]], [[Mixed Expressions & Type Conversions & Promotion]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Mixed Expressions & Type Conversions & Promotion]]
 ___
 ##  What are Floating-point Numbers?
 A variable declared to be of type **float** can be used for storing values containing decimal places. To simplify, a **floating point number** represents a real number i.e., numbers that can have decimals, like `3.14`, `-0.00001`, or `2.4545`.

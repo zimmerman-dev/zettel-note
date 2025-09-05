@@ -17,4 +17,5 @@ int add(int x, int y) {
 ```
 
 See:  [[Functions - Anatomy]]
+See: [[Functions - Return]]
 ___

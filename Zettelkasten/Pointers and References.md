@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:25 pm  📆 Mon Aug 25
- 🔗 **Related Concepts**: #note #cpp
+ 🔗 **Related Concepts**: #note #cpp [[Memory Management - Basics]]
 ___
 ## 📝 Note: Pointers and References
 ###  🔹 Mental Model: **Mailbox & Map** – Understanding References and Pointers

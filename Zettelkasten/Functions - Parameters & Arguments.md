@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:58 pm  📆 Mon Aug 11
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Data Types]], [[Functions - Passing Arrays & Vectors]], [[Functions - User-defined]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Fundamental Data Types]], [[Functions - Passing Arrays & Vectors]], [[Functions - User-defined]]
 ___
 ## 📝 Note: Functions - Parameters & Arguments
 - A **function parameter** is a variable declared in the function header, specifically within the _parameter list `()`_. It allows the function to **receive data from the caller** so it has values to operate on.

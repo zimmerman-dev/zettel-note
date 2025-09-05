@@ -27,8 +27,7 @@
             "rememberFoldState": true,
             "scope": "nofoldspecified",
             "persistence": "session"
-          },
-          "inverseFold": false
+          }
         },
         "textHighlight": {
           "lineSeparator": "",
@@ -57,14 +56,14 @@
           "enableHighlight": true
         },
         "inlineCode": {
-          "enableInlineCodeStyling": false,
+          "enableInlineCodeStyling": true,
           "enableSyntaxHighlight": true,
           "showIcons": false,
           "enableCopyOnClick": true,
           "copyModifierKey": "ctrl"
         },
         "printing": {
-          "enablePrintToPDFStyling": false,
+          "enablePrintToPDFStyling": true,
           "forceCurrentColorUse": false,
           "uncollapseDuringPrint": true,
           "printAnnotationsAsComments": false,
@@ -965,8 +964,7 @@
           "rememberFoldState": true,
           "scope": "nofoldspecified",
           "persistence": "session"
-        },
-        "inverseFold": false
+        }
       },
       "textHighlight": {
         "lineSeparator": "",
@@ -991,25 +989,25 @@
         "disableFoldUnlessSpecified": false
       },
       "gutter": {
-        "highlightActiveLineNr": true,
+        "highlightActiveLineNr": false,
         "enableHighlight": true
       },
       "inlineCode": {
-        "enableInlineCodeStyling": false,
+        "enableInlineCodeStyling": true,
         "enableSyntaxHighlight": true,
         "showIcons": false,
         "enableCopyOnClick": true,
         "copyModifierKey": "ctrl"
       },
       "printing": {
-        "enablePrintToPDFStyling": false,
+        "enablePrintToPDFStyling": true,
         "forceCurrentColorUse": false,
         "uncollapseDuringPrint": true,
         "printAnnotationsAsComments": false,
         "avoidPageBreaks": false
       },
       "common": {
-        "enableInSourceMode": false
+        "enableInSourceMode": true
       },
       "prompts": {
         "editedDefaults": {},
@@ -1138,8 +1136,8 @@
   "newPromptName": "",
   "alternateHighlightColorName": "",
   "languageBorderColorName": "",
-  "settingsType": "basic",
+  "settingsType": "appearance",
   "langSpecificSettingsType": "",
-  "languageSpecificLanguageName": "python, cpp, c",
+  "languageSpecificLanguageName": "",
   "foldAllCommand": false
 }

@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:27 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]]
 ___
 ## 📝 Note: Tuple 
 A **tuple** is a way to **bundle multiple values together** into a single unit, even if those values are different types.

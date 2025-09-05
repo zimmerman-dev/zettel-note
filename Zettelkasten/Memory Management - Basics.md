@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:35 pm  📆 Tue Aug 26
- 🔗 **Related Concepts**: #note #cpp
+ 🔗 **Related Concepts**: #note #cpp [[Sizeof Operator]] , [[Fundamental Data Types]]
 ___
 ## 📝 Note: Memory Management - Basics
 
