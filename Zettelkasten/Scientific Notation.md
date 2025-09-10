@@ -3,23 +3,6 @@
  🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]] , [[Binary Numbers & Bit Manipulation]]
 ___
 ## 📝 Note: Scientific Notation
-This note is an intro to scientific notation, and should be considered a pre-requisite read before moving onto [[Floating-Point Types]]. **Scientific Notation** is a useful shorthand for writing lengthy numbers in a standardized and concise way. Gaining a firm grasp on scientific notation will help prepare you for understanding how floating-point numbers work, and more importantly, what their limitations are.
-### 🔹 Formula
-Numbers in scientific notation take the following form: $significand * 10^{x}$. For example, consider this number represented in scientific notation: $1.2 * 10^4$.
-- Significand = $1.2$
-- Exponent = $10^4$
-Thus, $1.2 * 10^4 = 12000$.
-
-> By convention, numbers in scientific notation are written one digit before the decimal point, and the rest of the digits afterward. The exponent is just the amount of zeros is found by rounding down to the nearest decimal placement.
-#### Example
-Consider the mass of the earth. In decimal notation, we'd write this as 5,972,200,000,000,000,000,000,000. Well, with that in mind:
-- Significand = $5.9722$
-- Exponent = $10^{24}$
-Final equation: $5.9722 * 10^{24}$.
-
-
-
-## 📝 Note: Scientific Notation
 This note is an intro to scientific notation, and should be considered a pre-requisite read before moving on to [[Floating-Point Types]]. **Scientific Notation** is a useful shorthand for writing large or small numbers in a standardized and concise way.  Gaining a firm grasp on it will prepare you for understanding how floating-point numbers work, and more importantly, what their **limitations** are.
 ### 🔹 Formula
 Numbers in scientific notation take the following form:  
@@ -31,6 +14,8 @@ $1.2 \times 10^4 = 12,\!000$
 - Significand = $1.2$  
 - Exponent = $4$
 
+This would be represented as $1.2e4$
+
 > ✅ By convention, the significand is always written with **one digit before the decimal**, and the rest after.  The exponent indicates how many places the decimal point has been shifted to represent the original number.
 ___
 #### 🌍 Example: Mass of the Earth
@@ -41,70 +26,23 @@ In scientific notation:
 - Significand = $5.9722$
 - Exponent = $10^{24}$  
 - Final expression: $5.9722  10^{24}$
-### ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-How to convert decimal numbers to scientific notation
-
-Use the following procedure:
-
-- Your exponent starts at zero.
-- If the number has no explicit decimal point (e.g. `123`), it is implicitly on the right end (e.g. `123.`)
-- Slide the decimal point left or right so there is only one non-zero digit to the left of the decimal.
-    - Each place you slide the decimal point to the left increases the exponent by 1.
-    - Each place you slide the decimal point to the right decreases the exponent by 1.
-- Trim off any leading zeros (on the left end of the significand)
-- Trim off any trailing zeros (on the right end of the significand) only if the original number had no decimal point. We’re assuming they’re not significant. If you have additional information to suggest they are significant, you can keep them.
-
-___
-### 📌 Key Definitions
-
-
-
-
-
-
-
-
-
-
-___
-### 🧠 Flashcards
-
+### 🔹 Converting decimal numbers to scientific notation
+#### Step 1: **Identify the first non-zero digit**
+This will be the **start of your significand**.
+#### Step 2: **Place the decimal** right _after_ that first digit
+This gives you the proper format:  
+→ **1 digit before the decimal**, the rest after.
+#### Step 3: **Count how many places** the decimal moved
+This becomes your **exponent** on the base 10:
+- Moved right → **negative** exponent
+- Moved left → **positive** exponent
+#### Step 4: **Assemble final format**
+```txt
+significand × 10^exponent
+```
+### 📌 Rules of Thumb
+- Always 1 digit **before** the decimal
+- Count the shift **from original decimal to new decimal**
+- Use **positive exponent** for big numbers
+- Use **negative exponent** for tiny numbers
+- Drop trailing zeros unless precision matters

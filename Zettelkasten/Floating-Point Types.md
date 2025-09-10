@@ -1,91 +1,194 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
- ⌚10:00 pm  📆 Thu Aug 14
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Mixed Expressions & Type Conversions & Promotion]]
+⌚10:00 pm  📆 Thu Aug 14  
+🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Mixed Expressions & Type Conversions & Promotion]]
 ___
-##  What are Floating-point Numbers?
-A variable declared to be of type **float** can be used for storing values containing decimal places. To simplify, a **floating point number** represents a real number i.e., numbers that can have decimals, like `3.14`, `-0.00001`, or `2.4545`.
+## 📝 Floating-Point Types
+Before getting to **floating point types**, I'd like to first define what a real number is in general mathematics. A **real number** is a number within the set of all rational and irrational numbers. **Real Numbers can be:**
+- Positive, negative, or zero
+- Fractional/decimal
+- Irrational (e.g., $\sqrt{{2}}$, $\pi$, $e$)
 
-- They are useful for measuring things that aren't whole: Time, weight, temperature, velocity, etc.
-- **Think of them like scientific notation in binary**. A number + a fractional part + an exponent.
-### 📌 `float num = 3.14` vs. `float num = 3.14f`
-### 🔹 Main Floating-Point Types in C++
+--- start-multi-column: ID_tdtg
+```column-settings
+Number of Columns: 2
+Largest Column: Right
+Column Spacing: 3px
+Border: off
+```
+### 🔹 Floating Point Numbers (C++)
 
-| Type          | Size (Typical) | Precision (Decimal Digits)        | Use Case                           |
-| ------------- | -------------- | --------------------------------- | ---------------------------------- |
-| `float`       | `4 bytes`      | `~6-7 digits`                     | Lightweight math, graphics         |
-| `double`      | `8 bytes`      | `~15-16 digits`                   | General use (default literal type) |
-| `long double` | `8-16 bytes`   | at least `double`, sometimes more | Rarely needed                      |
->Depends on compiler/platform. On many systems, `long double` is the same as `double`.
----
-### 🔹 Key Concept: Precision *is not* Accuracy
-- **Precision** = how many digits you *choose* to display (or store)
-- **Accuracy** = how close the value is to the *true mathematical result*
-- **Example**: `0.1` **cannot be stored exactly in binary** — this is why floating-point math can result in subtle rounding errors
+In C++, **Floating Point Numbers** are *real numbers* represented in a binary floating format (IEEE-754), albeit with caveats. This means that in C++, floating point numbers can be:
+
+- Positive, negative, or zero in decimal form: $0.0$
+- Fractional decimals: $0.25$
+- Scientific notation: $1.2e4$
+
+> ⚠️ Because storage is finite, floating point numbers are **approximations** of real numbers — meaning not every number can be stored exactly (e.g., $0.\overline{{3}}$).
+
+--- column-break ---
+
+### 🔹 Floating Point Types (C++)
+
+C++ provides three floating point types (`float`, `double`, and `long double`) as part of its fundamental types:
+
+```cpp
+float       // Usually 32 bits → ≈ 7 decimal places of precision
+double      // Usually 64 bits → ≈ 16 decimal places of precision
+long double // Usually 80+ bits → Precision varies by platform
+```
+
+- The floating point **type** determines the range and precision.
+- `double` is the default type for floating point literals.
+
+--- end-multi-column
+___
+### 🔹 Floating Point Type Sizes and Ranges
+In floating-point representation:
+- **Range** is controlled by the number of exponent bits
+- **Precision** is controlled by the number of mantissa (significand) bits
+
+|          IEEE Format          |    C++ Type    |             Approximate Range             |      Approx. Precision       |
+| :---------------------------: | :------------: | :---------------------------------------: | :--------------------------: |
+|   Single Precision (32-bit)   |    `float`     |   ±1.18 × 10⁻³⁸ to ±3.4 × 10³⁸ and 0.0    | ~6–9 significant digits (≈7) |
+|   Double Precision (64-bit)   |    `double`    |  ±2.23 × 10⁻³⁰⁸ to ±1.80 × 10³⁰⁸ and 0.0  |     ~15–18 digits (≈16)      |
+|  Extended Precision (80-bit)  | `long double`* | ±3.36 × 10⁻⁴⁹³² to ±1.18 × 10⁴⁹³² and 0.0 |        ~18–21 digits         |
+| Quadruple Precision (128-bit) |  non-standard  | ±3.36 × 10⁻⁴⁹³² to ±1.18 × 10⁴⁹³² and 0.0 |        ~33–36 digits         |
+
+📝 *Mantissa (aka significand)*: the part of a floating point number that contains its significant digits.
+
+The 80-bit x87 extended-precision floating point type is unique. It’s usually padded to 12 or 16 bytes for alignment, but only 80 bits are used for data.
+
+Despite similar exponent ranges between 80-bit and 128-bit types, the 128-bit format provides **greater precision** due to a larger mantissa.
+
+See: [[IEEE 754]]
+#### Guiding Principles
+- `float` is typically 4 bytes (32 bits)
+- `double` is typically 8 bytes (64 bits)
+- `long double` varies and may not follow IEEE-754 — avoid it for portable code.
+
+___
+### 🔹 Precision
+Let's return from the technical weeds for a moment:
+
+> *Because storage is finite, floating point numbers are **approximations** of real numbers.*
+
+A value like $0.\overline{{3}}$ would require infinite memory. A `float` (≈7 digits) or `double` (≈16 digits) can only represent a subset of possible values, leading to **loss of precision** in many real-world cases.
+
+___
+### 🔹 Outputting Floating Point Values
+`std::cout` uses a default precision of **6 significant digits** — meaning it assumes you're outputting `float`s and will truncate accordingly.
+
+```cpp
+#include <iostream>
+
+int main()
+{
+    std::cout << 9.87654321f << '\n';
+    std::cout << 987.654321f << '\n';
+    std::cout << 987654.321f << '\n';
+    std::cout << 9876543.21f << '\n';
+    std::cout << 0.0000987654321f << '\n';
+
+    return 0;
+}
+```
+
+___
+### 🔹 `std::setprecision()`
+- Sets **significant digits** unless combined with `std::fixed`, in which case it sets **decimal places**.
+
 ```cpp
 #include <iostream>
 #include <iomanip>
 
 int main() {
-    float sum {1.0f / 3.0f};
-    
+    float sum {{1.0f / 3.0f}};
     std::cout << std::setprecision(10);
-    std::cout << sum << '\n'; // Output: 0.3333334333
-}                             
+    std::cout << sum << '\n'; // 0.3333334333
+}
 ```
-> 🔍 Computers use **base 2**, not base 10 — so many decimals like `0.1`, `0.3`, `1/3`, etc., **can’t be represented precisely**. The weird decimal behavior is from binary approximation, _not bad math_.
 
-👇 For readability and output safety, use `std::fixed` with `std::setprecision()` when displaying floats.
-___
-### 🔹 `std::setprecision()`, `std::fixed`, & scientific notation (see: <iomanip\>)
-- `std::setprecision(n)` sets the **number of significant digits** — _unless used with `std::fixed`, then it sets digits after the decimal_.
-- It acts like a **stream manipulator** (not a function you call). 
-```cpp
-std::cout << std::setprecision(4);
-// All following float/double output is affected
-```
-####  Behavior Table (*without* `std::fixed`)
-```cpp 
-std::cout << std::setprecision(4);
-// 0.000444444 ---> 0.0004444 ---> Leading zeros after decimal don't count as significant digits
-// 0.00045678  ---> 0.0004568 ---> Rounds the 4th digit up, based on next (7)
-// 0.11011111  ---> 0.1101    ---> 4 sig digits: 1,1,0,1; rounds, then stops
-// 9.9999      ---> 10.00     ---> Rounds across decimal, triggers cascading carry-up
-```
-### 🔹 How does `std::fixed` behave?
-On its own, `std::fixed` doesn't do much. `std::cout` shows 6 significant digits by default, so `std::fixed` by itself outputs the default 6 decimal places, padded with zeros. What makes it interesting is when you combine it  with `std::setprecision(n)`.  Let’s break down what happens when `std::fixed` meets `std::setprecision()`.
+> Computers use **base 2**, not base 10 — so many decimals like `0.1` or `1/3` can’t be precisely represented in binary.
 
-By default, `std::setprecision(n)` controls the total number of significant digits. But once you add `std::fixed`, it switches to controlling the number of digits **after the decimal point**, regardless of the number’s magnitude.
+---
+### 🔹 `std::fixed` Behavior
+When you combine `std::fixed` with `std::setprecision(n)`, you tell the stream: “show `n` digits **after the decimal point**, always.”
+
 ```cpp
-std::cout << std::fixed << std::precision(n);
-// all following float/double output is affected
-```
-####  Behavior Table (*with* `std::fixed`)
-```cpp 
 std::cout << std::fixed << std::setprecision(4);
-// 3.14159265359 ---> 3.1416 ---> Digits after decimal are clipped at 4 and the 5 is rounded to 6 due to the 9.
-// 1.1           ---> 1.1000 ---> Digits after the 1 are filled in with 0s
-// 1.99999       ---> 2.0000 ---> Digits are rounded to 2
-// 1.9           ---> 1.9000 ---> No rounding — padding occurs to match 4 digits after decimal.
 ```
-### 🔹 TL;DR:  
-Use `std::setprecision(n)` when you care about **how much to show**,  
-Use `std::fixed` when you care about **how it looks**.
-When using scientific notation, `e` replaced `10^`.
+
+Example behavior:
+
+- `3.14159265359` → `3.1416`
+- `1.1`           → `1.1000`
+- `1.99999`       → `2.0000`
+- `1.9`           → `1.9000`
+
+✅ Use `std::fixed` when formatting output for people. Use `std::setprecision()` alone when you care about scientific detail.
+
 ___
-### 🔹 `f` Literal Suffix
+### 🔹 Floating Point Variables
+All floating point types are **signed**.
+
 ```cpp
-float x = 3.14f;
+float x{};
+double y{};
+long double z{};
 ```
- - `f` tells the compiler to treat the number as a `float` (not `double`)
-- Without it, `3.14` is a `double` by default
-- Helps avoid _narrowing conversions_ or unwanted precision
-> 💡 Rule of thumb: Use `f` when assigning to `float` variables
+#### Literal Suffixes
+```cpp
+float num{ 3.14 };   // implicit double → float (narrowed)
+float num{ 3.14f };  // explicit float
+```
+
+| Type          | Suffix  | Example  |
+|---------------|---------|----------|
+| `float`       | `f`     | `3.14f`  |
+| `double`      | *(none)*| `3.14`   |
+| `long double` | `l`     | `3.14l`  |
+
+> 💡 Use `f` for float literals to avoid implicit promotion during arithmetic.
+
+```cpp
+float x{ 2.0f };
+auto result = x * 3.0; // x is promoted to double, result is double
+```
+
+---
+### 🔹 NaN and Inf
+
+IEEE 754 compatible formats additionally support some special values:
+
+- **Inf**, which represents infinity. Inf is signed, and can be positive (+Inf) or negative (-Inf).
+- **NaN**, which stands for “Not a Number”. There are several different kinds of NaN (which we won’t discuss here).
+- Signed zero, meaning there are separate representations for “positive zero” (+0.0) and “negative zero” (-0.0).
+
+Formats that are not compatible with IEEE 754 may not support some (or any) of these values. In such cases, code that uses or generates these special values will produce implementation-defined behavior.
 ___
-### 🔹 2. Scientific Notation
-While you can write floats normally, it's also viable to write digits in scientific notation.  For example, `1.2 x 10^4` would be written as `1.2e4`, and `5.9722 x 10^24` would be written as `5.9722e24`.
-___
-### 🔹 Why Floating-Path Math Can Be Weird
-- Computers use **binary fractions**.
-- *Just like how `1/3` is **hard to express** in `base 10`, `0.1` is **hard to express** in `base 2`.*
-- **Direct comparisons like `a == b` can fail** — even if both values look the same when printed. 
-	- Example: Adding `0.1 + 0.2` might not exactly equal `0.3` in memory.
+### 📌 Key Definitions
+- **Floating Point Type**: C++ type for real numbers with decimals (e.g., `float`, `double`).
+- **Precision**: The number of significant digits stored without loss.
+- **Mantissa/Significand**: The binary digits of a number’s magnitude in scientific notation.
+- **`std::setprecision(n)`**: Controls output precision (significant digits or decimal places).
+- **`std::fixed`**: Switches output to fixed-point notation (decimal-focused).
+- **Literal Suffix**: Suffix like `f`, `l` to specify the literal type (float, long double).
+
+---
+
+### 🧠 Flashcards
+
+**Q:** What’s the default floating point type in C++ when you write `3.14`?  
+**A:** `double`
+
+**Q:** What does `std::setprecision(8)` control by default?  
+**A:** Number of significant digits
+
+**Q:** What suffix makes `3.14` a float literal?  
+**A:** `f` (e.g., `3.14f`)
+
+**Q:** What does `std::fixed` change about output?  
+**A:** It causes `setprecision(n)` to control **digits after the decimal**.
+
+**Q:** Why can’t `0.1` be stored exactly in binary?  
+**A:** It’s not a clean base-2 fraction — binary representation is infinite.
