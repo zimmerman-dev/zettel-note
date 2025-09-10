@@ -1,7 +1,7 @@
 #### 📝 Note: Conditionals 
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:48 am  📆 Tue Jul 29
- 🔗 **Related Concepts**: #note #cpp [[Boolean Logic]] , [[Control Flow]] , [[Literals & Operators]], [[Statements and Expressions]] 
+ 🔗 **Related Concepts**: #note #cpp [[Boolean Logic]] , [[Control Flow]] , [[Literals & Operators]], [[Statements and Expressions]] , [[Boolean Type]]
 ___
 ### 🔹 Selection Statements
 *"While statements are executed in the same order in which they appear, programs are not limited to a linear sequence of the statements."* – [cplusplus.com](https://cplusplus.com/doc/tutorial/control/)
