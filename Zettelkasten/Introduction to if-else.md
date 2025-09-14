@@ -1,40 +1,23 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
- ⌚11:12 pm  📆 Tue Sep 9
- 🔗 **Related Concepts**: #note #cpp [[Boolean Logic]] , [[Control Flow]] , [[Literals & Operators]], [[Statements and Expressions]] , [[Boolean Type]]
+ ⌚2:54 pm  📆 Sat Sep 13
+ 🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Conditionals]] , [[Statements and Expressions]] , [[Literals & Operators]] , [[Boolean Logic]] , [[Functions - Return]]
 ___
-## 📝 Note: If Statements
-The `if` statement is a simple but powerful tool that introduces **conditional flow** into your programs. The idea is straightforward:
+## 📝 Note: Introduction to if-else
+The `if` statement introduces **conditional flow** into a program—one of the most fundamental ways to make your code react to what's happening at runtime.
 
-> "**If** a condition is `true`, execute the associated statement."
+> “**If** a condition is `true`, execute the associated statement.”
 
-This allows your code to respond dynamically — skipping or executing logic depending on what's happening during runtime. Along with `else if` and `else`, the `if` statement forms the backbone of decision-making in C++.
-### 🔹 Syntax:
+That’s it. Just one fork in the road, and suddenly your code can branch, adapt, and decide. This forms the backbone of most logic in C++, along with `else if` and `else`.
+___
+### 🔹 Syntax
 ```cpp
 if (condition) {
-// true_statement
+  // true_statement
 }
 ```
-
-If the *condition* of an `if` statement evaluates to Boolean value `true`, then the *true_statement* is executed. If the *condition* instead evaluates to Boolean value `false`, then *true_statement* is skipped.
-#### Sample 1
-```cpp
-#include <iostream>
-
-int main() {
-  std::cout << "Enter an Integer: ";
-  int x{};
-  std::cin >> x;
-
-  if (x == 0) {
-    std::cout << "Your entered zero. \n"; 
-  }
-  return 0;
-}
-```
-> The sample program is simple, and it obviously doesn't check for every scenario, but it should paint a picture at how useful it can be. With one conditional flow tool, we can chain together many of these `if` clauses to follow generally simple, yet deep instructions.
-
-Given what we know about the last example, how would you go about adding extra complexity to check for edge cases? You *could* stack another `if` clause, like this:
-#### Sample 2
+If the `condition` evaluates to the Boolean value `true`, then `true_statement` runs. If it evaluates to `false`, the statement is skipped entirely.
+___
+### 🔹 Sample 1: Basic Check
 ```cpp
 #include <iostream>
 
@@ -44,28 +27,47 @@ int main() {
   std::cin >> x;
 
   if (x == 0) {
-    std::cout << "Your value is zero";
-  }
-  if (x != 0) {
-    std::cout << "Your value is non-zero";
+    std::cout << "You entered zero.\n";
   }
   return 0;
 }
 ```
-> This works, and we *could* theoretically just keep adding `if` clauses over, and over again. However, there are more elegant ways to solve this issue.
-### 🔹 `if` and `else`
-After you're comfortable with the `if` clause, we can look at adding it's logical counterpart, the `else` clause. If the `if` clause is like saying, "If a condition is true, execute the associated statement...", the `else` is like saying "*Otherwise*" at the end of that statement.
-### 🔹 Syntax
+ This basic check illustrates the core idea: _only_ if the condition is met, the block executes. Otherwise, the program skips it entirely and keeps going.
+ 
+___
+### 🔹 Sample 2: Stacking `if` statements
+Now suppose we want to handle both zero and non-zero input:
 ```cpp
-if (condition) {
-	// true_statement
-} else {
-	// false_statement
+#include <iostream>
+
+int main() {
+  std::cout << "Enter an integer: ";
+  int x{};
+  std::cin >> x;
+
+  if (x == 0) {
+    std::cout << "Your value is zero\n";
+  }
+  if (x != 0) {
+    std::cout << "Your value is non-zero\n";
+  }
+  return 0;
 }
 ```
-> *If condition is true, execute true_statement. Otherwise, execute false_statement.*
+This technically works. But it’s clunkier than it needs to be—each condition is checked independently, even when they’re logically exclusive. A more elegant option? Let’s add a **fallback**.
+___
+### 🔹 `if` and `else`
+The `else` clause is the natural companion to `if`. If `if` says, _“do this if true”_, then `else` says, _“otherwise, do this instead.”_
+#### Syntax:
+```cpp
+if (condition) {
+  // true_statement
+} else {
+  // false_statement
+}
+```
 
-Lets amend Sample 2 with our new `if-else` conditional block.
+Here’s that same program, rewritten with `else`:
 ```cpp
 #include <iostream>
 
@@ -82,15 +84,15 @@ int main() {
   return 0;
 }
 ```
-> Now, for all intents and purposes, these two program do behave *similarly*, but they are different. We will get into that more later, but simply, we can see how in Sample 2, the second `if` clause checks if x != 0, while in our amended program, else just acts like a sort of catch-all for any value thats not zero.
+Now only **one** branch executes. This isn’t just cleaner—it’s more efficient.
+___
 ### 🔹 `if`, `else if`, and `else`
-If we want to be ultra precise and catch even more edge cases, we can combine Sample 1, Sample 2, and our amended Sample 2 program. By that I mean we can chain `if` clauses together, and use the `else` clause.
+To handle multiple distinct paths, we can chain conditions together using `else if`. Each one is only checked if all previous conditions failed.
 
 ```cpp
 #include <iostream>
 
 int main() {
-  
   std::cout << "Enter an integer: ";
   int x{};
   std::cin >> x;
@@ -105,35 +107,86 @@ int main() {
   return 0;
 }
 ```
-> With this, our logic tree is starting to take real shape. It's not checking for every edge case, but this note, it shows how much complexity can be had with very little effort.
+This pattern gives us a structured logic tree. Only one branch will ever execute—whichever condition passes first. See [[Literals & Operators]] and [[Statements and Expressions]].
+___
+### 🔹 Using Functions that Return `bool`
+You can pass conditions into `if` statements from **any expression that returns a Boolean**, including your own functions.
 
+```cpp
+bool isEqual(int x, int y) {
+  return x == y;
+}
+```
 
+We can plug this directly into an `if`:
+```cpp
+#include <iostream>
 
+bool isEqual(int x, int y) {
+  return x == y;
+}
 
+int main() {
+  std::cout << "Enter an integer: ";
+  int x{};
+  std::cin >> x;
 
+  std::cout << "Enter another integer: ";
+  int y{};
+  std::cin >> y;
 
+  std::cout << std::boolalpha;
 
+  if (isEqual(x, y)) {
+    std::cout << x << " and " << y << " are equal!\n";
+  } else {
+    std::cout << x << " and " << y << " are not equal!\n";
+  }
 
+  return 0;
+}
+```
 
-
-
-
-
-
-
-
+This is a powerful combo. Clean comparisons, reusable logic, and concise flow.
+___
+### 🔹 Best Practices
+-   Use `else` and `else if` when conditions are **mutually exclusive**.    
+-   Prefer braces `{}` even for single-line blocks. It’s safer and easier to refactor later.    
+-   Keep conditions **simple and expressive**: `isReady()`, `x < 10`, `buffer.empty()`.    
+-   Return early when it makes the logic easier to follow—don’t nest unnecessarily.
 ___
 ### 📌 Key Definitions
-- **Condition**: Or *conditional expression* is an expression that evaluates to a Boolean value. 
-
-
-
-
-
-
-
-
-
+-   **Condition**: An expression that evaluates to a Boolean (`true` or `false`). Can be a comparison, a function call, or any Boolean-producing expression.
+-   **Early Return**: Using `return` to exit a function as soon as a condition is met—often used to simplify logic and avoid deep nesting.
 ___
 ### 🧠 Flashcards
 
+**Q:** What happens if an `if` condition evaluates to false?  
+?|?
+**A:** The associated statement block is skipped.
+
+___
+
+**Q:** Why use `else` instead of a second `if`?  
+?|?
+**A:** `else` prevents unnecessary checks and guarantees only one path runs.
+
+___
+
+**Q:** What is the purpose of `else if`?  
+?|?
+**A:** To check a new condition _only_ if all previous ones failed.
+
+___
+
+**Q:** Can a function returning `bool` be used in `if`?  
+?|?
+**A:** Yes—its result is evaluated as the condition.
+
+___
+
+**Q:** What’s an early return and when is it useful?  
+?|?
+**A:** It exits a function before the end. Use it to avoid unnecessary work or nested logic.
+
+#flashcards 
