@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:27 pm  📆 Mon Jul 28
- 🔗 **Related Concepts**: #note #cpp [[Literals & Operators]], [[Control Flow]], [[Fundamental Data Types]] , [[Boolean Type]]
+ 🔗 **Related Concepts**: #note #cpp [[Operators]], [[Control Flow]], [[Fundamental Data Types]] , [[Boolean Type]]
 ___
 ## 📝 Note: Boolean Logic
 ### 🔹 What is Boolean Logic?

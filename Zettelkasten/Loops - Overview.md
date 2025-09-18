@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:36 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Boolean Logic]] , [[Literals & Operators]] , [[Statements and Expressions]] , [[Loops - For]] , [[Loops - While]] , [[Loops - Do While]] , [[Loops - Ranged-based For]] , [[Loops - Nesting]] , [[C++ Basics]]
+ 🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Boolean Logic]] , [[Operators]] , [[Statements and Expressions]] , [[Loops - For]] , [[Loops - While]] , [[Loops - Do While]] , [[Loops - Ranged-based For]] , [[Loops - Nesting]] , [[C++ Basics]]
 ___
 ## 📝 Note: Loops
  Loops are part of the third basic building block of programming, **iteration.** Iteration, or repetition allows the execution of a statement or block of statements repeatedly. These loops are made up of "loop conditions" and a body which contains the statements to repeat.

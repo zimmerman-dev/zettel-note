@@ -13,7 +13,7 @@ ___
 	- Dynamically sized (If C-style strings are like arrays, C++ strings are like vectors)
 	- Works with `iostream`
 	- Offers many useful member functions
-	- Supports familiar operators — see [[Literals & Operators]]
+	- Supports familiar operators — see [[Operators]]
 	- Safer than C-style strings
 	- Can be converted to C-style strings
 

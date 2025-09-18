@@ -2,30 +2,7 @@
  ⌚2:23 am  📆 Wed Jul 23
  🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Boolean Logic]], [[Statements and Expressions]]
 ___
-## 📝 Note: Literals & Operators
-### 🔹 Literals
-Consider the following two statements:
-```cpp
-std::cout << "Hello world!";
-int x { 5 };
-```
-> `"Hello world!"` is a **string literal**, and `5` is an **integer literal**.  
-`x` is **not** a literal — it’s a variable initialized **with** a literal. // NEW clarification
-### 🔹 Key insight
-- Literals are values that are inserted directly into the source code. These values usually appear directly in the executable code (unless they are optimized out).
-- Objects and variables represent memory locations that hold values. These values can be fetched on demand.
-### 🔹 Types of Literals
-
-|**Type**|**Example**|**Description**|
-|---|---|---|
-|Integer|`42`, `-7`, `0xFF`|Whole numbers (decimal, hex, octal, binary)|
-|Floating-point|`3.14`, `-0.5f`|Decimal numbers with fractions|
-|Boolean|`true`, `false`|Logical truth values|
-|Character|`'A'`, `'\n'`|Single characters|
-|String|`"Hello"`, `"Hi\n"`|Sequences of characters|
-
----
-### 🔹 Operators
+## 📝 Note: Operators
 An **operator** is a special symbol or keyword that performs operations on one or more operands. They're the core tools used within **expressions** to compute values, assign data, compare, or manipulate logic and memory.
 
 ```cpp title:Operators

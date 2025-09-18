@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
 ⌚10:01 pm  📆 Tue Sep 9  
-🔗 **Related Concepts**: #note #cpp  [[Literals & Operators]], [[Control Flow]], [[Fundamental Data Types]] , [[Boolean Logic]]
+🔗 **Related Concepts**: #note #cpp  [[Operators]], [[Control Flow]], [[Fundamental Data Types]] , [[Boolean Logic]]
 ___
 ## 📝 Note: Boolean Type
 Ever wonder why spell check always forces you to capitalize "Boolean"? That's because Boolean is a proper noun, named after its inventor **George Boole**.
