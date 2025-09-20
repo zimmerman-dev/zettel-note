@@ -26,10 +26,10 @@ ___
 
 ### 🔹 Week 3:  **09/09 – 09/15** — Fundamental Types & Literals  
 📍 **Ch. 4 + Ch. 5** — _Data Types, Constants, Strings_  
-- [ ] **Block 1:** (4.1 → 4.5) Primitive types, signed/unsigned, object sizes  
-- [ ] **Block 2:** (4.6 → 4.10) Fixed-width, floats, bool, if  
-- [ ] **Block 3:** (4.11 → 5.4) Chars, `static_cast`, constants, numeral systems  
-- [ ] **Weekend:** Chapter 4+5 quiz + type cheat sheet  
+- [x] **Block 1:** (4.1 → 4.5) Primitive types, signed/unsigned, object sizes  
+- [x] **Block 2:** (4.6 → 4.10) Fixed-width, floats, bool, if  
+- [x] **Block 3:** (4.11 → 5.4) Chars, `static_cast`, constants, numeral systems  
+- [x] **Weekend:** Chapter 4+5 quiz + type cheat sheet  
 
 ### 🔹 Week 4:  **09/16 – 09/22** — Strings, Operators, and Flow  
 📍 **Ch. 5 (cont.) + Ch. 6 + 8.1–8.5** — _Strings, Operators, Basic Flow_  

@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚8:39 pm  📆 Mon Aug 25
- 🔗 **Related Concepts**: #note #cpp [[Constants]] , [[Keywords and Naming-Identifiers]] [[Fundamental Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Constants & Constexpr]] , [[Keywords and Naming-Identifiers]] [[Fundamental Data Types]]
 ___
 ## 📝 Note: Variables and Objects
 ###  🔹 Key Insights

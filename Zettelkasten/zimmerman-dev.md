@@ -7,30 +7,11 @@ ___
 // Show general vault stats
 let s = await window.showStats();
 dv.paragraph(s);
-
-// Show last modified notes (default 10, excluding "Templates" folder)
-let recent = await window.showLastModifiedNotes(10, "Templates");
-dv.paragraph("### 🕒 Last Modified Notes:\n\n" + recent);
 ```
-#### ✅ To-do: zimmerman-dev   
+#### ✅ Chapter 4 review  
  ⌚10:58 pm  📆 Thu Sep 4
  🔗 **Related Concepts**: #todo
 ___
-### 🔹 Week 3:  **09/09 – 09/15** — Fundamental Types & Literals  
-📍 **Ch. 4 + Ch. 5** — _Data Types, Constants, Strings_  
-- [x] **Block 1:** (4.1 → 4.5) Primitive types, signed/unsigned, object sizes  
-- [x] **Block 2:** (4.6 → 4.10) Fixed-width, floats, bool, if  
-- [ ] **Block 3:** (4.11 → 5.4) Chars, `static_cast`, constants, numeral systems  
-- [ ] **Weekend:** Chapter 4+5 quiz + type cheat sheet  
-
-
-____
-#### 🔥 Most important stuff for Chapter 4
- ♻️  
- ⌚8:46 pm  📆 Sun Sep 7
- 🔗 **Related Concepts**: #note
-___
-
 - ✅ Type definitions (`int`, `short`, `long`, `float`, `char`, `bool`, etc.)
 - ✅ Type sizes (platform-dependent vs fixed-width)
 - ✅ Value ranges for common signed/unsigned types
@@ -44,3 +25,10 @@ ___
 - ✅ Floating point format basics (scientific notation, `float` vs `double`)
 - ✅ Boolean truthy/falsy behavior in C++
 - ✅ ASCII basics for `char` and character literals
+
+### 🔹 Week 4:  **09/16 – 09/22** — Strings, Operators, and Flow  
+📍 **Ch. 5 (cont.) + Ch. 6 + 8.1–8.5** — _Strings, Operators, Basic Flow_  
+- [ ] **Block 1:** (5.5 → 5.9) `constexpr`, `std::string`, `std::string_view`  
+- [ ] **Block 2:** (6.1 → 6.4) Precedence, arithmetic, increment/decrement  
+- [ ] **Block 3:** (6.5 → 8.5) Comma, ternary, relational/logical, if/switch  
+- [ ] **Weekend:** Chapter 6 quiz + flow diagramming  

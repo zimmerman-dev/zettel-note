@@ -103,9 +103,7 @@ Associativity rules decide which side binds first when operators share precedenc
 - **Statement** → A complete instruction; often contains expressions.
 ---
 ### 🧠 Flashcards
-What is a literal?|||A hardcoded value written directly in the source code. 
 
-Variables store values, literals **ARE** their values. 
 
 What’s the difference between an operator and an operand?|||Operators act on operands.  
 

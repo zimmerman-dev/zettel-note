@@ -11,7 +11,7 @@ int x { 5 };
 > `"Hello world!"` is a **string literal**, and `5` is an **integer literal**.  
 `x` is **not** a literal — it’s a variable initialized **with** a literal. // NEW clarification
 ### 🔹 Key insight
-- Literals are values that are inserted directly into the source code. These values usually appear directly in the executable code (unless they are optimized out).
+- Literals often end up embedded directly in your compiled program — unless the compiler optimizes them away.
 - Objects and variables represent memory locations that hold values. These values can be fetched on demand.
 ### 🔹 Types of Literals
 
@@ -89,40 +89,48 @@ int main() {
 }
 ```
 
-While most modern programming languages have strings as fundamental data types, for historical reasons, that is not the case for C++. Rather, they have a strange, complicated type that is
+While most modern languages treat strings as built-in types, C++ takes a different path. For historical reasons, it relies on a lower-level system called [[C-Style Strings]]. We won’t dive into them here, but you can learn more in that note — including how string literals interact with null terminators.
 
+The key reason we hold off here is that **string literals behave differently from other literals**. As you’ll see in [[string]], they’re actually **`const` objects** created at program start and guaranteed to live for the entire duration of the program.
+### 🔹 Magic Numbers
+Imagine stumbling across a number in code with no explanation — just a bare **`4`** sitting in a condition, dictating who gets through the gate. That’s a **magic number**. It’s “magic” because its meaning isn’t obvious; it works, but you’re left guessing _why_ it’s there and what it represents.
 
+Contrast that with a literal that’s been given a name. For instance:
 
+```cpp
+int heightInFeet{5}; // The 5 has meaning because it’s tied to 'heightInFeet'
+```
 
+Here, the number isn’t mysterious — it’s labeled. But look at this:
 
+```cpp
+if (height > 4) {
+     std::cout << "You may enter\n"; 
+}
+```
 
+What’s **`4`** supposed to be? Minimum height for entry? Some arbitrary cutoff? Unless you’ve memorized the rule, the program gives you no clue. That’s the trap: magic numbers hide intent.
 
+In small snippets, they’re just a nuisance. In large systems, they’re a minefield — every unexplained number is another riddle future you (or your teammates) will have to solve.
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-___
-### 📌 Key Definitions
-
-
-
-
-
-
-
-
-
-
+The fix is simple but powerful: give the number a name. Replace `4` with a constant like `const int minHeight{4};` and suddenly the code explains itself. You’re not just writing instructions for a computer — you’re leaving a story behind for the next human reader.
 ___
 ### 🧠 Flashcards
 
+What is a literal?
+?|?
+A hardcoded value written directly in the source code. 
+
+---
+
+What makes string literals different from other types of literals in C++?  
+?|?
+ String literals are `const` objects created at program start and guaranteed to exist for the program’s lifetime.
+
+---
+
+Do string literals in C++ behave like primitive data types?  
+?|?
+No — they behave more like fixed `const` objects and are linked to C-style string handling.
+
+#flashcards 
