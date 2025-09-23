@@ -127,7 +127,7 @@ int main() {
 }
 ```
 ### Function Parameters with `std::string_view` 
-A `std::string_view` parameter will accept arguments of type C-style string, a `std::string`, or `std::string_view`:
+Both a C-style string and a `std::string` will implicitly convert to a `std::string_view`. Therefore, a `std::string_view` parameter will accept arguments of type C-style string, a `std::string`, or `std::string_view`:
 
 ```cpp
 #include <iostream>
@@ -176,7 +176,6 @@ int main() {
   return 0;
 }
 ```
-
 ### `std::string_view` and `std::string` Function Parameters
 Unlike in the last example, where we passed c-string literals and `std::string` arguments through a function with a `std::string_view` parameter, `std::string_view` cannot be *implicitly* converted to a `std::string`, but it can be **explicitly converted**. Like so:
 ```cpp
@@ -189,11 +188,44 @@ std::string_view view{"View"};
 std::string string = static_cast<std::string>(view);
 ```
 Refer back to [[Assignment & Initialization]] for details.
+### 🔹Literals for `std::string_view`
+Much like how a floating-point literal is a `double` by default, a string literal is a c-style string literal by default. We can create `std::string` literals **and** `std::string_view` literals with the `using` directive:
+```cpp
+#include <iostream>
+#include <string>      // for std::string
+#include <string_view> // for std::string_view
 
+int main()
+{
+    using namespace std::string_literals;      // access the s suffix
+    using namespace std::string_view_literals; // access the sv suffix
 
+    std::cout << "foo\n";   // no suffix is a C-style string literal
+    std::cout << "goo\n"s;  // s suffix is a std::string literal
+    std::cout << "moo\n"sv; // sv suffix is a std::string_view literal
 
+    return 0;
+}
+```
+It’s fine to initialize a `std::string_view` object with a C-style string literal (you don’t need to initialize it with a `std::string_view` literal.
 
+That said, initializing a `std::string_view` using a `std::string_view` literal won’t cause problems (as such literals are actually C-style string literals in disguise).
+### 🔹constexpr `std::string_view`
+Unlike `std::string`, `std::string_view` has full support for constexpr:
+```cpp
+#include <iostream>
+#include <string_view>
 
+int main()
+{
+    constexpr std::string_view s{ "Hello, world!" }; // s is a string symbolic constant
+    std::cout << s << '\n'; // s will be replaced with "Hello, world!" at compile-time
+
+    return 0;
+}
+```
+
+This makes `constexpr std::string_view` the preferred choice when string symbolic constants are needed.
 
 
 

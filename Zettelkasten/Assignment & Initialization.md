@@ -98,71 +98,24 @@ The goal was to fix a few long-standing quirks in C++:
 - Make initialization syntax more consistent
 - Reduce ambiguity with constructors
 - Work across all types (fundamental, arrays, structs, classes)
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-### Brace initialization vs Copy initialization
-Consider the following:
+#### Why It’s Called “Uniform”
+You can use `{}` with almost anything:
 ```cpp
-int x{5};
-int y = 5;
+int x{5};                             // Fundamental
+std::vector<int> v{1, 2, 3};          // STL container
+MyStruct s{1, 2};                     // Struct/class
+int arr[3]{1, 2, 3};                  // Array
 ```
-**Both of these tell the compiler:**
-"Give me a piece of memory the size of `int` (usually 4-bytes), and store `5` inside. Also, allow me to refer to that chunk of memory as x or y."
+> The syntax doesn’t change. That’s why it’s called **uniform**.
+#### Narrowing is Not Allowed
+The most famous feature of brace initialization is that it **refuses to compile** if you try to initialize a variable in a way that could cause data loss.
+```cpp
+int x{4.5};   // ❌ Error: narrowing conversion from double to int
+```
+**This is intentional. It's the compiler saying:**
+*“You’re asking me to do something risky. You better make it explicit.”*
 
-This is what's known as **Initialization**. But you may be asking yourself:
-
-*If they both tell the compiler the same thing, why are there two different ways to initialize a variable?*
-
-Well, there are actually more than two ways to initialize a variable, and while they all tell the compiler the same basic thing, there are nuances between each that give purpose to each of these.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+If you really want to allow it, you can use a `static_cast` or go back to copy/direct initialization.
 ___
 ### 📌 Key Definitions
 
