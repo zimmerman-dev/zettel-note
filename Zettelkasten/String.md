@@ -1,147 +1,170 @@
-♻️ (*MinGW, Windows11, Codelite*)   
- ⌚2:27 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Iostream]]
+ ♻️ (*MinGW, Windows11, Codelite*)   
+ ⌚12:14 pm  📆 Sat Sep 20
+ 🔗 **Related Concepts**: #note #cpp [[String Syntax Reference]] , [[C-Style Strings]] , [[string_view]] , [[Fundamental Data Types]] , [[Memory Management - Basics]]
 ___
-## 📝 Note: Strings
-### 🔹 String vs. `<string>`
-- In C++, a string is sequence of `chars`, similar to an array. They are indexed like an array, and can be accessed like an array.
+## 📝 Note: string
+While it's fine to use **C-style string literals**, **C-style string variables** come with their own set of challenges.
+- You cannot use assignment to assign C-style string variables new values.
+- If you copy a larger C-style string into the space allocated for a shorter C-style string, **UB** will result.
 
-- `std::string` is a **class** in the **Standard Template Library (STL)**.
-	- `#include <string>`
-	- Resides in the `std` namespace
-	- Contiguous in memory
-	- Dynamically sized (If C-style strings are like arrays, C++ strings are like vectors)
-	- Works with `iostream`
-	- Offers many useful member functions
-	- Supports familiar operators — see [[Operators]]
-	- Safer than C-style strings
-	- Can be converted to C-style strings
-
----
-### 🔹 Syntax – Declaring and Initializing
+Example of [[C-Style Strings|C-Style String Literals]].
 ```cpp
+#include <iostream>
+
+int main() {
+  std::cout << "Hello"; // "Hello" is an example of a C-style string literal
+  return 0;
+  }
+```
+
+In modern C++, C-style strings are best avoided. To mitigate these problems, C++ has introduced two additional string-types into the language:
+- `std::string`
+- `std::string_view`
+
+`std::string` and `std::string_view` are not fundamental data types like `int`, or `char`. They are considered **class-types**, and we will discuss what that means down the road in [[Classes and Objects(STUB)]].
+___
+### 🔹 Introducing `std::string`
+The easiest way to work with strings in modern C++ is by using `std::string` from the `<string>` header file. In doing so, you can create objects of type `std::string`, as well as assign `std::string` variables with new values just like any other object.
+
+Just like normal variables, you can initialize or assign values to `std::string` objects as you would expect:
+```cpp
+#include <iostream>
 #include <string>
 
-std::string s1;             // Empty string
-std::string s2 {"John"};    // Literal init
-std::string s3 {s2};        // Copy init (separate memory)
-std::string s4 {"John", 3}; // Joh (first 3 chars)
-std::string s5 {s3, 0, 2};  // Jo (from s3 at index 0, length 2)
-std::string s6 (3, 'X');    // XXX (repeated char)
-```
+int main() {
 
----
-### 🔹 Concatenation
-👉 **LEGAL**
-```cpp
-std::string part1 {"C++"};
-std::string part2 {"is a powerful"};
-std::string sentence;
-
-sentence = part1 + " " + part2 + " language";
+  std::string name{"John"};
+  name = "Dave";
+  std::cout << name << '\n';
+  
+  return 0;
+  }
 ```
+#### Key insights
+Unlike the fundamental types like `int`, `char`, `float`, etc., `std::string` can be initialized with a very small value, only to be assigned later with a much larger value. This is the power of the `std::string`! If `std::string` doesn't have enough memory to store a string, it will request additional memory (at runtime) using a form of memory allocation called **dynamic memory allocation**, which we will discuss later in [[Memory Management - Basics]].
+___
+### 🔹 String input with `std::cin`
+Using `std::string` with `std::cin` may yield surprising results! Consider the following program:
+```cpp
+#include <iostream>
+#include <string>
 
-🛑 **ILLEGAL**
-```cpp
-sentence = "C++" + " is powerful";  // C-style string literals can't be added
-```
+int main() {
 
----
-### 🔹 Access Characters – `[]` and `.at()`
-```cpp
-std::string name {"John"};
+  std::cout << "Enter your full name here: ";
+  std::string name{};
+  std::cin >> name;
+  
+  std::cout << "Enter your favorite color: ";
+  std::string color{};
+  std::cin >> color;
+  
+  std::cout << "Your name is " << name << " and your favorite color is " << color << '\n';
+  return 0;  
+ }
+```
+ 
+ Unfortunately, the output for this seemingly simple program will be this:
+ ```bash
+$ Enter your full name here: David Jones
+$ Enter your favorite color: Blurple
+$ Your name is David and your favorite color is Jones
+ ```
+*What in tarnation?!*
 
-std::cout << name[1];     // o
-std::cout << name.at(0);  // J
-```
-###  🔹 Iteration
+This is because when using the extraction operator `>>`, it only returns characters up to the first whitespace leaving the rest in the buffer for the next extraction.
+### 🔹 `std::getline()`
+To read a full line of input into a string, you're better of using the `std::getline()` function instead:
 ```cpp
-std::string name {"John"};
-for (char c : name) {
-    std::cout << c;
-}
+  std::cout << "Enter your full name here: ";
+  std::string name{};
+  std::getline(std::cin >> std::ws, name);
 ```
-###  🔹 Comparing Strings
-Operators: `==`, `!=`, `<`, `>`, `<=`, `>=`
-- Compared character-by-character using ASCII values
-- Can compare:
-    - Two `std::string` objects
-    - `std::string` and C-style literals
-    - `std::string` and C-style variables
-### 🔹 Substrings – `.substr()`
-```cpp
-std::string s1 {"This is a test"};
+#### What is `std::ws`?
+In [[Floating-Point Types#🔹 `std setprecision()`|Floating-Point Types]], we learned about `std::setprecision()` to change the number of **digits of precision** that `std::cout` displayed. Remember, `std::setprecision()` is what's called an **output manipulator**.
 
-s1.substr(0, 4);   // "This"
-s1.substr(5, 2);   // "is"
-s1.substr(10, 4);  // "test"
-```
-- First argument: **start index**
-- Second argument: **number of characters to extract**
+`std::ws` on the other hand, is what known as an **input manipulator** and what it does is tells `std::cin` to ignore any leading whitespace before extraction.
 
----
-### 🔹 Erasing and Clearing – `.erase()` and `.clear()`
-```cpp
-std::string s1 {"This is a test"};
-s1.erase(0, 5);  // "is a test"
-s1.clear();      // Empties the entire string
-```
+> Note: **Leading whitespace** is any whitespace character (spaces, tabs, or newlines) that occur at the beginning of a string.
 
----
-### 🔹 Length – `.length()` / `.size()`
-```cpp
-std::string s1 {"John"};
-s1.length();  // 4
-```
-- Equivalent to `.size()`
-- Returns number of characters in the string
+ Now, consider this program:
+ ```cpp
+ #include <iostream>
+ #include <string>
+ 
+ int main() {
+   std::cout << "Pick 1 or 2: ";
+   int choice{};
+   std::cin >> choice;
+   
+   std::cout << "Now, enter your name: ";
+   std::string name{};
+   std::cin >> name;
+   
+   std::cout << "Hello " << name << ", you picked " << choice << '\n';
+   return 0;
+ }
+ ```
+ > All good right? I mean, we don't have to worry about whitespace in the first extraction because there's no space?
+ 
+❌ **Wrong**
+When you the user gets prompted from `std::cin` and they enter a value using the extraction operator, `>>`—even if there are no spaces in what they type—when the user presses **enter**, the terminal sneaks a newline character in, and it stays in the buffer for the next extraction.
+#### Best Practice for Now
+If using `std::getline()` to read strings, use `std::cin >> std::ws` to ignore leading whitespace. This needs to be done for each `std::getline()` call, as `std::ws` is not preserved across calls.
+___
+### 🔹 The length of `std::string`
+If we want to know how many characters are in a `std::string`, we can ask a `std::string` object for its length. It's a tad *different* than we are used to seeing, though it is relatively straightforward:
 
----
-### 🔹 Searching – `.find()`
 ```cpp
-std::string s1 {"This is a test"};
+#include <iostream>
+#include <string>
 
-s1.find("This");   // 0
-s1.find("is");     // 2 (first occurrence)
-s1.find("test");   // 10
-s1.find("pizza");  // std::string::npos
-```
-- Returns index of first character in match
-- If not found: returns `std::string::npos`  
-- Optional second argument = start index
-    - `s1.find('o', 5);`
-####  Pattern Example:
-```cpp
-if (s1.find("pizza") == std::string::npos) {
-    std::cout << "Not found!\n";
-}
-```
-### 🔹 Checking Emptiness – `.empty()`
-```cpp
-std::string s1 {""};
-if (s1.empty()) {
-    std::cout << "String is empty.";
+int main() {
+  std::string name{"Alex"};
+  std::cout << name << " has " << name.length() << " characters in it.\n";
+
+    return 0;
 }
 ```
 
----
-### 🔹 Input – `.getline()`
+Although `std::string` is *usually* null-terminated just like a C-style string, the returned length of a `std::string` does not include the null-terminator character. 
+
+Note: Instead of asking for the string length as `length(name)`, we say `name.length()`. The `.length()` function isn't a normal standalone function, but a special type of function nested with `std::string` called a **member function**. We will cover member functions later, but for now the key detail is normal functions, we call `function(object)`. With member functions, we call `object.function()`.
+
+#### An Aside
+Also note that `std::string::length()` returns an unsigned integral value (most likely of type `size_t`). If you want to assign the length to an `int` variable, you should `static_cast` it to avoid compiler warnings about signed/unsigned conversions:
 ```cpp
-std::string fullName;
-std::getline(std::cin, fullName);
+int length{static_cast<int>(name.length())};
 ```
 
-- `std::cin >>` stops at whitespace and leaves `\n` behind
-- `getline()` reads the entire line including spaces
-####  Common Gotcha:
-```cpp
-int age;
-std::string name;
+Later, consider looking into `std::ssize()`(C++20) at [cppreference.com](https://en.cppreference.com/w/cpp/iterator/size.html)
+___
+### 🔹 Basic Memory Practice with `std::string`
+- Whenever a `std::string` is initialized, a copy of the string use to initialize it is made. Making copies of strings is expensive, so care should be taken to minimize the number of copies made.
+- **Do not** pass `std::string` by value. When `std::string` is PBV, the `std::string` function parameter must be instantiated and initialized with the argument. This result is an expensive copy. We'll discuss what to do instead later when talking about `std::string_view`.
+#### Returning a `std::string`
+When a function returns by value to the caller, the return value is normally copied from the function back to the caller. So you might expect that you *shouldn't* return a `std::string` value; however, as a rule of thumb, that's generally not the case.
 
-std::cin >> age;
-std::getline(std::cin, name);  // gets leftover \n
-```
-####  Fix:
-```cpp
-std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-```
+It is okay to return a `std::string` value when:
+- It resolves to local variable of type `std::string`
+- It resolves to a `std::string` that has been returned by value from another function call or operator
+- It resolves to a `std::string` **temporary** that is created as part of the return type.
+___
+### 🔹 `std::string` Literals
+Double-quoted string literals are considered C-style string literals, but if we want to use a `std::string` literal, we add the `s` suffix to the end of the double-quoted literal. The most concise way to do this is by `using namespace std::literals`, though by doing so you run the risk of adding a bunch of literals you do not need. So it's actually best if you just need `std::string` literals, to only access `using namespace std::string_literals`.
+
+___
+### 📌 Key Definitions
+
+
+
+
+
+
+
+
+
+
+___
+### 🧠 Flashcards
+

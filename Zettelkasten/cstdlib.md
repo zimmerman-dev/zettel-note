@@ -1,10 +1,8 @@
-#### 📝 Note: cstdlib 
  ♻️ (*MinGW, Windows11, Codelite*)   
- ⌚7:32 pm  📆 Wed Aug 6
- 🔗 **Related Concepts**: #note #cpp [[C++ Syntax Reference]]
-
+ ⌚12:17 pm  📆 Sat Sep 20
+ 🔗 **Related Concepts**: #note #cpp
 ___
-
+## 📝 Note: cstdlib
 ### 🔹 `<cstdlib>` — String Conversion Functions
 
 These functions convert `char*` → numeric types (and vice versa in some cases):
@@ -20,3 +18,18 @@ These functions convert `char*` → numeric types (and vice versa in some cases)
 | `getenv(const char*)`  | Get environment variable by name |
 | `system(const char*)`  | Run shell command from string    |
 ##### 🚫 `atoi()` and friends do no error checking—prefer `strtol()` where possible.
+___
+### 📌 Key Definitions
+
+
+
+
+
+
+
+
+
+
+___
+### 🧠 Flashcards
+

@@ -45,24 +45,31 @@ The *size* of the address depends on the CPU architecture; for example, a 64-bit
 
 
 --- end-multi-column
-
-##  **Summary: How Floats Store Decimal Numbers**
-
-### 🔹 Floats use **binary scientific notation**
-
+___
+___
+___
+### 🔹 How Floats Store Decimal Numbers
+--- start-multi-column: ID_2irr
+```column-settings
+Number of Columns: 3
+Largest Column: Standard
+Column Spacing: 3px
+Border: off
+```
+#### Floats use **binary scientific notation**
 A number like `5.5` is stored as:
 
 ```
 1.011 × 2^2
 ```
 
-This breaks into:
-
+**This breaks into**:
 - **Sign bit** (0 = positive, 1 = negative)
 - **Exponent bits** (shift amount, using a bias)
 - **Fraction bits** (the digits after the binary point)
----
-### 🔹 Binary fractions use powers of 1/2:
+
+--- column-break ---
+#### Binary fractions use powers of 1/2:
 ```
 0.1 = 1/2  
 0.01 = 1/4  
@@ -71,8 +78,9 @@ This breaks into:
 ```
 
 Only numbers made from **clean sums of those** can be stored exactly.
-___
-### 🔹 Most decimals **can’t** be stored exactly in binary
+
+--- column-break ---
+#### Most decimals **can’t** be stored exactly in binary
 Numbers like:
 - `0.1`
 - `0.2`    
@@ -81,72 +89,79 @@ Numbers like:
 ...become infinite binary fractions and get **rounded** when stored.
 
 That’s why:
-
 ```cpp
 0.1f + 0.2f != 0.3f
 ```
 
----
+--- end-multi-column
+⬇️**cont'd**⬇️
+--- start-multi-column: ID_ns9e
+```column-settings
+Number of Columns: 3
+Largest Column: standard
+Column Spacing: 3px
+Border: off
+```
+#### A float has 3 parts (32 bits total):
 
-### 🔹 A float has 3 parts (32 bits total):
+|  Field   |  Size   |             Purpose              |
+| :------: | :-----: | :------------------------------: |
+|   sign   |  1 bit  |       Positive or Negative       |
+| Exponent | 8 bits  | Tells how far to shift with bias |
+| Fraction | 23 bits |       Holds the precision        |
 
-| Field    | Size    | Purpose                            |
-| -------- | ------- | ---------------------------------- |
-| Sign     | 1 bit   | Positive or negative               |
-| Exponent | 8 bits  | Tells how far to shift (with bias) |
-| Fraction | 23 bits | Holds the precision digits         |
-
----
-
-### 🔹 The Exponent Uses a Bias
-
+--- column-break ---
+#### The Exponent Uses a Bias
 - `float` uses **127** as the bias
-    
+
 - So:
-    
-    - Actual exponent = 2
-        
+    - Actual exponent = 2  
     - Stored = 2 + 127 = 129 → `10000001`
-        
 
 This lets the computer store both positive and negative exponents using only **positive** bit values.
 
----
-
-### 🔹 Rule of Thumb:
-
+--- column-break ---
+#### Rule of Thumb:
 > A decimal can be stored **exactly** in binary if it’s a fraction whose denominator is a power of 2.
 
 Examples:
-
 - ✅ 0.5 = 1/2
-    
 - ✅ 0.625 = 5/8
-    
 - ❌ 0.1 = 1/10
-    
 - ❌ 0.3 = 3/10
-    
 
+--- end-multi-column
 
+___
+___
+___
+### 🔹 Storing values and memory
+Consider the following:
 
+```cpp
+int x{5};
+// vs.
+int x = 5;
+```
 
+> **Both of the initializations tell the compiler this**:
+> 
+> *Give me a piece of memory of the size of type*,  `int` *and store value* `5` *in there. Also, allow me to refer to that memory location as* `x`.
 
+Both end up creating the same memory layout in most cases:
+- A memory block is allocated (usually 4-bytes for `int`).
+- The value `5` is **written** into that block of memory.
+- The name `x` is bound to that memory location (because `x` refers to location in memory, not the value).
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+However, the syntax of how you initialize objects changes the rules for how the compiler checks and converts the value you are trying to store. See [[Assignment & Initialization]] for more details.
+___
+___
+___
+### 🔹 Dynamic Memory Allocation
+TBD
+___
+___
+___
 
 
 
