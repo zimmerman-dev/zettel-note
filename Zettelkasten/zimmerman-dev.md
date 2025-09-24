@@ -28,7 +28,7 @@ ___
 
 ### 🔹 Week 4:  **09/16 – 09/22** — Strings, Operators, and Flow  
 📍 **Ch. 5 (cont.) + Ch. 6 + 8.1–8.5** — _Strings, Operators, Basic Flow_  
-- [ ] **Block 1:** (5.5 → 5.9) `constexpr`, `std::string`, `std::string_view`  
+- [x] **Block 1:** (5.5 → 5.9) `constexpr`, `std::string`, `std::string_view`  
 - [ ] **Block 2:** (6.1 → 6.4) Precedence, arithmetic, increment/decrement  
 - [ ] **Block 3:** (6.5 → 8.5) Comma, ternary, relational/logical, if/switch  
 - [ ] **Weekend:** Chapter 6 quiz + flow diagramming  

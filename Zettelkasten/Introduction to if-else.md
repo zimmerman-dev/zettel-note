@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:54 pm  📆 Sat Sep 13
- 🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Conditionals]] , [[Statements and Expressions]] , [[Operators]] , [[Boolean Logic]] , [[Functions - Return]]
+ 🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Conditionals]] , [[Statements and Expressions]] , [[Operators - Basics]] , [[Boolean Logic]] , [[Functions - Return]]
 ___
 ## 📝 Note: Introduction to if-else
 The `if` statement introduces **conditional flow** into a program—one of the most fundamental ways to make your code react to what's happening at runtime.
@@ -107,7 +107,7 @@ int main() {
   return 0;
 }
 ```
-This pattern gives us a structured logic tree. Only one branch will ever execute—whichever condition passes first. See [[Operators]] and [[Statements and Expressions]].
+This pattern gives us a structured logic tree. Only one branch will ever execute—whichever condition passes first. See [[Operators - Basics]] and [[Statements and Expressions]].
 ___
 ### 🔹 Using Functions that Return `bool`
 You can pass conditions into `if` statements from **any expression that returns a Boolean**, including your own functions.

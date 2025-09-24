@@ -1,8 +1,9 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:23 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Boolean Logic]], [[Statements and Expressions]]
+ 🔗 **Related Concepts**: #note #cpp [[Operators - Precedence and Associativity]] , [[Operators - Arithmetic, Remainder, and Exponentiation]] , 
 ___
 ## 📝 Note: Operators
+
 An **operator** is a special symbol or keyword that performs operations on one or more operands. They're the core tools used within **expressions** to compute values, assign data, compare, or manipulate logic and memory.
 
 ```cpp title:Operators

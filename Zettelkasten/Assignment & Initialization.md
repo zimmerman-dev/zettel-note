@@ -117,17 +117,87 @@ int x{4.5};   // ❌ Error: narrowing conversion from double to int
 
 If you really want to allow it, you can use a `static_cast` or go back to copy/direct initialization.
 ___
-### 📌 Key Definitions
-
-
-
-
-
-
-
-
-
-
-___
 ### 🧠 Flashcards
 
+**Question**  
+What is the difference between assignment and initialization in C++?  
+?|?  
+**Answer**  
+**Initialization** happens _at the point of variable definition_, giving it its first value.  
+**Assignment** happens _after_ a variable has been defined, updating its value.
+
+---
+
+**Question**  
+Which of these is initialization and which is assignment?
+
+`int x = 5; x = 10;`
+
+?|?  
+**Answer**  
+`int x = 5;` → **Initialization**  
+`x = 10;` → **Assignment**
+
+---
+
+**Question**  
+Why is copy initialization potentially less type-safe than brace initialization?  
+?|?  
+**Answer**  
+Copy initialization allows **implicit conversions** and **narrowing** (e.g. `double → int`), which can lead to silent data loss.  
+Brace initialization forbids narrowing and is more strict.
+
+---
+
+**Question**  
+Which form of initialization creates a temporary and then moves or copies it?
+
+`std::string name = "Tim";`
+
+?|?  
+**Answer**  
+**Copy initialization.**  
+A temporary `std::string` is created from `"Tim"`, then moved (or copied) into `name`.
+
+---
+
+**Question**  
+Which form of initialization constructs the object directly with no temporary?
+
+`std::string name("Tim");`
+
+?|?  
+**Answer**  
+**Direct initialization.**  
+The object is constructed in-place with the argument `"Tim"`.
+
+---
+
+**Question**  
+What is brace initialization, and why is it called "uniform"?  
+?|?  
+**Answer**  
+Brace initialization uses `{}` to initialize variables. It’s called “uniform” because the syntax works across all types (fundamental, arrays, structs, classes) and reduces ambiguity.
+
+---
+
+**Question**  
+What happens when you try to use brace initialization with a narrowing conversion?
+
+`int x{4.5};`
+
+?|?  
+**Answer**  
+**Compilation fails.**  
+Brace initialization forbids narrowing conversions to prevent silent truncation or data loss.
+
+---
+
+**Question**  
+Which form of initialization is safest for preventing unintended type conversions?  
+?|?  
+**Answer**  
+**Brace initialization** — it disallows narrowing and forces explicitness, making it the safest choice for type safety.
+
+
+#flashcards 

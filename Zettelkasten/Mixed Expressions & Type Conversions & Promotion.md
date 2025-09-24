@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:31 am  📆 Thu Jul 24
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Operators]], [[Type Casting]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Operators - Basics]], [[Type Casting]]
 ___
 ##  📝 Note: Mixed Expressions & Type Conversions & Promotion
 An expression involving **two or more different data types**, such as `int` and `double`.
