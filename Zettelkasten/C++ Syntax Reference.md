@@ -1,13 +1,13 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:06 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]], [[Operators - Basics]], [[Fundamental Data Types]]
+ 🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]], [[Operators - Overview]], [[Fundamental Data Types]]
 ___
 ## 📘 C++ Syntax Reference
 A concise, topic-driven reference for fundamental C++ syntax
 ### 🔹 Core Building Blocks
 - [[Statements and Expressions]]  
   → Learn how C++ programs are structured at the smallest level.
-- [[Operators - Basics]]  
+- [[Operators - Overview]]  
   → Arithmetic, logical, relational, assignment, and more.
 - [[Fundamental Data Types]]  
   → Primitive types (`int`, `float`, `char`, etc.) and user-defined types.

@@ -3,7 +3,7 @@
  🔗 **Related Concepts**: #note #cpp [[Operators - Precedence and Associativity]] , [[Fundamental Data Types]] , [[Mixed Expressions & Type Conversions & Promotion]]
 ___
 ## 📝 Note: Operators - Arithmetic, Remainder, and Exponentiation
-This note is a compilation of a few different operator topics. We'll start with Arithmetic and work our way to the right. As you read this, you may get linked over to [[Operators - Basics]].
+This note is a compilation of a few different operator topics. We'll start with Arithmetic and work our way to the right. As you read this, you may get linked over to [[Operators - Overview]].
 ___
 --- start-multi-column: ID_gq0m
 ```column-settings
@@ -257,27 +257,111 @@ int b{-3};
 The **remainder is still positive**, because it matches the sign of the dividend (`7`), not the divisor.
 ___
 ### 🔹 Exponentiation
-If you haven't already noticed, what is commonly used for exponents in math, `operator^`, is the *Bitwise XOR* operation in C++.  To do exponents in C++, you'll have to `#include <cmath>` header, and use the `pow()` function.
+In mathematics, the caret symbol (`^`) typically means exponentiation (e.g. `2^3 = 8`).  
+However, in C++, `^` is the **bitwise XOR** operator, _not_ exponentiation.
+
+To perform exponentiation in C++, use the `std::pow()` function from the `<cmath>` header:
 ```cpp
 #include <iostream>
 #include <cmath>
 
 int main() {
-  int
+  double product{ std::pow(5.0, 3.0) };
+  std::cout << product << '\n';
+
+  return 0;
 }
 ```
 
-### 📌 Key Definitions
+**Note**: `std::pow()` works with floating-point types. If you need to perform exponentiation on integers (e.g. `2^5 = 32`) without converting to double, it’s better to write your own integer-based version:
+```cpp
+#include <iostream>
 
+int intPow(int base, int exponent) {
+  int product{ 1 };
+  for (int i = 0; i < exponent; ++i) {
+    product *= base;
+  }
+  return product;
+}
 
+int main() {
+  int product{ intPow(2, 5) };
+  std::cout << product << '\n';
+  return 0;
+}
+```
+**Note**: This basic version doesn't handle edge cases like negative exponents or overflow. For robust usage, you’d want to:
 
-
-
-
-
-
-
-
+-   Validate input (e.g. no negative exponents unless using `double`)  
+-   Consider using `std::int64_t` for large bases   
+-   Possibly switch to `constexpr` if you're doing compile-time powers
 ___
 ### 🧠 Flashcards
 
+What type of operator is `x += 3` and why is it classified that way?  
+?|?  
+A modifying operator — because it changes the value stored in the left-hand operand (`x` is updated).
+
+---
+
+If `int a = -7; int b = 3;`, what is the value of `a % b` in C++?  
+?|?  
+`-1`, because the remainder keeps the sign of the dividend (`a`), even if the divisor is positive.
+
+---
+
+Will this compile?
+```cpp
+int x{2};
+int y{5};
+
+int result{std::pow(x,y)};
+```  
+?|?  
+Yes, it will compile — but `std::pow(x, y)` returns a `double`, so the result will be **narrowed** when initializing `int result`, which may cause a **compiler warning** or **truncation**. For pure integer math, write your own function instead.
+
+---
+
+In C++, what happens when you divide a floating-point number by 0.0? (e.g., `5.0 / 0.0`)  
+?|?  
+It returns positive or negative infinity (or NaN for 0.0/0.0), as defined by IEEE-754.
+
+---
+
+What value does `int result = 7 / 4;` store in `result` and why?  
+?|?  
+`1` — because both operands are integers, so the result is truncated (not rounded).
+
+---
+
+What is the behavior of `7 % -3` in C++ and why?  
+?|?  
+It returns `1` — the sign of the remainder always matches the dividend (`7`), not the divisor.
+
+---
+
+What is the general identity rule that the remainder operator `%` must follow in C++?  
+?|?  
+`a == (a / b) * b + (a % b)`
+
+---
+
+What kind of operator is the unary minus (e.g., `-x`), and what does it actually do?  
+?|?  
+A unary arithmetic operator — it negates the value, equivalent to multiplying by -1.
+
+---
+
+Why is `int x = 5; int y = x * 2;` considered non-modifying?  
+?|?  
+Because the expression computes a new value but doesn't change `x`; it only uses `x`.
+
+---
+
+How would you rewrite `x *= y;` without using the shorthand operator?  
+?|?  
+`x = x * y;`
+
+
+#flashcards 

@@ -61,6 +61,7 @@ Number of Columns: 2
 Largest Column: Left
 Column Spacing: 3px
 Border: off
+Overflow: Hidden
 ```
 
 |  Size / Type  |                            Range                            |
