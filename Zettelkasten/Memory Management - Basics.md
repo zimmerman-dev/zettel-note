@@ -3,6 +3,14 @@
  🔗 **Related Concepts**: #note #cpp [[Sizeof Operator]] , [[Fundamental Data Types]]
 ___
 ## 📝 Note: Memory Management - Basics
+structured, starting from the **bit-level** and building up to how the CPU sees and manages it. We'll touch briefly on the physical hardware (like logic gates and registers), then move toward how memory is addressed, typed, and organized. If you’re looking for deeper dives into specific topics, see:
+
+- [[Boolean Logic]] — how binary true/false values behave
+- [[Binary Numbers - Basic]] — how to count in base-2 and interpret bits as numbers
+- [[Gates]] — the physical circuits that store and process bits
+- [[Bit Manipulation - Overview]] — how to work with individual bits in C++ using tools like `std::bitset`
+
+Understanding memory at this level lays the groundwork for everything else: variables, arrays, pointers, stack/heap, and even higher-level abstractions like classes and file I/O all depend on how memory is modeled and managed. This note is where that journey begins.
 --- start-multi-column: ID_1mjs
 ```column-settings
 Number of Columns: 3
@@ -43,8 +51,22 @@ The *size* of the address depends on the CPU architecture; for example, a 64-bit
 0x00000000
 ```
 
-
 --- end-multi-column
+___
+### 🔹 Bits at the Hardware Level
+Before we dive deeper into how _types_ behave in memory, it helps to zoom in and ask: **how does memory actually store a `1` or a `0`**? At the lowest level, memory is made of **electronic circuits** built from logic gates, most commonly the **NAND gate**. Using just **four NAND gates**, engineers can wire up a simple circuit that _remembers_ a bit: a `1` or a `0`. This is the basic building block of memory and is sometimes called a **latch** or **memory cell**.
+
+We won’t go deep into how these gates are wired (see: [[Hardware - Boolean Logic & Circuits (STUB)]]), but what matters now is this:
+- Every **bit in memory** is physically represented by a small, switch-like circuit.
+- **One circuit = one bit.** 
+- Group 8 of them together and you get a **byte**.
+- Group 8, 16, 32, or 64 of them and you get a **register**—a named collection of bits the CPU can read from or write to in one operation.
+___
+### 🔹 Registers and Indexed Bits
+A **register** is a small, fast storage unit inside the CPU or hardware component. Each register holds a fixed number of bits, and each bit has a **position index**, starting from 0 on the right (least significant bit):
+                                ![[register.png]]
+When visualized left to right, the output matches the binary layout you'd see in C++. For example, this register holds the value `10001001`, where `bitset[0]` maps to Bit 0 (1's place), and `bitset[7]` maps to Bit 7 (128's place). Refer to [[Bit Manipulation - Overview]] to see how to you can work with bitmasks and other bit manipulation tools.
+
 ___
 ___
 ___

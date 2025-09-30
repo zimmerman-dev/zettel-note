@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:25 pm  📆 Mon Sep 8
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]] , [[Binary Numbers & Bit Manipulation]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]] , [[Binary Numbers - Basic]]
 ___
 ## 📝 Note: Scientific Notation
 This note is an intro to scientific notation, and should be considered a pre-requisite read before moving on to [[Floating-Point Types]]. **Scientific Notation** is a useful shorthand for writing large or small numbers in a standardized and concise way.  Gaining a firm grasp on it will prepare you for understanding how floating-point numbers work, and more importantly, what their **limitations** are.

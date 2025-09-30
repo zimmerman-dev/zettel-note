@@ -1,9 +1,9 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:42 pm  📆 Thu Sep 18
- 🔗 **Related Concepts**: #note #cpp [[Binary Numbers & Bit Manipulation]] , [[IEEE 754]] , [[Arithmetic Conversions(STUB)]]
+ 🔗 **Related Concepts**: #note #cpp [[Binary Numbers - Basic]] , [[IEEE 754]] , [[Arithmetic Conversions(STUB)]]
 ___
 ## 📝 Note: Numeral Systems
-Most of the stuff on binary will be covered in [[Binary Numbers & Bit Manipulation]] and [[IEEE 754]]. With that in mind this note will be the place I compile all my notes on **hexadecimal** and **octal** unless I find it necessary later to expand those concepts into their own notes. 
+Most of the stuff on binary will be covered in [[Binary Numbers - Basic]] and [[IEEE 754]]. With that in mind this note will be the place I compile all my notes on **hexadecimal** and **octal** unless I find it necessary later to expand those concepts into their own notes. 
 
 --- start-multi-column: ID_u6cw
 ```column-settings

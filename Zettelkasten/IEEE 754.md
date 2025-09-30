@@ -223,7 +223,7 @@ Floating point is just **scientific notation in base 2**.
 ----------
 ### 10. Where This Connects
 -   [[Floating-Point Types]]   
--   [[Binary Numbers & Bit Manipulation]] 
+-   [[Binary Numbers - Basic]] 
 -   [[Memory Management - Basics]] 
 
     
