@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:06 pm  📆 Sat Sep 13
- 🔗 **Related Concepts**: #note #cpp  [[Fundamental Data Types]] , [[Binary Numbers - Basic]] , [[ASCII Table]]  
+ 🔗 **Related Concepts**: #note #cpp  [[Fundamental Data Types]] , [[Binary Numbers - Overview]] , [[ASCII Table]]  
 ___
 ## 📝 Note: Char
 A `char` is a **fundamental integral type**, meaning it behaves like a small integer under the hood. It’s commonly used to store **character codes**, typically from the ASCII set.

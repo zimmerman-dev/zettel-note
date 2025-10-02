@@ -2,7 +2,7 @@
  ⌚11:12 am  📆 Sun Sep 7
  🔗 **Related Concepts**: #note #cpp
 ___
-## 📝 Note: Binary Numbers - Basic
+## 📝 Note: Binary Numbers - Overview
 When you interact with a computer—watching videos, sending messages, playing games—everything you see or hear is the result of processing electrical signals. But if you were to look inside the machine, you wouldn't find pictures or sounds stored as-is. Instead, everything is reduced to a common foundation: the **bit**, or **binary digit**.
 
 A **bit** is the smallest unit of data in computing. At the physical level, it's implemented as a tiny switch (a transistor) that can exist in one of two states: **on** or **off**, typically represented as `1` and `0`. This binary system is not arbitrary. Digital electronics use binary because it's the most stable and reliable way to represent state. Voltage is either present (`1`) or not (`0`). There's no ambiguity, which makes binary ideal for durable computation, storage, and transmission.

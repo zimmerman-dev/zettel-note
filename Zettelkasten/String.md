@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:14 pm  📆 Sat Sep 20
- 🔗 **Related Concepts**: #note #cpp [[String Syntax Reference]] , [[C-Style Strings]] , [[string_view]] , [[Fundamental Data Types]] , [[Memory Management - Basics]]
+ 🔗 **Related Concepts**: #note #cpp [[String Syntax Reference]] , [[C-Style Strings]] , [[string_view]] , [[Fundamental Data Types]] , [[Memory Management - Overview]]
 ___
 ## 📝 Note: string
 While it's fine to use **C-style string literals**, **C-style string variables** come with their own set of challenges.
@@ -41,7 +41,7 @@ int main() {
   }
 ```
 #### Key insights
-Unlike the fundamental types like `int`, `char`, `float`, etc., `std::string` can be initialized with a very small value, only to be assigned later with a much larger value. This is the power of the `std::string`! If `std::string` doesn't have enough memory to store a string, it will request additional memory (at runtime) using a form of memory allocation called **dynamic memory allocation**, which we will discuss later in [[Memory Management - Basics]].
+Unlike the fundamental types like `int`, `char`, `float`, etc., `std::string` can be initialized with a very small value, only to be assigned later with a much larger value. This is the power of the `std::string`! If `std::string` doesn't have enough memory to store a string, it will request additional memory (at runtime) using a form of memory allocation called **dynamic memory allocation**, which we will discuss later in [[Memory Management - Overview]].
 ___
 ### 🔹 String input with `std::cin`
 Using `std::string` with `std::cin` may yield surprising results! Consider the following program:

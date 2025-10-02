@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:15 pm  📆 Sat Sep 20
- 🔗 **Related Concepts**: #note #cpp [[string]] , [[C-Style Strings]] , [[String Syntax Reference]] , [[Constants & Constexpr]] , [[Memory Management - Basics]]
+ 🔗 **Related Concepts**: #note #cpp [[string]] , [[C-Style Strings]] , [[String Syntax Reference]] , [[Constants & Constexpr]] , [[Memory Management - Overview]]
 ___
 ## 📝 Note: `std::string_view`
 `std::string_view` is a lightweight, non-owning read-only view of a character sequence. As you read on, we will discuss the differences between `std::string` and `std::string_view` and why it's important.

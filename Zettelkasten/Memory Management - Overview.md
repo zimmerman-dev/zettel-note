@@ -6,7 +6,7 @@ ___
 structured, starting from the **bit-level** and building up to how the CPU sees and manages it. We'll touch briefly on the physical hardware (like logic gates and registers), then move toward how memory is addressed, typed, and organized. If you’re looking for deeper dives into specific topics, see:
 
 - [[Boolean Logic]] — how binary true/false values behave
-- [[Binary Numbers - Basic]] — how to count in base-2 and interpret bits as numbers
+- [[Binary Numbers - Overview]] — how to count in base-2 and interpret bits as numbers
 - [[Gates]] — the physical circuits that store and process bits
 - [[Bit Manipulation - Overview]] — how to work with individual bits in C++ using tools like `std::bitset`
 

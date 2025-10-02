@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚6:41 pm  📆 Sun Sep 7
- 🔗 **Related Concepts**: #note #cpp [[Binary Numbers - Basic]] [[Signed Integers]] [[Fundamental Data Types]] [[Memory Management - Basics]]
+ 🔗 **Related Concepts**: #note #cpp [[Binary Numbers - Overview]] [[Signed Integers]] [[Fundamental Data Types]] [[Memory Management - Overview]]
 ___
 ## 📝 Note: Unsigned Integers
 --- start-multi-column: ID_gy20
@@ -109,7 +109,7 @@ int main()
 Favor signed numbers over unsigned numbers for holding quantities (even quantities that should be non-negative) and mathematical operations. Avoid mixing signed and unsigned numbers.
 ___
 ### 🔹 So When?
-Unsigned integers have their place, especially in lower level, and systems level programming. We will talk more about that in [[Binary Numbers - Basic]]. Also, unsigned integers are sometimes relatively unavoidable, mainly when it comes to array indexing. We'll talk more about that in [[Arrays]]. Lastly, in embedded systems or memory-constrained environments, unsigned integers are often necessary due to hardware constraints or to avoid wasted space.
+Unsigned integers have their place, especially in lower level, and systems level programming. We will talk more about that in [[Binary Numbers - Overview]]. Also, unsigned integers are sometimes relatively unavoidable, mainly when it comes to array indexing. We'll talk more about that in [[Arrays]]. Lastly, in embedded systems or memory-constrained environments, unsigned integers are often necessary due to hardware constraints or to avoid wasted space.
 ___
 ### 📌 Key Definitions
 - **Unsigned Integer**  

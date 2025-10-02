@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:52 pm  📆 Tue Aug 26
- 🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]] , [[Variables and Objects]] , [[Memory Management - Basics]]
+ 🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]] , [[Variables and Objects]] , [[Memory Management - Overview]]
 ___
 ## 📝 Note: Uninitialized Variables & Undefined Behavior
 - In **C/C++**, local variables are **not automatically initialized**.

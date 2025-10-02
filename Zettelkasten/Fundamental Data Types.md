@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:58 pm  📆 Wed Sep 3
- 🔗 **Related Concepts**: #note #cpp [[Sizeof Operator]] , [[Pointers and References]] , [[Memory Management - Basics]]
+ 🔗 **Related Concepts**: #note #cpp [[Sizeof Operator]] , [[Pointers and References]] , [[Memory Management - Overview]]
 ___
 ## 📝 Note: Fundamental Data Types
 
@@ -14,6 +14,7 @@ Number of Columns: 3
 Largest Column: Left
 Column Spacing: 3px
 Border: off
+Overflow: Hidden
 ```
 ##### Floating Point Types
 - `float`
