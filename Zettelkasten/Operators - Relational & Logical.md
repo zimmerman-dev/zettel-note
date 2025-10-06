@@ -47,7 +47,7 @@ if (std::abs(a - b) < epsilon) { /* close enough */ }
 --- end-multi-column
 ___
 ### 🔹 Logical Operators
-C++ provides 3 logical operators where you can test multiple conditions at once. See: [[Boolean Logic]] and [[Gates]] for more practical information.
+C++ provides 3 logical operators where you can test multiple conditions at once. See: [[Boolean Logic]] and [[Logic Gates]] for more practical information.
 
 |  Operator   | Symbol |     Form     |                              Operation                              |
 | :---------: | :----: | :----------: | :-----------------------------------------------------------------: |

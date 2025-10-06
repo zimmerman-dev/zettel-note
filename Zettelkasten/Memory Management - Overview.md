@@ -7,7 +7,7 @@ structured, starting from the **bit-level** and building up to how the CPU sees 
 
 - [[Boolean Logic]] — how binary true/false values behave
 - [[Binary Numbers - Overview]] — how to count in base-2 and interpret bits as numbers
-- [[Gates]] — the physical circuits that store and process bits
+- [[Logic Gates]] — the physical circuits that store and process bits
 - [[Bit Manipulation - Overview]] — how to work with individual bits in C++ using tools like `std::bitset`
 
 Understanding memory at this level lays the groundwork for everything else: variables, arrays, pointers, stack/heap, and even higher-level abstractions like classes and file I/O all depend on how memory is modeled and managed. This note is where that journey begins.
