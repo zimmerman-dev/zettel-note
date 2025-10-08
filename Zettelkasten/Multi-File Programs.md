@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:37 am  📆 Sun Aug 31
- 🔗 **Related Concepts**: #note #cpp [[Functions - Prototypes]] , [[Namespaces]] , [[Functions - Scope, Lifetime, and Temporaries]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Prototypes]] , [[Namespaces, Scope, and Linkage]] , [[Functions - Scope, Lifetime, and Temporaries]]
 ___
 ## 📝 Note: Multi-File Programs
 ###  🔹 Why split files?

@@ -49,7 +49,7 @@ A concise, topic-driven reference for fundamental C++ syntax
 
 ---
 ###  🔹 Additional Features
-- [[Namespaces]]  
+- [[Namespaces, Scope, and Linkage]]  
   → Avoiding name collisions
 - [[Templates]]  
   → Generic programming syntax (`template<typename T>`)

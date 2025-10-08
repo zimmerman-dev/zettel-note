@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:14 am  📆 Mon Sep 1
- 🔗 **Related Concepts**: #note #cpp [[Multi-File Programs]] [[Preprocessor Directives]] [[Namespaces]]
+ 🔗 **Related Concepts**: #note #cpp [[Multi-File Programs]] [[Preprocessor Directives]] [[Namespaces, Scope, and Linkage]]
 ___
 ## 📝 Note: Header Files
 Conventionally, a header file could be something like `<iostream>` or your own header file within your project file. Header files are also used to propagate a bunch of related forward declarations into a code file. 
