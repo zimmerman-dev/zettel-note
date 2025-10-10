@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚8:36 pm  📆 Sun Sep 7
- 🔗 **Related Concepts**: #note #cpp [[Signed Integers]] , [[Fundamental Data Types]] , [[Sizeof Operator]] , [[climits]] 
+ 🔗 **Related Concepts**: #note #cpp [[Signed Integers]] , [[Unsigned Integers]] , [[Fundamental Data Types]] , [[Sizeof Operator]] , [[climits]] 
 ___
 ## 📝 Note: Fixed-Width Integers
 So, we know C++ only guarantees that integer variables **will have a minimum size** -- but they could be larger, depending on the target system. The common example is that an `int` has a minimum size of 16-bits, but it's typically 32-bits on modern architectures.  

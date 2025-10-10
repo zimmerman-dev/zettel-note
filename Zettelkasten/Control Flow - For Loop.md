@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚4:12 pm  📆 Sat Aug 2
- 🔗 **Related Concepts**: #cpp #note [[Loops - Overview]], [[Operators - Increment & Decrement]]
+ 🔗 **Related Concepts**: #cpp #note [[Control Flow - Loops Overview]], [[Operators - Increment & Decrement]]
 ___
 ## 📝 Note: For 
 A traditional `for` loop is ideal when you need to iterate a **specific number of times** or require control over the loop variable.

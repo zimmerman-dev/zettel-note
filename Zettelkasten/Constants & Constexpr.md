@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:08 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Variables and Objects]], [[Enums]] , [[Preprocessor Directives]], [[Functions - Parameters & Arguments]], [[Pointers and References]] , [[Compile-time Optimization]]
+ 🔗 **Related Concepts**: #note #cpp [[Variables and Objects]], [[Enums]] , [[Preprocessor Directives]], [[Functions - Parameters & Arguments]], [[Pointers and References]] , [[Compile-time Optimization]]
 ___
 ## 📝 Note: `const` and `constexpr`
 In C++, a **constant** is any value that cannot change once it’s been set.  

@@ -40,12 +40,13 @@ ___
 
 ### 🔹 Week 5:  **09/23 – 09/29** — Scope & Linkage 
 📍 **Chapter 7** — _Scope, Duration, Linkage_  
-- [ ] **Block 1:** (7.1 → 7.5) Blocks, namespaces, globals, shadowing  
-- [ ] **Block 2:** (7.6 → 7.10) Linkage, const globals, inline vars  
-- [ ] **Block 3:** (7.11 → 7.14) Static locals, using declarations, unnamed NS  
-- [ ] **Weekend:** Chapter 7 quiz + scope/lifetime worksheet  
+- [x] **Block 1:** (7.1 → 7.5) Blocks, namespaces, globals, shadowing  
+- [x] **Block 2:** (7.6 → 7.10) Linkage, const globals, inline vars  
+- [x] **Block 3:** (7.11 → 7.14) Static locals, using declarations, unnamed NS  
+- [x] **Weekend:** Chapter 7 quiz + scope/lifetime worksheet  
 ### 🔹 Week 6:  **09/30 – 10/06** — Loops, Branches, and Randomness  
-📍 **Ch. 8.6–8.15** — _Loops, Goto, RNG_  
+📍 **Ch. 8–8.15** — _If_, _Loops, Goto, RNG_  
+- [x] **Block 0:** (8 → 8.5) _if, if else, else if, and switch statements_ 
 - [ ] **Block 1:** (8.6 → 8.10) Switch scoping, goto, loops: while/do/for  
 - [ ] **Block 2:** (8.11 → 8.15) Break/continue, halt, RNG, Mersenne Twister  
 - [ ] **Block 3:** Practice problems + reroll logic game  

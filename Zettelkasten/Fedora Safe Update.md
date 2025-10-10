@@ -1,4 +1,3 @@
-#### 📝 Note: Fedora Safe Update 
  ⌚6:49 pm  📆 Wed Aug 13
  🔗 **Related Concepts**: #note #toolchain 
 ___

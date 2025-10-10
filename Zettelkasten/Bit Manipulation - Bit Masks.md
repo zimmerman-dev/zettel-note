@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:58 pm  📆 Sat Oct 4
- 🔗 **Related Concepts**: #note #cpp [[Bit Manipulation - Overview]] . [[Operators - Bitwise Operators & Bit Manipulation]] , [[Binary Numbers - Overview]] , [[Memory Management - Overview]]
+ 🔗 **Related Concepts**: #note #cpp [[Operators - Bitwise Operators & Bit Manipulation]] , [[Binary Numbers - Overview]] 
 ___
 ## 📝 Note: Bit Manipulation - Bit Masks
 In the last few modules, we learned bit manipulation using `std::bitset<size_t N>`, and basic bitwise operators. Lets go from theory and fundamentals, and move into how bit manipulation is commonly done.

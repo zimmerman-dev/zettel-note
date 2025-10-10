@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚8:01 pm  📆 Tue Sep 2
- 🔗 **Related Concepts**: #note #cpp [[Debugging - Manual Tactics]] [[Plog]] [[Designing a Program]]
+ 🔗 **Related Concepts**: #note #cpp [[Debugging - Manual Tactics]] , [[Plog]] , [[Designing a Program]]
 ___
 ## 📝 Note: Debugging - IDE Debugger
 A **Debugger** is a computer program that allows the programmer to control how another program executes and examine the program state while that program is running. The power of a debugger is twofold: The ability to precisely control execution of the program, and the ability to view (and modify, if desired) the program's state.

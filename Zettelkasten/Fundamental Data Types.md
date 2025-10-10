@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:58 pm  📆 Wed Sep 3
- 🔗 **Related Concepts**: #note #cpp [[Sizeof Operator]] , [[Pointers and References]] , [[Memory Management - Overview]]
+ 🔗 **Related Concepts**: #note #cpp [[Boolean Type]] , [[Signed Integers]] , [[Unsigned Integers]] , [[Fixed-Width Integers]] , [[Char]] , [[Floating-Point Types]] , [[Pointers and References]]
 ___
 ## 📝 Note: Fundamental Data Types
 

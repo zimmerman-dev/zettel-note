@@ -3,7 +3,6 @@
  🔗 **Related Concepts**: #note #cpp [[Introduction to Programming]] 
 ___
 ## 📝 Note: Basic Formatting
-
 ### 🔹 Info
 This section is **mostly stylistic** — no quiz, no new concepts.  
 Keep this note minimal and revisit later if you want a custom style guide.

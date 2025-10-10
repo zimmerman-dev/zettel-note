@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:24 pm  📆 Sat Aug 2
- 🔗 **Related Concepts**: #cpp #note  [[Loops - Overview]]
+ 🔗 **Related Concepts**: #cpp #note  [[Control Flow - Loops Overview]]
 ___
 ## 📝 Note: Loops - Do While 
 

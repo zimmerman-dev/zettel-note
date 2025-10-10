@@ -1,12 +1,12 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚6:05 pm  📆 Mon Sep 22
- 🔗 **Related Concepts**: #note #cpp
+ 🔗 **Related Concepts**: #note #cpp [[Statements and Expressions]] , [[Variables and Objects]] , [[Memory Management - Overview]]
 ___
 ## 📝 Note: Assignment & Initialization
 In [[Statements and Expressions]], we laid a surface-level foundation on what assignment is, and we’ve alluded to initialization in different parts of this notebook. In this note, we’ll dive deeper into both concepts so we can connect them with fundamentals of memory management down the road.
 
 Before going further, check out:  
-[[Mixed Expressions & Type Conversions & Promotion]] and [[Introduction to Type Conversion and static_cast]].
+[[Mixed Expressions & Type Conversions & Promotion]] and [[Type Conversion - Overview]].
 ___
 ### Assignment vs Initialization
 

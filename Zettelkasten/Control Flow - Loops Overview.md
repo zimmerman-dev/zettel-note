@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:36 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Boolean Logic]] , [[Operators - Overview]] , [[Statements and Expressions]] , [[Loops - For]] , [[Loops - While]] , [[Loops - Do While]] , [[Loops - Ranged-based For]] , [[Loops - Nesting]] , [[C++ Basics]]
+ 🔗 **Related Concepts**: #note #cpp [[Control Flow - For Loop]] , [[Control Flow - While Loops]] , [[Control Flow - Do While Loop]] , [[Control Flow - Ranged For Loops]] , [[Control Flow - Nesting Loops]] 
 ___
 ## 📝 Note: Loops
  Loops are part of the third basic building block of programming, **iteration.** Iteration, or repetition allows the execution of a statement or block of statements repeatedly. These loops are made up of "loop conditions" and a body which contains the statements to repeat.
@@ -28,11 +28,11 @@ ___
 
 ---
 ### 🔹 **Loop Types**
-#### [[Loops - For |For Loops]] 
+#### [[Control Flow - For Loop|For Loops]] 
 - Controlled iteration with explicit index handling.
-#### [[Loops - Ranged-based For | Ranged based For loops]] 
+#### [[Control Flow - Ranged For Loops| Ranged based For loops]] 
 - Simplified iteration over containers.
-#### [[Loops - While | While Loops]] 
+#### [[Control Flow - While Loops| While Loops]] 
 - Runs as long as a condition is true.
-#### [[Loops - Do While | Do while loops]]
+#### [[Control Flow - Do While Loop| Do while loops]]
 - Similar to while, but executes at least once.

@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚7:02 pm  📆 Tue Aug 5
- 🔗 **Related Concepts**: #cpp #note [[Loops - Overview]], [[Control Flow]]
+ 🔗 **Related Concepts**: #cpp #note [[Control Flow - Loops Overview]], [[Control Flow - Overview]]
 ___
 ## 📝 Note: Loops - Nesting 
 A nested loop is simply a loop placed inside of a loop. For this note, we will only consider nested `for` loops.

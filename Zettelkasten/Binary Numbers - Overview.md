@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚11:12 am  📆 Sun Sep 7
- 🔗 **Related Concepts**: #note #cpp
+ 🔗 **Related Concepts**: #note #cpp [[Numeral Systems]] [[Bit Manipulation - Overview]]
 ___
 ## 📝 Note: Binary Numbers - Overview
 When you interact with a computer—watching videos, sending messages, playing games—everything you see or hear is the result of processing electrical signals. But if you were to look inside the machine, you wouldn't find pictures or sounds stored as-is. Instead, everything is reduced to a common foundation: the **bit**, or **binary digit**.

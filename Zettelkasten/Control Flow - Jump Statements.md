@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:17 pm  📆 Mon Sep 1
- 🔗 **Related Concepts**: #note #cpp [[Control Flow]]
+ 🔗 **Related Concepts**: #note #cpp [[Control Flow - Overview]]
 ___
 ## 📝 Note: Jump Statements
 A jump statement is a control flow statement that unconditionally transfers the flow of the program execution to a different part of the code. Unlike conditional statements that rely on specific conditions to alter the flow, jump statements provide an immediate change in execution path.

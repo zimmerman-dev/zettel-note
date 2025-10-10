@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Arrays]], [[Functions - Passing Arrays & Vectors]], [[Loops - Ranged-based For]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Arrays]], [[Functions - Passing Arrays & Vectors]], [[Control Flow - Ranged For Loops]]
 ___
 ## 📝 Note: Vectors 
 A vector is an *class template* container defined in the **Standard Template Library (STL)**. 
@@ -184,7 +184,7 @@ letters[i];
 letters[i][j];
 ```
 
-See [[Loops - Nesting]] for information on iterating through vectors and 2D vectors.
+See [[Control Flow - Nesting Loops]] for information on iterating through vectors and 2D vectors.
 
 ---
 ### 🔹 Vector Rules (C++)

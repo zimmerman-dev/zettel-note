@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:11 am  📆 Sun Sep 28
- 🔗 **Related Concepts**: #note #cpp
+ 🔗 **Related Concepts**: #note #cpp [[Bit Manipulation - Bit Masks]] , [[Bit Manipulation - Bit Masks]] , [[Binary Numbers - Overview]] , [[Operators - Bitwise Operators & Bit Manipulation]]
 ___
 ## 📝 Note: Bit Manipulation - Overview
 As you already know, the **byte** is the smallest *addressable* unit of memory available (See: [[Memory Management - Overview]]). This means that Boolean types that only need 1 bit still occupy a full byte, leaving 7 unused bits. For most modern applications this isn’t a problem, but sometimes it can be useful to *pack* Boolean values into a single byte for efficiency.

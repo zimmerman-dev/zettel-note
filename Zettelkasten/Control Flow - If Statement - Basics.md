@@ -1,8 +1,8 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:54 pm  📆 Sat Sep 13
- 🔗 **Related Concepts**: #note #cpp [[Control Flow]] , [[Conditionals]] , [[Statements and Expressions]] , [[Operators - Overview]] , [[Boolean Logic]] , [[Functions - Return]]
+ 🔗 **Related Concepts**: #note #cpp [[Control Flow - Overview]] , [[Control Flow - Conditional Statements Overview]] , [[Statements and Expressions]] , [[Operators - Overview]] , [[Boolean Logic]] , [[Functions - Return]]
 ___
-## 📝 Note: Introduction to if-else
+## 📝 Note: Control Flow - If Statement Basics
 The `if` statement introduces **conditional flow** into a program—one of the most fundamental ways to make your code react to what's happening at runtime.
 
 > “**If** a condition is `true`, execute the associated statement.”
@@ -12,7 +12,7 @@ ___
 ### 🔹 Syntax
 ```cpp
 if (condition) {
-  // true_statement
+  // statement(s)
 }
 ```
 If the `condition` evaluates to the Boolean value `true`, then `true_statement` runs. If it evaluates to `false`, the statement is skipped entirely.

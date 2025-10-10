@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:17 am  📆 Sat Sep 27
- 🔗 **Related Concepts**: #note #cpp
+ 🔗 **Related Concepts**: #note #cpp [[Floating-Point Types]] , [[IEEE 754]] 
 ___
 ## 📝 Note: Floating-Point Math
 This is a note of some of the more common floating point math hurdles one will come across.

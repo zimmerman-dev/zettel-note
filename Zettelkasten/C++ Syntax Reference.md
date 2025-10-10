@@ -18,11 +18,11 @@ A concise, topic-driven reference for fundamental C++ syntax
 
 ---
 ###  🔹 Control Flow
-- [[Conditionals]]  
+- [[Control Flow - Conditional Statements Overview]]  
   → `if`, `else`, `switch`, ternary operator
-- [[Loops - Overview]]  
+- [[Control Flow - Loops Overview]]  
   → `for`, `while`, `do-while`, range-based loops
-- [[Jump Statements]]  
+- [[Control Flow - Jump Statements]]  
   → `break`, `continue`, `return`, `goto`
 
 ---
@@ -55,7 +55,7 @@ A concise, topic-driven reference for fundamental C++ syntax
   → Generic programming syntax (`template<typename T>`)
 - [[Operator Overloading]]  
   → Custom operator behavior
-- [[Exception Handling]]  
+- [[Control Flow - Exceptions (stub)]]  
   → `try`, `catch`, `throw`
 - [[Type Casting]]  
   → `static_cast`, `dynamic_cast`, `reinterpret_cast`

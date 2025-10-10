@@ -24,7 +24,7 @@ int main()
     return 0;
 }
 ```
-> We will cover this more in [[Arithmetic Conversions(STUB)]]
+
 
 
 

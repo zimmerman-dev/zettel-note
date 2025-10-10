@@ -1,4 +1,3 @@
-#### 📝 Note: Emoji Legend 
  ♻️ Useable Emojis for notes
  ⌚6:08 pm  📆 Wed Sep 3
  🔗 **Related Concepts**: #note

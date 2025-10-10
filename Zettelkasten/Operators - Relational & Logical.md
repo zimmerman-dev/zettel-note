@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚9:51 pm  📆 Fri Sep 26
- 🔗 **Related Concepts**: #note #cpp [[Operators - Overview]] , [[Operators - Precedence and Associativity]] , [[Operators - Arithmetic, Remainder, and Exponentiation]] , [[Conditionals]] , [[Introduction to if-else]]
+ 🔗 **Related Concepts**: #note #cpp [[Operators - Overview]] , [[Operators - Precedence and Associativity]] , [[Operators - Arithmetic, Remainder, and Exponentiation]] , [[Control Flow - Conditional Statements Overview]] , [[Control Flow - If Statement - Basics]]
 ___
 ## 📝 Note: Operators - Relational & Logical
 **Relational operators** compare two values and return a Boolean result (`true` or `false`). 

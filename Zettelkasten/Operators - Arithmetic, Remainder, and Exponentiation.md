@@ -118,7 +118,7 @@ int main() {
   return 0;
 }
 ```
-Look into [[Introduction to if-else]] and [[Conditionals]] for more information.
+Look into [[Control Flow - If Statement - Basics]] and [[Control Flow - Conditional Statements Overview]] for more information.
 
 --- column-break ---
 #### Floating Point Division by 0.0

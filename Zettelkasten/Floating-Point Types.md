@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
 ⌚10:00 pm  📆 Thu Aug 14  
-🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Mixed Expressions & Type Conversions & Promotion]]
+🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Mixed Expressions & Type Conversions & Promotion]] , [[IEEE 754]] , [[Floating-Point Math]]
 ___
 ## 📝 Floating-Point Types
 Before getting to **floating point types**, I'd like to first define what a real number is in general mathematics. A **real number** is a number within the set of all rational and irrational numbers. **Real Numbers can be:**
