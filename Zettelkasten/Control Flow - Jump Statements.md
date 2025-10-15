@@ -3,80 +3,128 @@
  🔗 **Related Concepts**: #note #cpp [[Control Flow - Overview]]
 ___
 ## 📝 Note: Jump Statements
-A jump statement is a control flow statement that unconditionally transfers the flow of the program execution to a different part of the code. Unlike conditional statements that rely on specific conditions to alter the flow, jump statements provide an immediate change in execution path.
-### 🔹 `break`
-**Use Case:** When you want to **stop a loop or switch** early.
+Broadly, the *conditional* statement is a construct that allows a program to execute different blocks of code based on whether a specified **condition** evaluates `true` or `false` (like the `if-else` statements from past notes). In contrast, an _unconditional_ statement; or more specifically for this note, a **jump statement** alters the flow of a program by forcing an immediate _jump_ to a different location in the code, regardless of any condition.
+
+In [[Control Flow - If Statement Alternatives (Switch)]], we covered both `break` and `return`, which are actually examples of **jump statements**. These keywords interrupt the normal top-to-bottom execution order:
+- `break` exits a `switch` or loop early.
+- `return` exits a function, optionally returning a value.
+
+You’ll encounter `break` again in [[Control Flow - Loops Overview]] and its child notes, where it’s commonly used to exit loops early. For `return`, the most in-depth treatment appears in the function-related notes, especially [[Functions - Return]]. Now that we’ve seen jump statements that serve clear and structured purposes, we’re ready to look at a **less structured** one: `goto`.
+___
+### 🔹 `goto` Statements
+The `goto` statement is an unconditional jump statement that uses the `goto` keyword and a **statement label** to determine where the execution should jump.
 ```cpp
-for (int i = 0; i < 5; ++i) {
-    if (i == 3)
-        break;  // If i is 3, exit the loop entirely
-    std::cout << i << " ";
+#include <iostream>
+#include <cmath>
+
+int main() {
+
+tryAgain:  // Statement label
+  std::cout << "Enter a non-negative number: ";
+  int num{};
+  std::cin >> num;
+
+  if (num < 0) {
+    goto tryAgain;  // goto statement
+  }
+
+  std::cout << "The square root of " << num << " is " << std::sqrt(num) << '\n';
+  return 0;
 }
-// Output: 0 1 2
+```
+> This program behaves similarly to a `while` loop, but mechanically it's not really a loop at all. The user is asked to enter a non-negative number. If a negative number is entered, the program uses `goto` to jump back to the labeled line `tryAgain`.
+
+Unlike a loop, which is **conditional** by nature, repeating _while_ a condition is true, a `goto` is an **external control mechanism**. It does not form a logical circular structure; it simply jumps unconditionally when called, regardless of the larger control flow.
+___
+### 🔹 Statement Labels - Function Scope
+We covered **local and global scope** in [[Namespaces, Scope, and Linkage]]. However, **statement labels** utilize a third type called **function scope**. This means that the `statement label` is visible throughout the function, even before the label itself is declared. 
+
+For example:
+```cpp
+#include <iostream>
+
+void printJump(bool jump) {
+  if (jump)
+    goto end;
+
+  // ⬇️ Prints when jump == false; return prevents fallthrough to label
+  std::cout << " jump over the brown dog!\n";
+  return;
+
+end:
+  // Only prints when jump == true
+  std::cout << "Cats";
+}
+
+int main() {
+  printJump(true);
+  printJump(false);
+}
 ```
 
->**Definition:**  
->If a specified condition is met, `break` **immediately exits the closest enclosing loop or switch statement**, skipping all remaining iterations or cases.
->---
-### 🔹 `continue`
-**Use Case:** When you want to **skip over specific cases** but keep looping.
+ ⚠️ Statement labels must be followed by a **statement**. If you want a clean jump target with no action, you can use a **null statement**:
 ```cpp
-for (int i = 0; i < 5; ++i) {
-    if (i == 2)
-        continue; // If i is 2, skip printing and continue the loop
-    std::cout << i << " ";
-}
-// Output: 0 1 3 4
-``` 
-
-> **Definition:**  
->If a specified condition is met, `continue` **skips the rest of the current loop iteration** and immediately jumps to the **next iteration** of the loop.
->---
-### 🔹 `goto`
-**Use Case:** Rarely used — mainly for **jumping out of deeply nested loops** or in legacy code
-```cpp
-int i = 0;
-start:
-if (i < 3) {
-    std::cout << i++ << " ";
-    goto start;
-}
-// Output: 0 1 2
+// ...
+end:
+  ; // ✅ null-statement
 ```
+___
+### 🔹 Limitations
+There are two primary limitations to *jumping*:
+1. You can jump only within the bounds of a single function (you can't jump outside of one function and into another).
+2. You cannot jump forward to a point that skips the initialization of a variable that would still be in scope after the jump. This restriction exists to prevent you from accidentally using a variable before it has been properly constructed.
 
->**Definition:**  
->Jumps to a _labeled_ statement elsewhere in the same function. **Generally discouraged** due to poor readability and error-prone behavior.
->---
-### 🔹 `return`
-**Use Case:** To **terminate a function early**, optionally with a result.
+For example:
 ```cpp
-int doubleOrZero(int x) {
-    if (x == 0)
-        return 0;  // Exit early if x is 0
-    return x * 2;
-}
-// In main(), return 0; signals that the program ended successfully.
-```
+// ...
+int main() {
 
->**Definition:**  
->If a specified condition is met (or unconditionally), `return` **exits the current function immediately** and optionally sends back a value to the caller.
->---
+  goto skip;
+  int x{5};
+skip:
+  x += 3;
+  return 0;
+}
+```
+> You can jump backwards over a variable initialization, and the variable will be re-initialized when the initialization is executed.
+___
+### 🔹 Avoiding `goto`
+`goto` is an old but divisive feature in many programming languages, C++ included. You can check out Dijkstra's classic paper on the topic, _A Case Against the GO TO Statement_. In it, he argues that a program should be not only **syntactically correct**, but also **structurally honest**; meaning the flow of control should clearly reflect the logic the programmer intends.
+
+He suggests that by using **induction-like patterns** (such as recursion or well-structured loops), we can more accurately represent the **dynamic process** of a program in a way that is easier to reason about. In contrast, `goto` and certain "superfluous repetition clauses" widen the gap between how code looks and how it behaves.
+
+> Put more plainly (and less astutely than Dijkstra might), `goto` allows a programmer to jump around arbitrarily, often in ways that don’t reflect the true logic of the program.  
+> That kind of unstructured control can lead to confusion, bugs, and maintenance headaches down the road.
+___
 ### 🧠 Flashcards
 
-**Q:** What does the `break` statement do in a loop or `switch`?  
+What kind of scope do statement labels use?
 ?|?
-**A:** It exits the nearest enclosing loop or `switch` immediately.
+Function scope — they're visible throughout the entire function, even before their point of declaration.
 
-**Q:** What does `continue` do inside a loop?  
-?|?
-**A:** It skips the remaining loop body and moves to the next iteration.
+___
 
-**Q:** Why is `goto` discouraged in modern C++?  
+Can a `goto` jump across function boundaries?
 ?|?
-**A:** Because it creates _spaghetti code_ and makes logic harder to follow and debug.
+No. You can only use `goto` within a single function.
 
-**Q:** What does a `return` statement do?  
+___
+
+Why must statement labels be followed by a statement?
 ?|?
-**A:** It exits the current function and optionally returns a value to the caller.
+Because the label must attach to a valid statement in the grammar; if no real code is needed, use a null statement (`;`).
+
+___
+
+Why does Dijkstra argue against `goto`?
+?|?
+Because it breaks structured control flow and creates a gap between how code looks (static structure) and how it behaves (dynamic process).
+
+___
+
+What happens if a `goto` skips over the initialization of a variable that's still in scope?
+?|?
+It’s undefined behavior and causes a compile-time error; you can't jump forward past variable initialization into its scope.
+
 
 #flashcards 

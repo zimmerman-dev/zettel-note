@@ -2,7 +2,7 @@
  ⌚7:31 pm  📆 Thu Oct 9
  🔗 **Related Concepts**: #note #cpp [[Control Flow - Overview]] , [[Control Flow - Conditional Statements Overview]]
 ___
-## 📝 Note: Control Flow - If Statement Alternatives
+## 📝 Note: Control Flow - If Statement Alternatives (Switch)
 Although you could chain together an infinite amount of `if-else` statements (not literally), this is both inefficient and hard to read.
 --- start-multi-column: ID_gayy
 ```column-settings
@@ -128,6 +128,8 @@ void printSomething(int x) {
 }
 // ...
 ```
+
+For more information on `break`  and `return`, see: [[Control Flow - Jump Statements]].
 ___
 ### 🔹 Fallthrough and Scoping
 What would happen if we wrote a `switch` statement, but omitted any `break` or `return` statements? When execution flows from a statement underneath a label into statements underneath a subsequent label this is called **fallthrough**.

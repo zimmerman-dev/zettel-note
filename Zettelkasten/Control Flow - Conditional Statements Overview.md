@@ -89,7 +89,7 @@ switch (x) {
 }
 ```
 
-See: [[Control Flow - If Statement Alternatives]]
+See: [[Control Flow - If Statement Alternatives (Switch)]]
 ___
 ### 🔹 Conditional (Ternary) Operator `?:`
 ```c
