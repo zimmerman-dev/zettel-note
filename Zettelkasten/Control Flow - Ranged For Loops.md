@@ -22,9 +22,11 @@ std::vector<int> nums {1,2,3,4,5};   /*    Container                */
 int sum {};                          /*    Accumulator for total    */
 
 for (auto n : nums) {                
-	sum += n;                        /*    'n' is the element variable                                              representing each value in 'nums'  */
+	sum += n;                        /*    'n' is the element variable                                              
+	                                        representing each value in 'nums'  */
 	                                 
-	                                 /*    Add the current element 'n' to the                                         running total 'sum'              */
+	                                 /*    Add the current element 'n' to the                                       
+	                                       running total 'sum'              */
 }
 std::cout << "Sum: " << sum << std::endl;
 ```

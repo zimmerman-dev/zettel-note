@@ -3,14 +3,25 @@
  🔗 **Related Concepts**: #cpp #note [[Control Flow - Loops Overview]], [[Control Flow - Overview]]
 ___
 ## 📝 Note: Loops - Nesting 
-A nested loop is simply a loop placed inside of a loop. For this note, we will only consider nested `for` loops.
+A nested loop is simply a loop placed inside of a loop.
 
+### 🔹 Nested `while` Loop
+```cpp
+
+while (condition) {
+  while (condition) {
+    // inner statement
+  }    
+  // outer statement
+}
+```
+### 🔹 Nested `for` Loop
 ```cpp
 for (initialization; condition; increment) {
-	for (initialization; condition; increment) {
-		// inner statement
-	}
-	// outer statement
+  for (initialization; condition; increment) {
+    // inner statement
+  }
+  // outer statement
 }
 ```
 ### 🔹 Basics:
@@ -21,14 +32,38 @@ for (initialization; condition; increment) {
 
 ---
 ### 🔹 Nested Loop Flow
-Iteration flow for nested `for` loops example:
-
+Iteration flow for nested `while` loops example:
 ```cpp
-for (int i {1}; i <= 2; ++i) {        // <--> Outer Loop
-	for (int j {1}; j <= 3; ++j) {    // <--> Inner Loop (body of outer loop)
+// ...
+  int x{1};
+  // ⬇️ Outer Loop
+  while (x <= 5) { 
+    
+    // (body of outer loop)
+    int y{1};
+    
+    // ⬇️ Inner Loop
+    while (y <= x) { // (still body of outer loop) 
+      
+      // (body of inner loop)
+      std::cout << y << ' ';
+      y++;
+    }
+    
+    // (still body of outer loop)
+    std::cout << '\n';
+    x++;
+  }
+```
+
+Iteration flow for nested `for` loops example:
+```cpp
+// ...
+for (int i{1}; i <= 2; ++i) {        // <--> Outer Loop
+	for (int j{1}; j <= 3; ++j) {    // <--> Inner Loop (body of outer loop)
 		std::cout << i << "," << j << std::endl;  // <--> (body of inner loop)
 	}
-	std::cout << std::endl;
+	std::cout << std::endl;          // (still body of outer loop)
 }
 ```
 ### 🔹 Flow Breakdown:
@@ -52,6 +87,16 @@ for (int i {1}; i <= 2; ++i) {        // <--> Outer Loop
    - `i` increments → `3`, condition `false` ❌ **outer loop ends**
    - Program continues with code after the loops (if any).
 
+Output:
+```text
+1,1
+1,2
+1,3
+
+2,1
+2,2
+2,3
+```
 ---
 ### 🔹 **Arrays & Vectors**
 You can use nested loops to process a 1D array multiple times or compare elements.
