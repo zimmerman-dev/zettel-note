@@ -32,7 +32,7 @@ int main() {
 ```
 > Simple? Not quite.
 
-When `s` is initialized, it copies the string literal `"hello"` into memory where the`std::string` owns and manages the data. This allocation and duplication is **slower** than dealing with fundamental types like `int`.  We've just made a full `std::string`, only to print and destroy it a moment later.  
+When `s` is initialized, it copies the string literal `"hello"` into memory where the `std::string` owns and manages the data. This allocation and duplication is **slower** than dealing with fundamental types like `int`.  We've just made a full `std::string`, only to print and destroy it a moment later.  
 
 --- column-break ---
 #### How `std::string` works
@@ -76,8 +76,8 @@ This looks just like the previous example, but there is a key difference. **`s` 
 ___
 ### 🔹 What `std::string_view` is not
 Before we define `string_view`, let’s define what it **isn’t**:
-- It is **not** a string.   
-- It does **not** own the memory it points to.
+- It's **not** a string.   
+- It **doesn't** own the memory it points to.
 - It cannot **modify** the characters it views.
 - It doesn’t allocate or free memory.
 ```cpp
@@ -92,12 +92,12 @@ It's best think of `std::string_view` as a pair of pointers:
 It simply observes part of a string. That's it.
 ___
 ### 🔹 Safe Usage & Lifetime (Analogy)
-Let’s sidebar for analogy. Say you want to paint a picture of a bicycle. You’ve got paint and a canvas—but you don’t own a bike to model from. **You have two options:**
+Let’s sidebar for an analogy. Say you want to paint a picture of a bicycle. You’ve got paint and a canvas, but you don’t own a bike to model from. **You have two options:**
 
 - **Buy your own bike.** It’s expensive, but it’s yours. You can decorate it, ride it, or leave it parked wherever and whenever you want. It will always be available for your painting session.
     - 🟥 This is like using a `std::string`: You _own_ the data. It’s flexible, powerful—but has a cost.
     
-- **Use your neighbor’s bike.** It’s already sitting outside, shiny and red—perfect for your painting. No need to buy one. But here’s the catch: you can’t move it, modify it, or control how long it stays there. If your neighbor puts it in the garage halfway through your session, you’re out of luck.
+- **Use your neighbor’s bike.** It’s already sitting outside, shiny and red, perfect for your painting. No need to buy one. But here’s the catch: you can’t move it, modify it, or control how long it stays there. If your neighbor puts it in the garage halfway through your session, you’re out of luck.
     - 🟦 This is like using a `std::string_view`: You _borrow_ the data. It’s lightweight and cheap—but risky if the original disappears.
 
  💡 **Moral of the story:** 
@@ -121,7 +121,7 @@ myName[0] = 'D';
 ```cpp
 // ...
 int main() {
-  std::string_view view;
+  std::string_view view; 
   {
     std::string name{"John"};
     view = name;
@@ -217,9 +217,9 @@ Unlike in the last example, where we passed c-string literals and `std::string` 
 ```cpp
 std::string_view view{"View"};
 std::string string{view};
-```
-or you can use static_cast:
-```cpp
+
+// or you can use static_cast: 
+
 std::string_view view{"View"};
 std::string string = static_cast<std::string>(view);
 ```
