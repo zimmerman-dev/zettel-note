@@ -101,16 +101,6 @@ Output:
 1. Loop counters are often named `i`, `j`, `k`, etc. — a convention dating back to Fortran.
 2. Avoid using unsigned loop variables. Signed integers are safer unless you **know** you're counting strictly in the positive.
 ___
-### 🔹 Control Statements
-`break` – exits the loop immediately.  
-  - No further statements in the loop body run.  
-  - Control jumps to the first statement **after** the loop.
-
-`continue` – skips the rest of the current iteration.  
-  - Control jumps to the top of the loop and re-checks the condition.
-
-`return` – exits the **entire function**, not just the loop.
-___
 ### 🔹Loop Types
 1. [[Control Flow - For Loop|For Loops]] - Controlled iteration with explicit index handling.
 2. [[Control Flow - Ranged For Loops| Ranged based For loops]] - Simplified iteration over containers.
