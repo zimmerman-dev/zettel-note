@@ -3,6 +3,7 @@
  🔗 **Related Concepts**: #note #cpp
 ___
 ## 📝 Note: Control Flow - Break and Continue
+We *have* seen the `break` statement already in the case (no pun intended 😏) of the `switch` statement,
 ### 🔹 Control Statements
 `break` – exits the loop immediately.  
   - No further statements in the loop body run.  
