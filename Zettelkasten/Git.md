@@ -173,6 +173,7 @@ git push origin <branch-name>
 You’ll now see your new commits on GitHub under the `<branch-name>` branch.
 
 When ready to merge those edits into main, do it one of two ways:
+
 #### Option A — On GitHub (web merge)
 1. Open a Pull Request from `<branch-name>` → main.
 2. Merge it using the web UI.
@@ -203,7 +204,7 @@ git push origin --delete <branch-name>   # delete remote branch
 
 You can recreate it any time with:
 ```bash
-git checkout -b <branch-name> main
+git checkout -b <branch-name>
 ```
 ___
 ### Quick Reference Table
