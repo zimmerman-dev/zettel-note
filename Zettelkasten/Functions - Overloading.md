@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:11 am  📆 Tue Aug 12
- 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Parameters & Arguments]], [[Type Conversion - Type Casting]]
+ 🔗 **Related Concepts**: #note #cpp [[Functions - Overview]] , [[Functions - Parameters & Arguments]], [[Type Conversion - Type Casting & static_cast]]
 ___
 ## 📝 Note: Functions - Overloading 
 Function overloading lets you define multiple functions with the same name, as long as their **parameter lists** are different.

@@ -57,7 +57,7 @@ A concise, topic-driven reference for fundamental C++ syntax
   → Custom operator behavior
 - [[Control Flow - Exceptions (stub)]]  
   → `try`, `catch`, `throw`
-- [[Type Conversion - Type Casting]]  
+- [[Type Conversion - Type Casting & static_cast]]  
   → `static_cast`, `dynamic_cast`, `reinterpret_cast`
 
 ---

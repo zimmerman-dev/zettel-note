@@ -6,7 +6,7 @@ ___
 In [[Statements and Expressions]], we laid a surface-level foundation on what assignment is, and we’ve alluded to initialization in different parts of this notebook. In this note, we’ll dive deeper into both concepts so we can connect them with fundamentals of memory management down the road.
 
 Before going further, check out:  
-[[Mixed Expressions & Type Conversions & Promotion]] and [[Type Conversion - Overview]].
+[[Type Conversion - Overview]] and [[Type Conversion - Implicit Type Conversion]].
 ___
 ### Assignment vs Initialization
 

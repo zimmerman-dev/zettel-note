@@ -51,7 +51,7 @@ With that in mind, lets re-address the statement above:
 With this:
 > `std::int8_t` and its unsigned counterpart `std::uint8_t` are both just **aliases** for chars, signed and unsigned respectively.
 
-See: [[Char]] and [[Mixed Expressions & Type Conversions & Promotion]] for more info on this.
+See: [[Char]] and [[Type Conversion - Overview]] for more info on this.
 ___
 ### 🔹 Quibbles with Fixed-width `int`
 There are two main quibbles with the `<cstdint>` header.

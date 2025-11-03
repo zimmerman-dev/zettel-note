@@ -1,8 +1,8 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚2:28 am  📆 Wed Jul 23
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Functions - Parameters & Arguments]], [[Mixed Expressions & Type Conversions & Promotion]] , [[Type Conversion - Overview]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Functions - Parameters & Arguments]], [[Type Conversion - Overview]] , [[Type Conversion - Implicit Type Conversion]]
 ___
-## 📝 Note: Type Casting 
+## 📝 Note: Type Conversion - Type Casting & static_cast
 When you *manually* tell the compiler: ==*“Hey — treat this value as if it's a different type,”*==  that’s called **explicit type casting**.
 
 C++ gives you two ways to do this:

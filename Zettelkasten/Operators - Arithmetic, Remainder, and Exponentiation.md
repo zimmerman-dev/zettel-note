@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚10:23 pm  📆 Tue Sep 23
- 🔗 **Related Concepts**: #note #cpp [[Operators - Precedence and Associativity]] , [[Fundamental Data Types]] , [[Mixed Expressions & Type Conversions & Promotion]]
+ 🔗 **Related Concepts**: #note #cpp [[Operators - Precedence and Associativity]] , [[Fundamental Data Types]] , [[Type Conversion - Overview]]
 ___
 ## 📝 Note: Operators - Arithmetic, Remainder, and Exponentiation
 This note is a compilation of a few different operator topics. We'll start with Arithmetic and work our way to the right. As you read this, you may get linked over to [[Operators - Overview]].
