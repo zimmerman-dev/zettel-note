@@ -1,6 +1,6 @@
 ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚12:31 am  📆 Thu Jul 24
- 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Operators - Overview]], [[Type Casting]]
+ 🔗 **Related Concepts**: #note #cpp [[Fundamental Data Types]], [[Operators - Overview]], [[Type Conversion - Type Casting]]
 ___
 ##  📝 Note: Mixed Expressions & Type Conversions & Promotion
 An expression involving **two or more different data types**, such as `int` and `double`.
@@ -98,9 +98,9 @@ if (i < u) {...} // i gets converted to unsigned!
 - if `i` is negative, it gets turned into a *huge* positive number
 ###  🔹Types Hierarchy
 Diagram for visual aid on types hierarchy for promotion and demotion here:
-[[Types Hierarchy]]
+[[Type Conversion - Types Hierarchy]]
 
 ---
 ###  Type Casting
 Continued: 
-[[Type Casting]]
+[[Type Conversion - Type Casting]]

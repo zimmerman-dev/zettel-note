@@ -43,11 +43,26 @@ dv.list([
   `📁 Unique Folders: ${allFolders.size}`
 ]);
 ```
-### 🔹 Week 6:  **09/30 – 10/06** — Loops, Branches, and Randomness  
-📍 **Ch. 8–8.15** — _If_, _Loops, Goto, RNG_  
-- [x] **Block 0:** (8 → 8.5) _if, if else, else if, and switch statements_ 
-- [ ] **Block 1:** (8.6 → 8.10) Switch scoping, goto, loops: while/do/for  
-- [ ] **Block 2:** (8.11 → 8.15) Break/continue, halt, RNG, Mersenne Twister  
-- [ ] **Block 3:** Practice problems + reroll logic game  
-- [ ] **Weekend:** Chapter 8 quiz + random project 
-- [ ] **Block 4:** (9.1 → 9.6) Testing, coverage, semantic errors, `std::cin`, `assert`  
+#### ✅ To-do: zimmerman-dev TODO   
+ ⌚8:58 pm  📆 Sun Nov 2
+ 🔗 **Related Concepts**: #todo
+___
+### 🚀 Immediate Action
+- [ ] Random Number Generator Notes
+---
+- [ ]  ch 10 type conversions, type aliases, and type deductions
+---
+- [ ] ch 11 function overloading and function templates 
+---
+- [ ]  
+---
+- [ ] 
+---
+- [ ] 
+---
+- [ ] 
+---
+- [ ] 
+---
+- [ ] 
+---

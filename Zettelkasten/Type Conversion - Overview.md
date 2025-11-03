@@ -1,6 +1,6 @@
  ♻️ (*MinGW, Windows11, Codelite*)   
  ⌚3:13 pm  📆 Sat Sep 13
- 🔗 **Related Concepts**: #note #cpp [[Mixed Expressions & Type Conversions & Promotion]] [[Type Casting]]
+ 🔗 **Related Concepts**: #note #cpp [[Mixed Expressions & Type Conversions & Promotion]] [[Type Conversion - Type Casting]]
 ___
 ## 📝 Note: Introduction to Type Conversion and static_cast
 ### Example 1
